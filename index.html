@@ -1,9 +1,106 @@
 <!DOCTYPE html>
 <html>
 
-<body>
-    <h1>Hello World</h1>
-    <p>This is a test code to create my website.</p>
-</body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Carolina Knoll - Desenvolvimento Front-End</title>
+    <meta name="keywords" content="web development, front end, front-end, internship, estágio, html, css, html5, css3, jquery, javascript, santa catarina, florianópolis, portfolio">
+    <meta name="author" content="Carolina Knoll">
+    <meta name="description" content="Carolina Knoll - Desenvolvimento Front-End">
+    
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
 
-</html>
+<body>
+    <header class="header"> 
+        <div class="container">
+            <div class="header-inner">
+                <h2 class="header-logo">Carolina Knoll</h2>
+                <a id="menu" class="header-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
+                    </svg>
+                </a>
+    
+                <nav id="drawer" class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item current"><a href="#">Home</a></li>
+                        <li class="nav-item"><a href="#">Sobre</a></li>
+                        <li class="nav-item"><a href="#">Portfolio</a></li>
+                        <li class="nav-item"><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+       <section class="content">
+           
+            <div class="hero">
+                <div class="container">
+                    <h1 class="hero-title">Carolina Knoll</h1>
+                    <h2>Website em construção.</h2>
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="container">
+                    <h2 class="section-title">Sobre mim</h2>
+                    <p>Saiba mais sobre...</p>
+                </div>
+            </div>
+            
+            <div class="portfolio">
+                <div class="container">
+                    <h2 class="section-title">Portfolio</h2>
+                </div>
+            </div>
+            
+            <div class="contact">
+                <div class="container">
+                    <h2 class="section-title">Contato</h2>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <ul class="list-inline">
+                    <li class="contact"><a href="mailto:carolina-knoll@hotmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/carolinaknoll"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="github"><a href="https://github.com/carolinaknoll"><i class="fa fa-github"></i></a></li>
+                    <li class="twitter"><a href="https://twitter.com/carolina_knoll"><i class="fa fa-twitter"></i></a></li>
+                    <li class="codepen"><a href="http://codepen.io/carolinaknoll/"><i class="fa fa-codepen"></i></a></li>
+                    <li class="freecodecamp"><a href="http://www.freecodecamp.com/carolinaknoll"><i class="fa fa-fire"></i></a></li>
+                    <p>Made with <span>&hearts;</span> by Carolina Knoll / 2015</p>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+       <script>
+        /*
+         * Open the drawer when the menu ison is clicked.
+         */
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var drawer = document.querySelector('.nav');
+
+        menu.addEventListener('click', function (e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        main.addEventListener('click', function () {
+            drawer.classList.remove('open');
+        });
+    </script>
+</body>

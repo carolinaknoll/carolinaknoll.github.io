@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+ *
+ * Header
+ * 
+ */
+
+.header {  
+    background: #FF2;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    min-height: 100px;
+    text-align: center;
+    display: inline;
+}
+
+.header-logo { 
+    float: left;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 2.8em;
+    color: #83c4e2;
+    line-height: 1;
+    text-shadow: 1px 3px 1px #257A9F;
+}
+
+.header-menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+}
+
+/*
+ *
+ * Navigation
+ * 
+ */
+
+.nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+}
+
+.nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.nav-item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+}
+
+.nav-item a {
+    color: rgba(101, 101, 101, 1);
+    padding: padding: 1rem 1rem;
+    display: block;
+    border-bottom: 1px dotted rgba(101, 101, 101, .4);
+}
+
+.header-inner {
+    margin: 1rem 0rem 1rem 0rem;     
+}
+
+.nav { 
+    margin: 0rem 10rem 0rem 0rem;
+    padding: .5rem; 
+    border: none;     
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav-item a {
+    color: #6a6867;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 620px) {
+    .header-menu svg {
+    display: none;
+    }
+}
