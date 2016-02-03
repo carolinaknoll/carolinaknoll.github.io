@@ -13,12 +13,13 @@
     
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="header"> 
-        <div class="container">
+    <header class="header"> <!-- 
+        <div class="container"> -->
             <div class="header-inner">
                 <h2 class="header-logo">Carolina Knoll</h2>
                 <a id="menu" class="header-menu">
@@ -29,14 +30,14 @@
     
                 <nav id="drawer" class="nav">
                     <ul class="nav-list">
-                        <li class="nav-item current"><a href="#">Home</a></li>
+                        <li class="nav-item"><a href="#">Home</a></li>
                         <li class="nav-item"><a href="#">Sobre</a></li>
                         <li class="nav-item"><a href="#">Portfolio</a></li>
                         <li class="nav-item"><a href="#">Contato</a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
+            </div><!-- 
+                    </div> -->
     </header>
     
     <main>
@@ -45,6 +46,7 @@
             <div class="hero">
                 <div class="container">
                     <h1 class="hero-title">Carolina Knoll</h1>
+                    <hr class="divider"/>
                     <h2>Website em construção.</h2>
                 </div>
             </div>
@@ -52,6 +54,7 @@
             <div class="about">
                 <div class="container">
                     <h2 class="section-title">Sobre mim</h2>
+                    <hr class="divider"/>
                     <p>Saiba mais sobre...</p>
                 </div>
             </div>
@@ -59,12 +62,14 @@
             <div class="portfolio">
                 <div class="container">
                     <h2 class="section-title">Portfolio</h2>
+                    <hr class="divider"/>
                 </div>
             </div>
             
             <div class="contact">
                 <div class="container">
                     <h2 class="section-title">Contato</h2>
+                    <hr class="divider"/>
                 </div>
             </div>
             
@@ -73,6 +78,16 @@
     
     <footer class="footer">
         <div class="container">
+            <ul class="footer-nav">
+                <li class="footer-nav-item"><a href="#">Home</a></li>
+                <li class="footer-nav-divider"><span>&sdot;</span></li>
+                <li class="footer-nav-item"><a href="#">Sobre</a></li>
+                <li class="footer-nav-divider"><span>&sdot;</span></li>
+                <li class="footer-nav-item"><a href="#">Portfolio</a></li>
+                <li class="footer-nav-divider"><span>&sdot;</span></li>
+                <li class="footer-nav-item"><a href="#">Contato</a></li>
+            </ul>
+            
             <div class="row">
                 <ul class="list-inline">
                     <li class="contact"><a href="mailto:carolina-knoll@hotmail.com"><i class="fa fa-envelope"></i></a></li>

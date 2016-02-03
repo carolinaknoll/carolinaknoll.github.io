@@ -1,5 +1,11 @@
 html {
     box-sizing: border-box;
+    font-family: Lato, "Helvetica";
+}
+
+p {
+    font-family: Lato;
+    font-weight: 400;
 }
 
 .container {
@@ -14,6 +20,16 @@ html {
     clear: both;
 }
 
+.section-title {
+    text-align: center;
+} 
+
+.divider {
+    box-shadow: 2px 1px 2px #333;
+    width: 70%;
+    margin-top: -15px;
+}
+
 /*
  *
  * Header
@@ -21,14 +37,23 @@ html {
  */
 
 .header {  
-    background: #FF2;
+    background: #FF1;
     background-size: cover;
     width: 100%;
     position: relative;
     min-height: 100px;
     text-align: center;
     display: inline;
+  	position: fixed;
+
+  	top:0;
+    z-index: 99;
+    margin-top: -0px;
+    background:rgba(77, 77, 77, 0);
+/*     background: linear-gradient(rgba(2,55,99,1), rgba(2,55,99,0.5));   */
+    background: linear-gradient(rgba(204, 255, 255, .5), rgba(204, 255, 255, 0.2));  
 }
+
 
 .header-logo { 
     float: left;
@@ -38,6 +63,7 @@ html {
     color: #83c4e2;
     line-height: 1;
     text-shadow: 1px 3px 1px #257A9F;
+    padding-left: 1em;
 }
 
 .header-menu svg {
@@ -50,35 +76,6 @@ html {
  * Navigation
  * 
  */
-
-.nav {
-    z-index: 10;
-    background-color: #fff;
-    width: 300px;
-    position: absolute;
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
-    transition: transform 0.3s ease;
-}
-
-.nav.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-
-.nav-item {
-    display: list-item;
-    border-bottom: 1px solid #E0E0E0;
-    width: 100%;
-    text-align: left;
-}
-
-.nav-item a {
-    color: rgba(101, 101, 101, 1);
-    padding: padding: 1rem 1rem;
-    display: block;
-    border-bottom: 1px dotted rgba(101, 101, 101, .4);
-}
 
 .header-inner {
     margin: 1rem 0rem 1rem 0rem;     
@@ -99,9 +96,150 @@ html {
     padding: 1rem;
 }
 
+.hero {
+    background: #333 url('../images/hero-bg.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    border-bottom: 4px solid #e2e2e2;
+    width: 100%;
+    position: relative;
+    min-height: 700px; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;  
+} 
 
-@media screen and (min-width: 620px) {
+/*
+ *
+ * Footer
+ * 
+ */
+
+.footer {
+    background: #5b95be no-repeat 50% 50%;
+    background-size: cover;
+    min-height: 100%;  
+    max-width: 100%;
+    max-height: auto;
+    padding: 5px;
+    margin-top: 250px;
+    font-size: 1.4em;    
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 100%;
+    border-top: 4px #ffff66 outset;
+    font-family: Lato;
+    font-weight: 300;
+}
+
+.footer p,
+a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 5px;
+    text-align: center;
+}
+
+.footer .fa {
+    color: #FFF;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 1.4;
+}
+
+.footer .fa:hover {
+    transition: 0.3s;
+    text-shadow: 2px 1px 2px #333;
+}
+
+.footer .contact .fa:hover {
+    background-color: #e6b800; 
+}
+
+.footer .linkedin .fa:hover {
+    background-color: #117BB7;
+}
+
+.footer .github .fa:hover {
+    background-color: #24478f;    
+}
+
+.footer .twitter .fa:hover {
+    background-color: #007acc;
+}
+
+.footer .codepen .fa:hover {
+    background-color: #ff6600;
+}
+
+.footer .freecodecamp .fa:hover {
+    background-color: #009933;
+}
+
+.footer span {
+    color: #ffff66;
+}
+
+@media screen and (max-width: 610px) {
+    .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 250px;
+    position: absolute;
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+    }
+    
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    
+    .nav-item {
+        display: list-item;
+        border-bottom: 1px solid #00ccff;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .nav-item a {
+        color: rgba(101, 101, 101, 1);
+        padding: 1rem 1rem;
+        display: block;
+        border-bottom: 1px dotted rgba(101, 101, 101, .4);
+    }
+    
+    .nav-item a:hover {
+        background: #00ccff;
+    }
+    
+}
+
+@media screen and (min-width: 611px) {
     .header-menu svg {
     display: none;
     }
+    
+    .nav  {
+        
+    }
+    
+     .nav ul {
+        float: right;
+        display: inline;
+    } 
 }
