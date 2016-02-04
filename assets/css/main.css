@@ -1,10 +1,11 @@
 html {
     box-sizing: border-box;
-    font-family: Lato, "Helvetica";
+    font-family: "Lato", "Helvetica";
+    background: #EAEFEC;
 }
 
 p {
-    font-family: Lato;
+    font-family: "Lato";
     font-weight: 400;
 }
 
@@ -51,7 +52,9 @@ p {
     margin-top: -0px;
     background:rgba(77, 77, 77, 0);
 /*     background: linear-gradient(rgba(2,55,99,1), rgba(2,55,99,0.5));   */
-    background: linear-gradient(rgba(204, 255, 255, .5), rgba(204, 255, 255, 0.2));  
+    
+   /*  background: linear-gradient(rgba(204, 255, 255, .5), rgba(204, 255, 255, 0.2));   */
+    background: linear-gradient(rgba(64, 64, 64, .9), rgba(64, 64, 64, 0.6));
 }
 
 
@@ -92,17 +95,19 @@ p {
 }
 
 .nav-item a {
-    color: #6a6867;
+    color: #FFF; /* #6a6867; */
+    font-size: 1.4em;
     padding: 1rem;
 }
 
-.hero {
+.hero {/* 
+    background: #333 url('../images/hero-bg.jpg') no-repeat 50% 50%; */
     background: #333 url('../images/hero-bg.jpg') no-repeat 50% 50%;
     background-size: cover;
     border-bottom: 4px solid #e2e2e2;
     width: 100%;
     position: relative;
-    min-height: 700px; 
+    min-height: 800px; 
     
     display: flex;
     flex-direction: column;
@@ -137,6 +142,7 @@ p {
     display: block;
     overflow: hidden;
     margin: 10px;
+    background: #FFF;
 }
 
 .project-image img {
@@ -261,7 +267,7 @@ a {
     .nav {
     z-index: 10;
     background-color: #fff;
-    width: 250px;
+    width: 200px;  /* width: 250px; */
     position: absolute;
     -webkit-transform: translate(-300px, 0);
     transform: translate(-300px, 0);
