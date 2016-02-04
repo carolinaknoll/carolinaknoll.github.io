@@ -51,10 +51,9 @@ p {
     z-index: 99;
     margin-top: -0px;
     background:rgba(77, 77, 77, 0);
-/*     background: linear-gradient(rgba(2,55,99,1), rgba(2,55,99,0.5));   */
+    background: linear-gradient(rgba(64, 64, 64, 0.9), rgba(64, 64, 64, 0.6));
     
-   /*  background: linear-gradient(rgba(204, 255, 255, .5), rgba(204, 255, 255, 0.2));   */
-    background: linear-gradient(rgba(64, 64, 64, .9), rgba(64, 64, 64, 0.6));
+    margin: -20px 0;
 }
 
 
@@ -66,7 +65,6 @@ p {
     color: #83c4e2;
     line-height: 1;
     text-shadow: 1px 3px 1px #257A9F;
-    padding-left: 1em;
 }
 
 .header-menu svg {
@@ -81,27 +79,28 @@ p {
  */
 
 .header-inner {
-    margin: 1rem 0rem 1rem 0rem;     
+    padding: 0 2em;
 }
 
-.nav { 
-    margin: 0rem 10rem 0rem 0rem;
-    padding: .5rem; 
-    border: none;     
+.header-inner, 
+.header-logo, 
+.nav-list {
+    margin: 1rem;
+    padding: 0 2em; 
 }
 
 .nav li {
     display: inline-block;
+    margin-top: 1rem;
 }
 
 .nav-item a {
-    color: #FFF; /* #6a6867; */
+    color: #FFF;
     font-size: 1.4em;
     padding: 1rem;
 }
 
-.hero {/* 
-    background: #333 url('../images/hero-bg.jpg') no-repeat 50% 50%; */
+.hero {
     background: #333 url('../images/hero-bg.jpg') no-repeat 50% 50%;
     background-size: cover;
     border-bottom: 4px solid #e2e2e2;
@@ -120,13 +119,19 @@ p {
  * 
  */
 
-
+.about {
+    padding-top: 80px;
+}
 
 /*
  *
  * Portfolio
  * 
  */
+
+.portfolio {
+    padding-top: 80px;
+}
 
 .portfolio-projects {  
     text-align: center;
@@ -178,6 +183,10 @@ p {
  * Contact/Contato
  * 
  */
+
+.contact {
+    padding-top: 80px;
+}
 
 /*
  *
