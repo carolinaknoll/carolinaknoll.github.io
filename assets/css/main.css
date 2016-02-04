@@ -100,6 +100,12 @@ p {
     padding: 1rem;
 }
 
+/*
+ *
+ * Home
+ * 
+ */
+
 .hero {
     background: #333 url('../images/hero-bg.jpg') no-repeat 50% 50%;
     background-size: cover;
@@ -176,6 +182,45 @@ p {
     max-width: 350px;
     height: 40px;
     border-bottom: 2px solid #d8d9d9;      
+}
+
+
+/* Each project hover effects */
+
+.under-dev:hover {
+    background: #225EB4;
+    border: 2px solid #225EB4;
+    color: #FFF;
+}
+
+.insight:hover {
+    background: #243A43;
+    border: 2px solid #243A43;
+    color: #FFF;
+}
+
+.flat-web:hover {
+    background: #55ACD7;
+    border: 2px solid #55ACD7;
+    color: #FFF;
+}
+
+.pomodoro:hover {
+    background: #FF7777;
+    border: 2px solid #FF7777;
+    color: #FFF;
+}
+
+.lucky-quote:hover {
+    background: #7FE17A;
+    border: 2px solid #1AA910;
+    color: #FFF;
+}
+
+.js-calc:hover {
+    background: #33ccff; /* #08E3E9 */
+    border: 2px solid #288AEF;
+    color: #FFF;
 }
 
 /*
