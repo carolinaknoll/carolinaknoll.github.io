@@ -1,10 +1,15 @@
 html {
     box-sizing: border-box;
-    font-family: "Lato", "Helvetica";
+    font-family: "Lato", "Helvetica", sans-serif;
     background: #EAEFEC;
 }
 
-p {
+p { 
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+h3 {
     font-family: "Lato";
     font-weight: 400;
 }
@@ -46,13 +51,12 @@ p {
     text-align: center;
     display: inline;
   	position: fixed;
-
+    /* trick to make header transparent */
   	top:0;
     z-index: 99;
     margin-top: -0px;
     background:rgba(77, 77, 77, 0);
-    background: linear-gradient(rgba(64, 64, 64, 0.9), rgba(64, 64, 64, 0.6));
-    
+    background: linear-gradient(rgba(64, 64, 64, 0.9), rgba(64, 64, 64, 0.6));   
     margin: -20px 0;
 }
 
@@ -114,9 +118,9 @@ p {
     position: relative;
     min-height: 800px; 
     
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center !important;  
+    justify-content: center !important;   */
 } 
 
 /*
@@ -139,9 +143,8 @@ p {
     padding-top: 80px;
 }
 
-.portfolio-projects {  
-    text-align: center;
-    
+.portfolio-projects {/*   
+    text-align: center; */
 }
 
 .project-block {
@@ -166,10 +169,19 @@ p {
     border-bottom: 2px solid #d8d9d9;    
 }
 
+.project-info h3,
+.project-info p {
+    margin-left: 5px;
+}
+
 .project-title-space {
     max-width: 350px;
-    height: 30px;
+    height: 20px;
     border-bottom: 2px solid #d8d9d9;
+}
+
+.project-title-space h3 {
+    padding-top: 0px;
 }
 
 .project-technologies-space {
@@ -181,9 +193,8 @@ p {
 .project-description-space {
     max-width: 350px;
     height: 40px;
-    border-bottom: 2px solid #d8d9d9;      
+    border-bottom: 2px solid #d8d9d9;
 }
-
 
 /* Each project hover effects */
 
@@ -203,6 +214,7 @@ p {
     background: #55ACD7;
     border: 2px solid #55ACD7;
     color: #FFF;
+    font-weight: 300;
 }
 
 .pomodoro:hover {
@@ -213,13 +225,13 @@ p {
 
 .lucky-quote:hover {
     background: #7FE17A;
-    border: 2px solid #1AA910;
+    border: 2px solid #7FE17A;
     color: #FFF;
 }
 
 .js-calc:hover {
-    background: #33ccff; /* #08E3E9 */
-    border: 2px solid #288AEF;
+    background: #288aef; /* #08E3E9 */
+    border: 2px solid #288aef;
     color: #FFF;
 }
 
