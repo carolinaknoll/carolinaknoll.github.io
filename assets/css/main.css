@@ -114,14 +114,41 @@ h3 {
     background: #333 url('../images/hero-bg.jpg') no-repeat 50% 50%;
     background-size: cover;
     border-bottom: 4px solid #e2e2e2;
-    width: 100%;
     position: relative;
-    min-height: 800px; 
-    
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center !important;   */
+    min-height: 1000px;
 } 
+
+.hero-block {
+    max-height: 300px;
+    max-width: 700px;
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(115, 115, 115, .6);
+    border-radius: 10px;
+    text-align: center;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    vertical-align: middle;
+    text-align: center;
+    
+    width: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
+}
+
+.hero-block h1 {
+    text-align: center;
+    font-size: 4.2em;
+    font-weight: 400;
+}
 
 /*
  *
