@@ -58,7 +58,8 @@ h3 {
     background:rgba(77, 77, 77, 0);
     background: linear-gradient(rgba(64, 64, 64, 0.9), rgba(64, 64, 64, 0.6));   
     margin: -20px 0;
-    font-weight: 300;
+    font-weight: 300;   
+    text-shadow: 1px 2px 2px #333;
 }
 
 
@@ -66,11 +67,11 @@ h3 {
     float: left;
     margin-top: 10px;
     font-weight: 600;
-    font-size: 2.6em;
-    color: #FFF; /* #83c4e2; */
-    line-height: 1; /*
-    text-shadow: 1px 2px 2px #ac6898;  #257A9F #dbbdd2; */
+    font-size: 2em;
+    color: #FFF;
+    line-height: 1;
     font-weight: 300;
+    margin-left: 0;
 }
 
 .header-menu svg {
@@ -97,7 +98,7 @@ h3 {
 
 .nav li {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: .9rem;
 }
 
 .nav-item a {
@@ -506,6 +507,11 @@ a {
         background: #00ccff;
     }
     
+    .header-logo {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    
 }
 
 @media screen and (min-width: 611px) {
@@ -524,5 +530,9 @@ a {
     
     .project-block {
         display: inline-block;
+    }
+    
+    .header-logo {
+        font-size: 2.6em;
     }
 }
