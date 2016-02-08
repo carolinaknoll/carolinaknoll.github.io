@@ -173,16 +173,15 @@ h3 {
 .about {
     padding-top: 80px;
     font-size: 1.1em;
-    margin-top: 20px solid green;
 }
 
-.about-text-area {
+.text-area {
     text-align: justify;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
 }
 
-.about-text-area p {
+.text-area p {
     font-size: 1.1em;
 }
 
@@ -192,13 +191,13 @@ h3 {
 
 .three-rules-block { 
     min-height: 350px;
-    max-width: 250px;
+    max-width: 280px; /* was 250px */
     width: 100%;
     height: 100%;
     display: inline-block;
     padding: .5em;
-    margin: .5em;
-    border: 2px solid #d8d9d9;
+    margin: .8em;
+    border: 2px solid #007399; /* #d8d9d9; */
     border-radius: 10px;
     background: #FFF;
     
@@ -292,7 +291,7 @@ h3 {
     margin: 10px;
     background: #FFF;
     
-    	-webkit-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
 	-moz-transition: all ease 0.5s;
 	transition: all ease 0.5s;
 }
@@ -336,41 +335,28 @@ h3 {
 
 /* Each project hover effects */
 
-.under-dev:hover {
-    background: #225EB4;
+.under-dev {
     border: 2px solid #225EB4;
-    color: #FFF;
 }
 
-.insight:hover {
-    background: #243A43;
+.insight {
     border: 2px solid #243A43;
-    color: #FFF;
 }
 
-.flat-web:hover {
-    background: #55ACD7;
+.flat-web {
     border: 2px solid #55ACD7;
-    color: #FFF;
-    font-weight: 300;
 }
 
-.pomodoro:hover {
-    background: #FF7777;
+.pomodoro {
     border: 2px solid #FF7777;
-    color: #FFF;
 }
 
-.lucky-quote:hover {
-    background: #7FE17A;
-    border: 2px solid #7FE17A;
-    color: #FFF;
+.lucky-quote {
+    border: 2px solid #0C8813;
 }
 
-.js-calc:hover {
-    background: #288aef; /* #08E3E9 */
+.js-calc {
     border: 2px solid #288aef;
-    color: #FFF;
 }
 
 /*
@@ -390,7 +376,7 @@ h3 {
  */
 
 .footer {
-    background: #5b95be no-repeat 50% 50%;
+    background: #5b95be;
     background-size: cover;
     min-height: 100%;  
     max-width: 100%;
