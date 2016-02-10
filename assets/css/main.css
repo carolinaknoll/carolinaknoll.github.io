@@ -369,6 +369,57 @@ h3 {
     padding-top: 80px;
 }
 
+.contact-area {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-info {
+    max-height: 550px;
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: .5em;
+    margin: .8em; 
+    border: 2px solid #007399;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.contact-form .powr-contact-form {
+    padding: 35px 0;  
+}
+
+.social-list ul {
+    margin-top: -60px;
+    margin-left: -30px;
+}
+
+.social-list ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.social-list .fa {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5em;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.social-list a {
+    color: #000;
+    font-size: 1.05em;
+}
+
 /*
  *
  * Footer
@@ -425,27 +476,33 @@ a {
     text-shadow: 2px 1px 2px #333;
 }
 
-.footer .contact .fa:hover {
+.footer .contact .fa:hover,
+.contact-info .contact .fa {
     background-color: #e6b800; 
 }
 
-.footer .linkedin .fa:hover {
+.footer .linkedin .fa:hover,
+.contact-info .linkedin .fa {
     background-color: #117BB7;
 }
 
-.footer .github .fa:hover {
+.footer .github .fa:hover,
+.contact-info .github .fa {
     background-color: #24478f;    
 }
 
-.footer .twitter .fa:hover {
+.footer .twitter .fa:hover,
+.contact-info .twitter .fa {
     background-color: #007acc;
 }
 
-.footer .codepen .fa:hover {
+.footer .codepen .fa:hover,
+.contact-info .codepen .fa {
     background-color: #ff6600;
 }
 
-.footer .freecodecamp .fa:hover {
+.footer .freecodecamp .fa:hover,
+.contact-info .freecodecamp .fa {
     background-color: #009933;
 }
 
