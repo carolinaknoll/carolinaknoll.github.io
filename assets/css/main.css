@@ -200,10 +200,6 @@ h3 {
     border: 2px solid #007399; /* #d8d9d9; */
     border-radius: 10px;
     background: #FFF;
-    
-	-webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
-	transition: all ease 0.5s;
 }
 
 .rules-description {
@@ -372,6 +368,9 @@ h3 {
 .contact-area {
     max-width: 1000px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-info {
@@ -385,16 +384,14 @@ h3 {
     border: 2px solid #007399;
     border-radius: 10px;
     background: #FFF;
+    font-size: 1.05em;
 }
 
-.contact-form .powr-contact-form {
-    padding: 35px 0;  
-}
-
-.social-list ul {
+.social-list ul { 
     margin-top: -60px;
     margin-left: -30px;
-}
+    margin-bottom: 25px;
+}  
 
 .social-list ul li {
     list-style: none;
@@ -408,7 +405,7 @@ h3 {
     border: 2px solid #000;
     border-radius: 50%;
     padding: 8px;
-    margin: 5px;
+    margin: 7px; /* 5px; */
     width: 30px;
     height: 30px;
     line-height: 1.2;
@@ -417,7 +414,6 @@ h3 {
 
 .social-list a {
     color: #000;
-    font-size: 1.05em;
 }
 
 /*
@@ -577,5 +573,9 @@ a {
     
     .header-logo {
         font-size: 2.6em;
+    }
+    
+    .contact-area {
+        flex-direction: row;
     }
 }
