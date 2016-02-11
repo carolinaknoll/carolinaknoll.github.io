@@ -197,7 +197,8 @@ h3 {
     display: inline-block;
     padding: .5em;
     margin: .8em;
-    border: 2px solid #007399; /* #d8d9d9; */
+    border: 2px solid #DEDEDE;
+/*  border: 2px solid #3993D1;  #007399;  #d8d9d9; */
     border-radius: 10px;
     background: #FFF;
 }
@@ -207,8 +208,17 @@ h3 {
 }
 
 .three-rules-block .fa {
-    font-size: 2em;
+    font-size: 2.5em;
     padding-top: 10px;
+    
+    color:  #3993D1;
+    text-align: center;
+    border: 8px solid #DEDEDE;
+    border-radius: 90%;
+    padding: 20px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
     
 	-webkit-transition: all ease 0.5s;
 	-moz-transition: all ease 0.5s;
@@ -220,46 +230,19 @@ h3 {
 }
 
 .three-rules-block:hover {
-    border: 2px solid  #007399;
+    border: 2px solid  #3993D1;
     border-radius: 10px;
-}
-
-/* 2D Transition - Pulse Effect (from Hover.css on github) */
-
-@-webkit-keyframes hvr-pulse {
-  25% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  75% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-
-@keyframes hvr-pulse {
-  25% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-  75% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
+    
+    -webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
 }
 
 .three-rules-block:hover .fa {
-  -webkit-animation-name: hvr-pulse;
-  animation-name: hvr-pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;   
   color: #007399;
+    color: #3993D1;
+    border: 8px solid #3993D1;
+
 }
 
 /*
