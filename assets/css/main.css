@@ -9,6 +9,11 @@ p {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 h2,
 h3 {
     font-weight: 400;    
@@ -399,16 +404,20 @@ h3 {
     background: #FFF;
     font-size: 1.05em;
     box-shadow: 0px 0px 10px #bfc0c0;
+    
+    -webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
 }
 
 .contact-info:hover {
     border: 2px solid #3993D1;
 }
 
-.social-list ul { 
-    margin-top: -60px;
+.social-list ul { /* 
+    margin-top: -60px; */
     margin-left: -30px;
-    margin-bottom: 25px;
+    margin-bottom: 52px;
 }  
 
 .social-list ul li {
@@ -432,6 +441,36 @@ h3 {
 
 .social-list a {
     color: #000;
+}
+
+.contact-info-contact .fa {
+    border: 2px solid #E6B800;
+    color: #E6B800;
+}
+
+.contact-info-linkedin .fa {
+    border: 2px solid #117BB7;
+    color: #117BB7;
+}
+
+.contact-info-github .fa {
+    border: 2px solid #24478F;
+    color: #24478F;
+}
+
+.contact-info-twitter .fa {
+    border: 2px solid #007ACC;
+    color: #007ACC;
+}
+
+.contact-info-codepen .fa {
+    border: 2px solid #FF6600;
+    color: #FF6600;
+}
+
+.contact-info-freecodecamp .fa {
+    border: 2px solid #009933;
+    color: #009933;
 }
 
 /*
@@ -460,7 +499,7 @@ h3 {
 }
 
 .footer p,
-a {
+.footer a {
     color: #FFF;
     text-decoration: none;
     padding: 0px;
@@ -490,33 +529,27 @@ a {
     text-shadow: 2px 1px 2px #333;
 }
 
-.footer .contact .fa:hover,
-.contact-info .contact .fa {
+.footer .contact .fa:hover {
     background-color: #e6b800; 
 }
 
-.footer .linkedin .fa:hover,
-.contact-info .linkedin .fa {
+.footer .linkedin .fa:hover {
     background-color: #117BB7;
 }
 
-.footer .github .fa:hover,
-.contact-info .github .fa {
+.footer .github .fa:hover {
     background-color: #24478f;    
 }
 
-.footer .twitter .fa:hover,
-.contact-info .twitter .fa {
+.footer .twitter .fa:hover {
     background-color: #007acc;
 }
 
-.footer .codepen .fa:hover,
-.contact-info .codepen .fa {
+.footer .codepen .fa:hover {
     background-color: #ff6600;
 }
 
-.footer .freecodecamp .fa:hover,
-.contact-info .freecodecamp .fa {
+.footer .freecodecamp .fa:hover {
     background-color: #009933;
 }
 
