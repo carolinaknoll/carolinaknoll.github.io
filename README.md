@@ -1,5 +1,6 @@
 #### Welcome to carolinaknoll.github.io :octocat:
 :seedling: This is where I keep my github portfolio website.  
+Please note this website is currently under development.
 ##### Projects included:  
 ##### – PSD to Code:  
 – Flat-Web: Created with HTML/CSS and JavaScript for the mobile menu. Responsive with desktop-first approach.  
