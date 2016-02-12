@@ -62,7 +62,6 @@ h3 {
     text-shadow: 1px 2px 2px #333;
 }
 
-
 .header-logo { 
     float: left;
     margin-top: 10px;
@@ -198,9 +197,9 @@ h3 {
     padding: .5em;
     margin: .8em;
     border: 2px solid #DEDEDE;
-/*  border: 2px solid #3993D1;  #007399;  #d8d9d9; */
     border-radius: 10px;
     background: #FFF;
+    box-shadow: 0px 0px 10px #bfc0c0;
 }
 
 .rules-description {
@@ -230,7 +229,7 @@ h3 {
 }
 
 .three-rules-block:hover {
-    border: 2px solid  #3993D1;
+    border: 2px solid #3993D1;
     border-radius: 10px;
     
     -webkit-transition: all ease 0.5s;
@@ -239,7 +238,6 @@ h3 {
 }
 
 .three-rules-block:hover .fa {
-  color: #007399;
     color: #3993D1;
     border: 8px solid #3993D1;
 
@@ -269,6 +267,7 @@ h3 {
     overflow: hidden;
     margin: 10px;
     background: #FFF;
+    box-shadow: 0px 0px 10px #bfc0c0;
     
     -webkit-transition: all ease 0.5s;
 	-moz-transition: all ease 0.5s;
@@ -345,27 +344,27 @@ h3 {
 
 /* Each project hover effects */
 
-.under-dev {
+.under-dev:hover {
     border: 2px solid #225EB4;
 }
 
-.insight {
+.insight:hover {
     border: 2px solid #243A43;
 }
 
-.flat-web {
+.flat-web:hover {
     border: 2px solid #55ACD7;
 }
 
-.pomodoro {
+.pomodoro:hover {
     border: 2px solid #FF7777;
 }
 
-.lucky-quote {
+.lucky-quote:hover {
     border: 2px solid #0C8813;
 }
 
-.js-calc {
+.js-calc:hover {
     border: 2px solid #288aef;
 }
 
@@ -395,10 +394,15 @@ h3 {
     display: inline-block;
     padding: .5em;
     margin: .8em; 
-    border: 2px solid #007399;
+    border: 2px solid #d8d9d9;
     border-radius: 10px;
     background: #FFF;
     font-size: 1.05em;
+    box-shadow: 0px 0px 10px #bfc0c0;
+}
+
+.contact-info:hover {
+    border: 2px solid #3993D1;
 }
 
 .social-list ul { 
@@ -437,7 +441,7 @@ h3 {
  */
 
 .footer {
-    background: #5b95be;
+    background: #3993D1;
     background-size: cover;
     min-height: 100%;  
     max-width: 100%;
@@ -450,7 +454,7 @@ h3 {
     margin-right: auto;
     position: relative;
     min-height: 100%;
-    border-top: 4px #ffff66 outset;
+    border-top: 4px #FFF outset;
     font-family: Lato;
     font-weight: 300;
 }
@@ -528,13 +532,13 @@ a {
 
 @media screen and (max-width: 610px) {
     .nav {
-    z-index: 10;
-    background-color: #fff;
-    width: 200px;  /* width: 250px; */
-    position: absolute;
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
-    transition: transform 0.3s ease;
+        z-index: 10;
+        background-color: #fff;
+        width: 200px;  /* width: 250px; */
+        position: absolute;
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        transition: transform 0.3s ease;
     }
     
     .nav.open {
@@ -569,7 +573,7 @@ a {
 
 @media screen and (min-width: 611px) {
     .header-menu svg {
-    display: none;
+        display: none;
     }
     
     .nav  {
