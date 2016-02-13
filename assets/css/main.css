@@ -392,7 +392,7 @@ h3 {
 }
 
 .contact-info {
-    max-height: 550px;
+    max-height: 580px;
     max-width: 400px;
     width: 100%;
     height: 100%;
@@ -414,13 +414,35 @@ h3 {
     border: 2px solid #3993D1;
 }
 
-.social-list ul { /* 
+.contact-info .fa {
+    font-size: 2em;   
+    color: #3993D1;
+    border: 8px solid #DEDEDE;
+    border-radius: 90%;
+    padding: 20px;    
+    width: 35px;
+    height: 35px;
+    line-height: 1;
+    margin: auto; 
+    display: block;
+    
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+
+.contact-info:hover .fa-envelope-o,
+.contact-info:hover .fa-paper-plane-o {
+    border: 8px solid #3993D1;
+}
+
+.contact-info ul { /* 
     margin-top: -60px; */
     margin-left: -30px;
     margin-bottom: 52px;
 }  
 
-.social-list ul li {
+.contact-info ul li {
     list-style: none;
     text-align: left;
 }
