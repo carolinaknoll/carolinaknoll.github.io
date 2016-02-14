@@ -305,34 +305,46 @@ h3 {
 }
 
 .project-links-space {
+    box-sizing: border-box;
+    overflow: hidden;
+    clear: both;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
-    min-height: 55px; /* height: 55px; */
-    overflow: hidden;
-    border-bottom: 5px solid #FFF;
+    height: 55px; /* height: 55px; */
+    border-bottom: 4px solid #3993D1;    
 }
 
 .project-links-space .fa {
     color: #FFF;
     font-size: 1.5em;
-    padding-top: 5px;
+    padding-top: 5px;   
 }
 
 .project-links-space a {
     margin: auto;
+    margin: 0;
+}
+
+.project-links-space p {
+    margin: 0;
 }
 
 .visit-project {
     flex: 1 50%;
-    background: #007399;
+    background: #6eb1dd;
 }
 
 .view-code {  
     flex: 1 50%;
-    background: #007399;
+    background: #6eb1dd;
+}
+
+.visit-project:hover,
+.view-code:hover {
+    background: #3993D1;    
 }
 
 /* Each project hover effects */
