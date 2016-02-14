@@ -613,6 +613,19 @@ h3 {
         padding-top: 1em;
     }
 
+    .three-rules-block {
+        width: 80%;
+        height: 80%;      
+    }
+    
+    .project-block {
+        width: 92%;
+        height: 92%;
+    }
+    
+    .contact-info {
+        max-height: 750px;
+    }
 }
 
 @media screen and (min-width: 820px) {
