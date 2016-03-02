@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
@@ -64,7 +65,7 @@
     <main>
       <section class="content">
         <a name="home"></a>
-        <div class="hero">
+        <div class="hero" id="home">
           <div class="container">
             <div class="hero-block">
               <h1 class="hero-title">Carolina Knoll</h1>
@@ -74,7 +75,7 @@
           </div>
         </div>
         <a name="about"></a>
-        <div class="about">
+        <div class="about" id="about">
           <div class="container">
             <h2 class="section-title">
               <i class="fa fa-eye"></i>
@@ -116,7 +117,7 @@
         </div>
 
         <a name="portfolio"></a>
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
           <div class="container">
             <h2 class="section-title">
               <i class="fa fa-code"></i>
@@ -310,7 +311,7 @@
         </div>
 
         <a name="contact"></a>
-        <div class="contact">
+        <div class="contact" id="contact">
           <div class="container">
             <h2 class="section-title">
               <i class="fa fa-comments-o"></i>
@@ -447,6 +448,9 @@
         drawer.classList.remove('open');
       });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/scrollspy.min.js"></script>
+    <script>$(".nav").scrollspy({ offset: -100 });</script> <!-- thanks https://github.com/r3plica/Scrollspy -->
     <script src="http://www.powr.io/powr.js" external-type="html"></script>
   </body>
 

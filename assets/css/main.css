@@ -95,11 +95,13 @@ h3 {
  *
  */
 
-
-/* .header-inner {
-    padding: 0 2em;
-} */
-
+ .nav ul li.active a {
+   color: #acd2ec;
+   border-top: 4px solid #83bce2;
+   border-bottom: 4px solid #83bce2;
+   font-size: 1.5em;
+   transition: 0.5s;
+ }
 
 /*
  *
