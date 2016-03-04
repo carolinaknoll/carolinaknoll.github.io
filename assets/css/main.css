@@ -41,7 +41,6 @@ h3 {
   margin-top: -15px;
 }
 
-
 /*
  *
  * Header
@@ -88,7 +87,6 @@ h3 {
   padding-left: 0;
 }
 
-
 /*
  *
  * Navigation
@@ -120,7 +118,7 @@ h3 {
 .hero-block {
   max-height: 300px;
   max-width: 550px;
-  margin: 20px;
+  margin: 0px;
   width: 100%;
   height: 100%;
   background: rgba(115, 115, 115, .5);
@@ -131,7 +129,7 @@ h3 {
   justify-content: center;
   vertical-align: middle;
   text-align: center;
-  width: 50%;
+  width: 70%;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
@@ -157,7 +155,6 @@ h3 {
   font-weight: 300;
   text-shadow: 1px 2px 3px #111;
 }
-
 
 /*
  *
@@ -479,7 +476,6 @@ h3 {
   color: #009933;
 }
 
-
 /*
  *
  * Footer
@@ -570,6 +566,16 @@ h3 {
  * Media Queries
  *
  */
+@media screen and (max-width: 450px) {
+  .hero {
+    min-height: 400px;
+  }
+  .hero-block {
+    max-height: 150px;
+    transition: 0.5s;
+  }
+
+}
 
 @media screen and (max-width: 854px) {
   .nav {
@@ -618,6 +624,12 @@ h3 {
   .header-menu svg {
     float: right;
     padding-top: 1.5em;
+  }
+  .hero {
+    min-height: 100vh;
+  }
+  .hero-block h1 {
+    font-size: 2.6em;
   }
   .three-rules-block {
     width: 80%;
