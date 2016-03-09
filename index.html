@@ -71,7 +71,38 @@
               <h1 class="hero-title">Carolina Knoll</h1>
               <hr class="divider"/>
               <h2>Aspiring front-end developer.</h2>
+
+              <ul class="hero-social">
+              <li>
+                <a href="mailto:carolina-knoll@hotmail.com">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/carolinaknoll">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/carolinaknoll">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+            <!--
+              <a href="mailto:carolina-knoll@hotmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="https://github.com/carolinaknoll">
+                <i class="fa fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/carolinaknoll">
+                <i class="fa fa-linkedin"></i>
+              </a> -->
+
             </div>
+            <div class="hero-anchor"><a href="#about"<i class="fa fa-chevron-down"></i></a></div>
           </div>
         </div>
         <a name="about"></a>
@@ -432,10 +463,8 @@
       </div>
     </footer>
 
+    <!-- Mobile navigation -->
     <script>
-      /*
-         * Open the drawer when the menu ison is clicked.
-         */
       var menu = document.querySelector('#menu');
       var main = document.querySelector('main');
       var drawer = document.querySelector('.nav');
@@ -448,10 +477,29 @@
         drawer.classList.remove('open');
       });
     </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="assets/js/scrollspy.min.js"></script>
     <script>$(".nav").scrollspy({ offset: -100 });</script> <!-- thanks https://github.com/r3plica/Scrollspy -->
+
+    <!-- Smooth scrolling -->
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
     <script src="http://www.powr.io/powr.js" external-type="html"></script>
   </body>
-
 </html>
