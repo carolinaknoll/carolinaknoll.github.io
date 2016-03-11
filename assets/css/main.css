@@ -137,7 +137,7 @@ h3 {
   left: 50%;
   padding: 20px;
   /*  resize: both; */
-  overflow: auto;
+  overflow: hidden;
   color: #FFF;
   font-weight: 300;
   line-height: 1;
@@ -166,9 +166,9 @@ h3 {
 .hero-block .fa {
   border: 6px solid #DEDEDE;
   border-radius: 50%;
-  padding: 15px;
+  padding: 10px;
   /* margin: 10px; */
-  width: 35px;
+  width: 25px;
   color: #fff;
 }
 
@@ -178,8 +178,9 @@ h3 {
 }
 
 .hero-anchor .fa {
+  font-size: .8em;
   position: absolute;
-  bottom: 220px;
+  bottom: 120px;
   margin-left: -40px;
   color: #737274;
 }
@@ -631,8 +632,28 @@ h3 {
     min-height: 400px;
   }
   .hero-block {
-    max-height: 150px;
+    max-height: 300px;
     transition: 0.5s;
+  }
+  .hero ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-block .fa {
+    border: 4px solid #DEDEDE;
+    border-radius: 50%;
+    padding: 8px;
+    width: 35px;
+    font-size: 1em;
+    color: #fff;
+  }
+  .hero-anchor .fa {
+    font-size: .6em;
+    position: absolute;
+    bottom: 20px;
+    margin-left: -20px;
+    color: #737274;
   }
 
 }
@@ -690,6 +711,21 @@ h3 {
   }
   .hero-block h1 {
     font-size: 2.6em;
+  }
+  .hero-block .fa {
+    border: 5px solid #DEDEDE;
+    border-radius: 50%;
+    padding: 10px;
+    width: 35px;
+    font-size: 1em;
+    color: #fff;
+  }
+  .hero-anchor .fa {
+    font-size: .8em;
+    position: absolute;
+    bottom: 20px;
+    margin-left: -20px;
+    color: #737274;
   }
   .three-rules-block {
     width: 80%;
@@ -767,6 +803,29 @@ h3 {
     margin-top: 10px;
     font-weight: 300;
     text-shadow: 1px 2px 3px #111;
+  }
+
+  .hero-block ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 1em;
+    font-size: 2em;
+  }
+
+  .hero-block .fa {
+    border: 6px solid #DEDEDE;
+    border-radius: 50%;
+    padding: 15px;
+    width: 35px;
+    color: #fff;
+  }
+
+  .hero-anchor .fa {
+    font-size: 1em;
+    position: absolute;
+    bottom: 220px;
+    margin-left: -40px;
+    color: #737274;
   }
 }
 
