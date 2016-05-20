@@ -1,0 +1,418 @@
+/*
+* Website CSS summary list:
+* 1. Backgrounds and background styles.
+* 2. Fonts and fonts styles.
+* 3. Div objects and object styles.
+* 4. Media Queries.
+*/
+
+/* 1. Backgrounds and background styles. */
+body {
+  font-family: "Questrial", sans-serif;
+  color: #000;
+}
+
+/* */
+.navbar {
+  background: #a5dff9;
+  height: 60px;
+  margin-bottom: 0;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.hero {
+  background: #a5dff9;
+  min-height: 100vh;
+  width: 100%;
+  display: block;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  background: rgb(165,223,249);
+  background: -moz-linear-gradient(top,  rgba(165,223,249,1) 0%, rgba(165,223,249,1) 69%, rgba(165,223,249,1) 69%, rgba(246,148,193,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(165,223,249,1) 0%,rgba(165,223,249,1) 69%,rgba(165,223,249,1) 69%,rgba(246,148,193,1) 100%);
+  background: linear-gradient(to bottom,  rgba(165,223,249,1) 0%,rgba(165,223,249,1) 69%,rgba(165,223,249,1) 69%,rgba(246,148,193,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5dff9', endColorstr='#f694c1',GradientType=0 );
+  z-index: 1;
+}
+
+.hero:after {
+  content: "";
+  background: url(../img/tiles.png) center repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.about {
+  min-height: 800px;
+  width: 100%;
+  display: block;
+  position: relative;
+  background: #F694C1;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f694c1+0,ede7b1+97,ede7b1+100 */
+  background: rgb(246,148,193);
+  background: -moz-linear-gradient(top,  rgba(246,148,193,1) 0%, rgba(246,148,193,1) 69%, rgba(246,148,193,1) 69%, rgba(237,231,177,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(246,148,193,1) 0%,rgba(246,148,193,1) 69%,rgba(246,148,193,1) 69%,rgba(237,231,177,1) 100%);
+  background: linear-gradient(to bottom,  rgba(246,148,193,1) 0%,rgba(246,148,193,1) 69%,rgba(246,148,193,1) 69%,rgba(237,231,177,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f694c1', endColorstr='#ede7b1',GradientType=0 );
+  z-index: 1;
+
+}
+
+.about:after {
+  content: "";
+  background: url(../img/tiles.png) center repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.portfolio {
+  min-height: 1000px;
+  width: 100%;
+  display: block;
+  position: relative;
+
+  background: rgb(237,231,177);
+  background: -moz-linear-gradient(top,  rgba(237,231,177,1) 0%, rgba(237,231,177,1) 69%, rgba(237,231,177,1) 69%, rgba(117,201,200,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(237,231,177,1) 0%,rgba(237,231,177,1) 69%,rgba(237,231,177,1) 69%,rgba(117,201,200,1) 100%);
+  background: linear-gradient(to bottom,  rgba(237,231,177,1) 0%,rgba(237,231,177,1) 69%,rgba(237,231,177,1) 69%,rgba(117,201,200,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ede7b1', endColorstr='#75c9c8',GradientType=0 );
+  z-index: 2;
+
+}
+
+.portfolio:after {
+  content: "";
+  background: url(../img/tiles.png) center repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.contact {
+  min-height: 800px;
+  width: 100%;
+  display: block;
+  position: relative;
+
+  background: rgb(117,201,200);
+  background: -moz-linear-gradient(top,  rgba(117,201,200,1) 0%, rgba(117,201,200,1) 69%, rgba(117,201,200,1) 69%, rgba(63,186,243,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(117,201,200,1) 0%,rgba(117,201,200,1) 69%,rgba(117,201,200,1) 69%,rgba(63,186,243,1) 100%);
+  background: linear-gradient(to bottom,  rgba(117,201,200,1) 0%,rgba(117,201,200,1) 69%,rgba(117,201,200,1) 69%,rgba(63,186,243,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75c9c8', endColorstr='#3fbaf3',GradientType=0 );
+  z-index: 2;
+}
+
+.contact:after {
+  content: "";
+  background: url(../img/tiles.png) center repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.footer-top {
+  min-height: 140px;
+  width: 100%;
+  border-top: 1px solid #FFF;
+  background: #3fbaf3;
+}
+
+.footer-bottom {
+  min-height: 60px;
+  width: 100%;
+  background: #27b1f1;
+}
+
+/* 2. Fonts and font styles. */
+
+/* Helper classes */
+a {
+  color: #000 !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+span {
+  color: #a32949;
+}
+
+.color-red {
+  color: #a32949;
+}
+
+.section-title {
+  font-size: 34px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  line-height: 0.9;
+  text-shadow:2px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-box {
+  max-width: 520px;
+  min-height: 300px;
+  background: rgba(87, 195, 244, 0.2);
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.presentation h1 {
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.presentation-second {
+  font-size: 28px;
+}
+
+.presentation-third,
+.presentation-fourth,
+.presentation-fifth {
+  font-size:28px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Section's styles */
+
+/* About */
+.about .section-subtitle {
+  font-size: 22px;
+}
+
+.about .section-description {
+  margin: 20px;
+}
+
+/* Portfolio */
+.portfolio-projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 30px;
+}
+
+.portfolio-block {
+  max-width: 500px;
+  max-height: 400px;
+  width: 100%;
+  border: 2px solid #d8d9d9;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #d65c7c;
+  background: #e0859d;
+}
+
+.portfolio-block p {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 4px;
+  line-height: 0.9;
+}
+
+.portfolio-image {
+  box-sizing: border-box;
+  max-width: 500px;
+  max-height: 225px;
+  width: 100%;
+  height: 100%;
+  background: #555;
+  border-bottom: 1px solid #FFF;
+  overflow: hidden; /* Solução paleativa problema img */
+}
+
+.portfolio-title {
+  max-width: 500px;
+  min-height: 20px;
+  border-bottom: 1px solid #FFF;
+}
+
+.portfolio-description {
+  max-width: 500px;
+  min-height: 20px;
+  border-bottom: 1px solid #FFF;
+}
+
+.portfolio-tags {
+  max-width: 500px;
+  min-height: 20px;
+  border-bottom: 1px solid #FFF;
+}
+
+.portfolio-links {
+  box-sizing: border-box;
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  min-height: 20px;
+  border-bottom: 5px solid #FFF;
+}
+
+.visit-project {
+  flex: 1 50%;
+  background: #e0859d;
+}
+
+.view-code {
+  flex: 1 50%;
+  background: #e0859d;
+}
+
+.visit-project:hover,
+.view-code:hover {
+  background: #db708d;
+}
+
+/* Contact */
+.contact .section-description {
+  display: inline;
+  margin: 0px;
+}
+
+.contact .social-list,
+.footer .social-list {
+  margin-left: 0;
+  padding-left: 0;
+  column-count: 3;
+  text-align: center;
+}
+
+.social-small-box {
+  display: inline-block;
+  background: rgba(87, 195, 244, 0.5);
+  border: 1px solid #FFF;
+  font-size: 40px;
+  margin: 2px;
+  padding: 2px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 1.5;
+  color: #d1476c;
+}
+
+.social-list .social-icon {
+  display: block;
+  color: #d1476c;
+}
+
+/* Footer */
+.footer p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer .social-list {
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  padding-top: 10px;
+}
+
+/* 3. Media Queries. */
+@media screen and (min-width: 768px) {
+  .section-box {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 48px;
+  }
+
+  .section-subtitle {
+    font-size: 24px;
+  }
+
+  .navbar-brand {
+    font-size: 28px;
+  }
+
+  .presentation-second {
+    font-size: 64px;
+  }
+
+  .presentation-third,
+  .presentation-fourth {
+    font-size:34px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .presentation-fifth {
+    font-size: 40px;
+  }
+
+  .portfolio-block p {
+    font-size: 20px;
+  }
+  .social-small-box {
+    font-size: 50px;
+    margin: 2px;
+    padding: 2px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 1.0;
+    color: #d1476c;
+  }
+
+  .contact .social-list,
+  .footer .social-list {
+    column-count: 1;
+  }
+}

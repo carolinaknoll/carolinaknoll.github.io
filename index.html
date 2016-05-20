@@ -1,505 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Carolina Knoll | Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Carolina Knoll</title>
     <meta name="keywords" content="web development, portfolio, front end, front-end, internship, estágio, html, css, html5, css3, jquery, javascript, santa catarina, florianopolis, brazil, brasil">
-    <meta name="author" content="Carolina Knoll">
-    <meta name="description" content="Carolina Knoll - Front-End Developer">
+    <meta name="author" content="Carolina Knoll _> carolinasknoll@gmail.com">
+    <meta name="description" content="Carolina Knoll - Frontend developer just starting out! Take a look at my projects, and let's see what I'm able to help you with. :-).">
 
-    <link rel="icon" href="./assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/favicon.ico">
 
+    <!-- CSS  -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
   </head>
 
-  <body>
-    <header class="header">
-      <!--
-        <div class="container"> -->
-      <div class="header-inner">
-        <h2 class="header-logo">
-          <a href="#home">Carolina Knoll</a>
-        </h2>
-        <a id="menu" class="header-menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          </svg>
-        </a>
-
-        <nav id="drawer" class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#home">
-                <i class="fa fa-home"></i>
-                Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about">
-                <i class="fa fa-eye"></i>
-                About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio">
-                <i class="fa fa-code"></i>
-                Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact">
-                <i class="fa fa-comments-o"></i>
-                Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!--
-                    </div> -->
-    </header>
-
-    <main>
-      <section class="content">
-        <a name="home"></a>
-        <div class="hero" id="home">
-          <div class="container">
-            <div class="hero-block">
-              <h1 class="hero-title">Carolina Knoll</h1>
-              <hr class="divider"/>
-              <h2>Aspiring front-end developer.</h2>
-
-              <ul class="hero-social">
-              <li>
-                <a href="mailto:carolina-knoll@hotmail.com">
-                  <i class="fa fa-envelope"></i>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://github.com/carolinaknoll">
-                  <i class="fa fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/carolinaknoll">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-            <!--
-              <a href="mailto:carolina-knoll@hotmail.com">
-                <i class="fa fa-envelope"></i>
-              </a>
-              <a href="https://github.com/carolinaknoll">
-                <i class="fa fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/carolinaknoll">
-                <i class="fa fa-linkedin"></i>
-              </a> -->
-
-            </div>
-            <div class="hero-anchor"><a href="#about"<i class="fa fa-chevron-down"></i></a></div>
-          </div>
-        </div>
-        <a name="about"></a>
-        <div class="about" id="about">
-          <div class="container">
-            <h2 class="section-title">
-              <i class="fa fa-eye"></i>
-              About me</h2>
-            <hr class="divider"/>
-            <div class="text-area">
-              <p>
-                <span>Hi! I'm Carolina,</span>
-                and during the last four months I've been studying hard to start my career in front-end development. My goal is to know enough about the recent technologies to get an internship where I'll be able to grow as a professional and push start my career in
-                the field.</p>
-            </div>
-
-            <div class="three-rules-area">
-              <p>I currently believe that there are three main rules during the process of building a website or web application:</p>
-
-              <div class="three-rules-block">
-                <i class="fa fa-rocket"></i>
-                <p class="rules-title">INTERACTIVITY.</p>
-                <p class="rules-description">Enabling a positive interaction with possible clients can be a game changer. I think that there are two sides of interactivity: the bad side, when a pop-up appears, begging the user to register or like their facebook page
-                  in order to view the content, and the good side, when the website can somehow connect to the user and make them feel valuable and important.</p>
-              </div>
-
-              <div class="three-rules-block">
-                <i class="fa fa-balance-scale"></i>
-                <p class="rules-title">
-                  SMART POSITIONING.</p>
-                <p class="rules-description">Every element should have a reason to be exactly where it is. As the web is growing fast and renewing itself every day, it doesn't matter if it is a color palette, a big column list or a different typography: if it adds
-                  up to allow a positive experience, then it's the job of a good front-end developer to code it and make the end result as light, smooth and natural as possible.</p>
-              </div>
-
-              <div class="three-rules-block">
-                <i class="fa fa-cubes"></i>
-                <p class="rules-title">FUNCTIONALITY.</p>
-                <p class="rules-description">It needs to work. Correctly. And should be developed in a way that when the user does something unexpected, it wont spam the screen with scary messages and errors. Yet it should present the user with a complete
-                  experience: whether if it is just a small form on a page or a big e-commerce application with complex processes and components, it should not be left halfway done.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a name="portfolio"></a>
-        <div class="portfolio" id="portfolio">
-          <div class="container">
-            <h2 class="section-title">
-              <i class="fa fa-code"></i>
-              Portfolio</h2>
-            <hr class="divider"/>
-
-            <div class="text-area">
-              <p>I enjoy creating websites from psd templates and from scratch, and even tough I'm currently learning more about Bootstrap and SASS, I'm sure I'll start to feel loopy at some point in the future, and jump headfirst to JavaScript and its frameworks
-                and libraries such as AngularJS and jQuery to create bigger and more challenging projects. Feel free to review my projects.</p>
-            </div>
-
-            <div class="portfolio-projects">
-
-              <div class="project-block under-dev">
-                <div class="project-image">
-                  <img class="project-image-under-development" src="./assets/images/under-development.jpg" width="350" height="225">
-                </div>
-                <div class="project-info">
-                  <div class="project-title-space">
-                    <h3 class="project-title">Project currently under development.</h3>
-                  </div>
-                  <div class="project-technologies-space">
-                    <p class="project-technologies">HTML/CSS (SASS), JavaScript - Mobile-first.</p>
-                  </div>
-                  <div class="project-description-space">
-                    <p class="project-description">Project created to learn more about SASS and mobile-first, and how to use both adequately.</p>
-                  </div>
-                  <div class="project-links-space">
-                    <a href="#home" class="visit-project">
-                      <i class="fa fa-flask"></i>
-                      <br/>
-                      <p>Visit project</p>
-                    </a>
-                    <a href="#contact" class="view-code">
-                      <i class="fa fa-github-alt"></i>
-                      <br/>
-                      <p>View code</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-block insight">
-                <div class="project-image">
-                  <img class="project-image-insight" src="./assets/images/insight-project.jpg" width="350" height="225">
-                </div>
-                <div class="project-info">
-                  <div class="project-title-space">
-                    <h3 class="project-title">Insight - Follow your dreams.</h3>
-                  </div>
-                  <div class="project-technologies-space">
-                    <p class="project-technologies">HTML/CSS, JavaScript - Desktop-first.</p>
-                  </div>
-                  <div class="project-description-space">
-                    <p class="project-description">PSD template to full-page responsive HTML/CSS, with JavaScript mobile menu.</p>
-                  </div>
-                  <div class="project-links-space">
-                    <a href="#home" class="visit-project">
-                      <i class="fa fa-flask"></i>
-                      <br/>
-                      <p>Visit project</p>
-                    </a>
-                    <a href="#contact" class="view-code">
-                      <i class="fa fa-github-alt"></i>
-                      <br/>
-                      <p>View code</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-block flat-web">
-                <div class="project-image">
-                  <img class="project-image-flat-web" src="./assets/images/flat-web-project.jpg" width="350" height="225">
-                </div>
-
-                <div class="project-info">
-                  <div class="project-title-space">
-                    <h3 class="project-title">Flat Web - Count on us when you need.</h3>
-                  </div>
-                  <div class="project-technologies-space">
-                    <p class="project-technologies">HTML/CSS, JavaScript - Desktop first.</p>
-                  </div>
-                  <div class="project-description-space">
-                    <p class="project-description">PSD template to full-page responsive HTML/CSS, with JavaScript mobile menu.</p>
-                  </div>
-                  <div class="project-links-space">
-                    <a href="#home" class="visit-project">
-                      <i class="fa fa-flask"></i>
-                      <br/>
-                      <p>Visit project</p>
-                    </a>
-                    <a href="#contact" class="view-code">
-                      <i class="fa fa-github-alt"></i>
-                      <br/>
-                      <p>View code</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-block pomodoro">
-                <div class="project-image">
-                  <img class="project-image-pomodoro" src="./assets/images/pomodoro-clock-project.jpg" width="350" height="225">
-                </div>
-                <div class="project-info">
-                  <div class="project-title-space">
-                    <h3 class="project-title">Online Pomodoro Timer.</h3>
-                  </div>
-                  <div class="project-technologies-space">
-                    <p class="project-technologies">HTML/CSS, JavaScript (jQuery).</p>
-                  </div>
-                  <div class="project-description-space">
-                    <p class="project-description">Online Pomodoro with settable break and work time. Plays a sound when a full section is over.</p>
-                  </div>
-                  <div class="project-links-space">
-                    <a href="#home" class="visit-project">
-                      <i class="fa fa-flask"></i>
-                      <br/>
-                      <p>Visit project</p>
-                    </a>
-                    <a href="#contact" class="view-code">
-                      <i class="fa fa-github-alt"></i>
-                      <br/>
-                      <p>View code</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-block js-calc">
-                <div class="project-image">
-                  <img class="project-image-js-calculator" src="./assets/images/javascript-calculator-project.jpg" width="350" height="225">
-                </div>
-                <div class="project-info">
-                  <div class="project-title-space">
-                    <h3 class="project-title">Online JavaScript Calculator.</h3>
-                  </div>
-                  <div class="project-technologies-space">
-                    <p class="project-technologies">HTML/CSS, JavaScript (jQuery).</p>
-                  </div>
-                  <div class="project-description-space">
-                    <p class="project-description">Online JavaScript calculator that enables operations with multiple selectors.</p>
-                  </div>
-                  <div class="project-links-space">
-                    <a href="#home" class="visit-project">
-                      <i class="fa fa-flask"></i>
-                      <br/>
-                      <p>Visit project</p>
-                    </a>
-                    <a href="#contact" class="view-code">
-                      <i class="fa fa-github-alt"></i>
-                      <br/>
-                      <p>View code</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-block lucky-quote">
-                <div class="project-image">
-                  <img class="project-image-lucky-quote" src="./assets/images/lucky-quote-generator-project.jpg" width="350" height="225">
-                </div>
-                <div class="project-info">
-                  <div class="project-title-space">
-                    <h3 class="project-title">Lucky Quote Generator.</h3>
-                  </div>
-                  <div class="project-technologies-space">
-                    <p class="project-technologies">HTML/CSS, JavaScript (jQuery).</p>
-                  </div>
-                  <div class="project-description-space">
-                    <p class="project-description">Click the button and the page will give you a random quote.</p>
-                  </div>
-                  <div class="project-links-space">
-                    <a href="#home" class="visit-project">
-                      <i class="fa fa-flask"></i>
-                      <br/>
-                      <p>Visit project</p>
-                    </a>
-                    <a href="#contact" class="view-code">
-                      <i class="fa fa-github-alt"></i>
-                      <br/>
-                      <p>View code</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <a name="contact"></a>
-        <div class="contact" id="contact">
-          <div class="container">
-            <h2 class="section-title">
-              <i class="fa fa-comments-o"></i>
-              Contact me</h2>
-            <hr class="divider"/>
-            <div class="text-area">
-              <p>If you would like to get in contact with me please send me an e-mail, or better yet, use the form below. I'll reply soon!</p>
-            </div>
-            <div class="contact-area">
-              <div class="contact-info contact-form">
-                <i class="fa fa-envelope-o"></i>
-                <p>Feel free to use the form below.</p>
-                <script src="//www.powr.io/powr.js" external-type="html"></script>
-                <div class="powr-contact-form" id="3763335a_1454877158272"></div>
-              </div>
-
-              <div class="contact-info">
-                <i class="fa fa-paper-plane-o"></i>
-                <p>If you are interested, you can visit my other social links below.</p>
-                <ul class="list-inline social-list">
-                  <li class="contact-info-contact">
-                    <a href="mailto:carolinasknoll@gmail.com">
-                      <i class="fa fa-envelope"></i>Send me an e-mail.</a>
-                  </li>
-                  <li class="contact-info-linkedin">
-                    <a href="https://www.linkedin.com/in/carolinaknoll">
-                      <i class="fa fa-linkedin"></i>View my LinkedIn profile.</a>
-                  </li>
-                  <li class="contact-info-github">
-                    <a href="https://github.com/carolinaknoll">
-                      <i class="fa fa-github"></i>Review my GitHub code.</a>
-                  </li>
-                  <li class="contact-info-twitter">
-                    <a href="https://twitter.com/carolina_knoll">
-                      <i class="fa fa-twitter"></i>Read my recent tweets.</a>
-                  </li>
-                  <li class="contact-info-codepen">
-                    <a href="http://codepen.io/carolinaknoll/">
-                      <i class="fa fa-codepen"></i>Check my pens on CodePen.</a>
-                  </li>
-                  <li class="contact-info-freecodecamp">
-                    <a href="http://www.freecodecamp.com/carolinaknoll">
-                      <i class="fa fa-fire"></i>View my FreeCodeCamp profile.</a>
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-    </main>
-
-    <footer class="footer">
+  <body data-spy="scroll" data-target=".navbar" data-offset="200">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <ul class="footer-nav">
-          <li class="footer-nav-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="footer-nav-divider">
-            <span>&sdot;</span>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#">About</a>
-          </li>
-          <li class="footer-nav-divider">
-            <span>&sdot;</span>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#">Portfolio</a>
-          </li>
-          <li class="footer-nav-divider">
-            <span>&sdot;</span>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="color-red ion-asterisk"></i> Carolina Knoll</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="active"><a href="#home"><i class="color-red ion-earth"></i> Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#about"><i class="color-red ion-clipboard"></i> About</a></li>
+            <li><a href="#portfolio"><i class="color-red ion-planet"></i> Portfolio</a></li>
+            <li><a href="#contact"><i class="color-red ion-ios-chatboxes"></i> Contact</a></li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="presentation">
+          <h1 class="presentation-first"><span><i class="ion-ios-color-wand"></i> Hello</span>, I'm</h1>
+          <h1 class="presentation-second"><i class="color-red ion-asterisk"></i> Carolina Knoll <i class="color-red ion-asterisk"></i></h1>
+          <h1 class="presentation-third"><span>(</span>a beginner <span>frontend developer</span> </h1>
+          <h1 class="presentation-fourth">fueled by coffee and candy<span>),</span></h1>
+          <h1 class="presentation-fifth">and I'm happy to help <span>you! :-)</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title"><i class="color-red ion-asterisk"></i> About</h2>
+        <div class="row">
+          <div class="column col-xs-12 col-sm-6 col-md-6">
+            <h2 class="section-title"><i class="color-red ion-ios-color-wand"></i> Who I am</h2>
+            <div class="section-box">
+              <div class="section-description">
+                <p class="section-subtitle">My name is Carolina. I'm 20 years old, and I'm currently a sophomore in college, studying to obtain my Information Systems bachelor's degree. </p>
+                <p class="section-subtitle">I believe in a world that is increasingly productive, yet inspiring and enjoyable. And I want to be one of those who try everyday to make the world bit by bit closer to that.</p>
+                <p class="section-subtitle">When not coding, I like to watch game-shows and Vsauce videos, and of course, to eat yummy stuff.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column col-xs-12 col-sm-6 col-md-6">
+            <h2 class="section-title"><i class="color-red ion-paintbucket"></i> What I do </h2>
+            <div class="section-box">
+              <div class="section-description">
+                <p class="section-subtitle">I've been learning about frontend technologies since October/15, when I discovered that being a frontend developer was the best fit for me.</p>
+                <p class="section-subtitle">Ever since, I've been studying hard and refining my new skills to get an internship and start my career.</p>
+                <p class="section-subtitle">Right now, my top skills are HTML, CSS, responsive web design and Bootstrap, but I also know how to make GitHub pull-requests and to create simple JavaScript functions. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <p class="section-subtitle text-center">If you want to contact me, please email me at <a href="mailto:carolinasknoll@gmail.com">carolinasknoll@gmail.com!</a></p>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-title"><i class="color-red ion-asterisk"></i> Portfolio</h2>
+        <p class="section-subtitle text-center">I'm always trying to improve, and to discover creative and awesome ideas. And the more I find out, the more fun it gets. </p>
+        <p class="section-subtitle text-center">Take a look at my past projects, and check out if we can be creative together!</p>
+
+        <div class="portfolio-projects">
+          <div class="row">
+            <div class="column col-xs-12 col-sm-6 col-md-6">
+              <div class="portfolio-block">
+                <div class="portfolio-image">
+                  <img class="img-responsive project-image-under-development" src="img/bislite-project.jpg" width="500" height="225">
+                </div>
+                <div class="portfolio-title">
+                  <p><i class="color-red ion-asterisk"></i> BisLite - Clean, crisp &amp; memorable icons!</p>
+                </div>
+                <div class="portfolio-description">
+                  <p><i class="color-red ion-paintbucket"></i> PSD template to mobile-first code.</p>
+                </div>
+                <div class="portfolio-tags">
+                  <p><i class="color-red ion-wrench"></i> HTML/SCSS, Bootstrap, OwlCarousel, JavaScript.</p>
+                </div>
+                <div class="portfolio-links">
+                  <a href="#home" class="visit-project">
+                    <p><i class="color-red ion-wand"></i> Visit project</p></a>
+                  <a href="#contact" class="view-code">
+                    <p><i class="color-red ion-code"></i> View code</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column col-xs-12 col-sm-6 col-md-6">
+              <div class="portfolio-block">
+                <div class="portfolio-image">
+                  <img class="img-responsive project-image-insight" src="img/insight-project.png" width="500" height="225">
+                </div>
+                <div class="portfolio-title">
+                  <p><i class="color-red ion-asterisk"></i> Insight - Follow your dreams.</p>
+                </div>
+
+                <div class="portfolio-description">
+                  <p><i class="color-red ion-paintbucket"></i> PSD template to desktop-first code.</p>
+                </div>
+                <div class="portfolio-tags">
+                  <p><i class="color-red ion-wrench"></i> HTML/CSS, JavaScript.</p>
+                </div>
+                <div class="portfolio-links">
+                  <a href="#home" class="visit-project">
+                    <p><i class="color-red ion-wand"></i> Visit project</p></a>
+                  <a href="#contact" class="view-code">
+                    <p><i class="color-red ion-code"></i> View code</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column col-xs-12 col-sm-6 col-md-6">
+              <div class="portfolio-block">
+                <div class="portfolio-image">
+                  <img class="img-responsive project-image-flat-web" src="img/flat-web-project.png" width="500" height="225">
+                </div>
+                <div class="portfolio-title">
+                  <p><i class="color-red ion-asterisk"></i> Flat Web - Count on us when you need.</p>
+                </div>
+                <div class="portfolio-description">
+                  <p><i class="color-red ion-paintbucket"></i> PSD template to desktop-first code.</p>
+                </div>
+                <div class="portfolio-tags">
+                  <p><i class="color-red ion-wrench"></i> HTML/CSS, JavaScript.</p>
+                </div>
+                <div class="portfolio-links">
+                  <a href="#home" class="visit-project">
+                    <p><i class="color-red ion-wand"></i> Visit project</p></a>
+                  <a href="#contact" class="view-code">
+                    <p><i class="color-red ion-code"></i> View code</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column col-xs-12 col-sm-6 col-md-6">
+              <div class="portfolio-block">
+                <div class="portfolio-image">
+                  <img class="img-responsive project-image-flat-web" src="img/flat-web-project.png" width="500" height="225">
+                </div>
+                <div class="portfolio-title">
+                  <p><i class="color-red ion-asterisk"></i> Online Pomodoro Timer.</p>
+                </div>
+                <div class="portfolio-description">
+                  <p><i class="color-red ion-paintbucket"></i> freeCodeCamp frontend project.</p>
+                </div>
+                <div class="portfolio-tags">
+                  <p><i class="color-red ion-wrench"></i> HTML/CSS, JavaScript (jQuery).</p>
+                </div>
+                <div class="portfolio-links">
+                  <a href="#home" class="visit-project">
+                    <p><i class="color-red ion-wand"></i> Visit project</p></a>
+                  <a href="#contact" class="view-code">
+                    <p><i class="color-red ion-code"></i> View code</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column col-xs-12 col-sm-6 col-md-6">
+              <div class="portfolio-block">
+                <div class="portfolio-image">
+                  <img class="img-responsive project-image-flat-web" src="img/flat-web-project.png" width="500" height="225">
+                </div>
+                <div class="portfolio-title">
+                  <p><i class="color-red ion-asterisk"></i> Online JavaScript Calculator.</p>
+                </div>
+                <div class="portfolio-description">
+                  <p><i class="color-red ion-paintbucket"></i> freeCodeCamp frontend project.</p>
+                </div>
+                <div class="portfolio-tags">
+                  <p><i class="color-red ion-wrench"></i> HTML/CSS, JavaScript (jQuery).</p>
+                </div>
+                <div class="portfolio-links">
+                  <a href="#home" class="visit-project">
+                    <p><i class="color-red ion-wand"></i> Visit project</p></a>
+                  <a href="#contact" class="view-code">
+                    <p><i class="color-red ion-code"></i> View code</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column col-xs-12 col-sm-6 col-md-6">
+              <div class="portfolio-block">
+                <div class="portfolio-image">
+                  <img class="img-responsive project-image-flat-web" src="img/flat-web-project.png" width="500" height="225">
+                </div>
+                <div class="portfolio-title">
+                  <p><i class="color-red ion-asterisk"></i> Lucky Quote Generator.</p>
+                </div>
+                <div class="portfolio-description">
+                  <p><i class="color-red ion-paintbucket"></i> freeCodeCamp frontend project.</p>
+                </div>
+                <div class="portfolio-tags">
+                  <p><i class="color-red ion-wrench"></i> HTML/CSS, JavaScript (jQuery).</p>
+                </div>
+                <div class="portfolio-links">
+                  <a href="#home" class="visit-project">
+                    <p><i class="color-red ion-wand"></i> Visit project</p></a>
+                  <a href="#contact" class="view-code">
+                    <p><i class="color-red ion-code"></i> View code</p></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title"><i class="color-red ion-asterisk"></i> Contact</h2>
+        <p class="section-subtitle text-center">Let's change the world together (and drink a lot of coffee in the proccess)!</p>
 
         <div class="row">
-          <ul class="list-inline">
-            <li class="contact">
-              <a href="mailto:carolina-knoll@hotmail.com">
-                <i class="fa fa-envelope"></i>
-              </a>
+
+          <div class="contact-social column col-xs-12 col-sm-6 col-md-6">
+            <h2 class="section-title"><i class="color-red ion-paintbucket"></i> Let's chat!</h2>
+            <div class="section-box">
+              <div class="section-description">
+                <p class="section-subtitle">You can visit me through these social sites:</p>
+                <ul class="social-list">
+                  <li class="social-small-box">
+                    <a href="mailto:carolinasknoll@gmail.com"><i class="social-icon ion-ios-email"></i></a>
+                  </li>
+                  <li class="social-small-box">
+                    <a href="https://www.linkedin.com/in/carolinaknoll"><i class="social-icon ion-social-linkedin"></i></a>
+                  </li>
+                  <li class="social-small-box">
+                    <a href="https://github.com/carolinaknoll"><i class="social-icon ion-social-github"></i></a>
+                  </li>
+                  <li class="social-small-box">
+                    <a href="https://twitter.com/carolina_knoll"><i class="social-icon ion-social-twitter"></i></a>
+                  </li>
+                  <li class="social-small-box">
+                    <a href="http://codepen.io/carolinaknoll/"><i class="social-icon ion-social-codepen"></i></a>
+                  </li>
+                  <li class="social-small-box">
+                    <a href="http://www.freecodecamp.com/carolinaknoll"><i class="social-icon ion-ios-flame"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-art column col-xs-12 col-sm-6 col-md-6">
+            <h2 class="section-title"><i class="color-red ion-paintbucket"></i> Hello2</h2>
+            <div class="section-box">
+              <div class="section-description">
+                <p class="section-subtitle">Hello</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="section-subtitle text-center"><i class="color-red ion-film-marker"></i> Ready to build something awesome? :-)</p>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <ul class="social-list">
+            <li class="social-small-box">
+              <a href="mailto:carolinasknoll@gmail.com"><i class="social-icon ion-ios-email"></i></a>
             </li>
-            <li class="linkedin">
-              <a href="https://www.linkedin.com/in/carolinaknoll">
-                <i class="fa fa-linkedin"></i>
-              </a>
+            <li class="social-small-box">
+              <a href="https://www.linkedin.com/in/carolinaknoll"><i class="social-icon ion-social-linkedin"></i></a>
             </li>
-            <li class="github">
-              <a href="https://github.com/carolinaknoll">
-                <i class="fa fa-github"></i>
-              </a>
+            <li class="social-small-box">
+              <a href="https://github.com/carolinaknoll"><i class="social-icon ion-social-github"></i></a>
             </li>
-            <li class="twitter">
-              <a href="https://twitter.com/carolina_knoll">
-                <i class="fa fa-twitter"></i>
-              </a>
+            <li class="social-small-box">
+              <a href="https://twitter.com/carolina_knoll"><i class="social-icon ion-social-twitter"></i></a>
             </li>
-            <li class="codepen">
-              <a href="http://codepen.io/carolinaknoll/">
-                <i class="fa fa-codepen"></i>
-              </a>
+            <li class="social-small-box">
+              <a href="http://codepen.io/carolinaknoll/"><i class="social-icon ion-social-codepen"></i></a>
             </li>
-            <li class="freecodecamp">
-              <a href="http://www.freecodecamp.com/carolinaknoll">
-                <i class="fa fa-fire"></i>
-              </a>
+            <li class="social-small-box">
+              <a href="http://www.freecodecamp.com/carolinaknoll"><i class="social-icon ion-ios-flame"></i></a>
             </li>
-            <p>Crafted with
-              <span>&hearts;</span>
-              by Carolina Knoll / 2016</p>
           </ul>
         </div>
       </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>Handcrafted with <i class="color-red ion-heart"></i> and <i class="color-red ion-coffee"></i> by Carolina Knoll, May/2016.</p>
+        </div>
+      </div>
+
     </footer>
 
-    <!-- Mobile navigation -->
-    <script>
-      var menu = document.querySelector('#menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('.nav');
-
-      menu.addEventListener('click', function (e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function () {
-        drawer.classList.remove('open');
-      });
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="assets/js/scrollspy.min.js"></script>
-    <script>$(".nav").scrollspy({ offset: -100 });</script> <!-- thanks https://github.com/r3plica/Scrollspy -->
-
-    <!-- Smooth scrolling -->
-    <script>
-      $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html, body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-    </script>
-
-    <script src="http://www.powr.io/powr.js" external-type="html"></script>
+    <!--  Scripts-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>
