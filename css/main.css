@@ -63,10 +63,12 @@ body {
 }
 
 .about {
-  min-height: 800px;
+  min-height: 900px;
   width: 100%;
   display: block;
   position: relative;
+  padding-top: 80px; /* for smooth scrolling */
+
   background: #F694C1;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f694c1+0,ede7b1+97,ede7b1+100 */
   background: rgb(246,148,193);
@@ -94,6 +96,7 @@ body {
   width: 100%;
   display: block;
   position: relative;
+  padding-top: 80px;
 
   background: rgb(237,231,177);
   background: -moz-linear-gradient(top,  rgba(237,231,177,1) 0%, rgba(237,231,177,1) 69%, rgba(237,231,177,1) 69%, rgba(117,201,200,1) 100%);
@@ -120,6 +123,7 @@ body {
   width: 100%;
   display: block;
   position: relative;
+  padding-top: 80px;
 
   background: rgb(117,201,200);
   background: -moz-linear-gradient(top,  rgba(117,201,200,1) 0%, rgba(117,201,200,1) 69%, rgba(117,201,200,1) 69%, rgba(63,186,243,1) 100%);
@@ -172,7 +176,8 @@ span {
   color: #a32949;
 }
 
-.section-title {
+.section-title { /*
+  padding-top: 80px; */
   font-size: 34px;
   text-align: center;
 }
@@ -221,7 +226,11 @@ span {
 
 /* Section's styles */
 
-/* About */
+/* About */ /*
+.about .section-title {
+  padding-top: 80px;
+}
+*/
 .about .section-subtitle {
   font-size: 22px;
 }
