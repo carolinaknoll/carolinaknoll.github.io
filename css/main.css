@@ -226,11 +226,7 @@ span {
 
 /* Section's styles */
 
-/* About */ /*
-.about .section-title {
-  padding-top: 80px;
-}
-*/
+/* About */
 .about .section-subtitle {
   font-size: 22px;
 }
