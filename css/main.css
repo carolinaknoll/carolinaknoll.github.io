@@ -14,23 +14,29 @@ body {
 
 /* */
 .navbar {
-  background: #a5dff9;
+  background: rgba(12, 135, 192, 0.9);
+  background: rgba(0, 119, 224, 0.5);
+  background: rgba(77, 172, 255, 0.8);
+  -webkit-box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);
   height: 60px;
-  margin-bottom: 0;
-  border-bottom: 1px solid white;
+  margin-bottom: 0; /*
+  border-bottom: 1px solid white; */
+  border-bottom: none;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
   font-size: 20px;
+  background: rgba(66, 165, 245, 0.8);
 }
 
 .navbar-brand {
   font-size: 24px;
 }
 
-.hero {
-  background: #a5dff9;
+.home {
   min-height: 100vh;
   width: 100%;
   display: block;
@@ -42,24 +48,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-
-  background: rgb(165,223,249);
-  background: -moz-linear-gradient(top,  rgba(165,223,249,1) 0%, rgba(165,223,249,1) 69%, rgba(165,223,249,1) 69%, rgba(246,148,193,1) 100%);
-  background: -webkit-linear-gradient(top,  rgba(165,223,249,1) 0%,rgba(165,223,249,1) 69%,rgba(165,223,249,1) 69%,rgba(246,148,193,1) 100%);
-  background: linear-gradient(to bottom,  rgba(165,223,249,1) 0%,rgba(165,223,249,1) 69%,rgba(165,223,249,1) 69%,rgba(246,148,193,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5dff9', endColorstr='#f694c1',GradientType=0 );
-  z-index: 1;
-}
-
-.hero:after {
-  content: "";
-  background: url(../img/tiles.png) center repeat;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  background-color: rgb(242, 242, 242);
 }
 
 .about {
@@ -68,27 +57,7 @@ body {
   display: block;
   position: relative;
   padding-top: 80px; /* for smooth scrolling */
-
-  background: #F694C1;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f694c1+0,ede7b1+97,ede7b1+100 */
-  background: rgb(246,148,193);
-  background: -moz-linear-gradient(top,  rgba(246,148,193,1) 0%, rgba(246,148,193,1) 69%, rgba(246,148,193,1) 69%, rgba(237,231,177,1) 100%);
-  background: -webkit-linear-gradient(top,  rgba(246,148,193,1) 0%,rgba(246,148,193,1) 69%,rgba(246,148,193,1) 69%,rgba(237,231,177,1) 100%);
-  background: linear-gradient(to bottom,  rgba(246,148,193,1) 0%,rgba(246,148,193,1) 69%,rgba(246,148,193,1) 69%,rgba(237,231,177,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f694c1', endColorstr='#ede7b1',GradientType=0 );
-  z-index: 1;
-
-}
-
-.about:after {
-  content: "";
-  background: url(../img/tiles.png) center repeat;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  background: #cfe9fc;
 }
 
 .portfolio {
@@ -97,25 +66,7 @@ body {
   display: block;
   position: relative;
   padding-top: 80px;
-
-  background: rgb(237,231,177);
-  background: -moz-linear-gradient(top,  rgba(237,231,177,1) 0%, rgba(237,231,177,1) 69%, rgba(237,231,177,1) 69%, rgba(117,201,200,1) 100%);
-  background: -webkit-linear-gradient(top,  rgba(237,231,177,1) 0%,rgba(237,231,177,1) 69%,rgba(237,231,177,1) 69%,rgba(117,201,200,1) 100%);
-  background: linear-gradient(to bottom,  rgba(237,231,177,1) 0%,rgba(237,231,177,1) 69%,rgba(237,231,177,1) 69%,rgba(117,201,200,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ede7b1', endColorstr='#75c9c8',GradientType=0 );
-  z-index: 2;
-
-}
-
-.portfolio:after {
-  content: "";
-  background: url(../img/tiles.png) center repeat;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  background: #ffffe6;
 }
 
 .contact {
@@ -124,24 +75,7 @@ body {
   display: block;
   position: relative;
   padding-top: 80px;
-
-  background: rgb(117,201,200);
-  background: -moz-linear-gradient(top,  rgba(117,201,200,1) 0%, rgba(117,201,200,1) 69%, rgba(117,201,200,1) 69%, rgba(63,186,243,1) 100%);
-  background: -webkit-linear-gradient(top,  rgba(117,201,200,1) 0%,rgba(117,201,200,1) 69%,rgba(117,201,200,1) 69%,rgba(63,186,243,1) 100%);
-  background: linear-gradient(to bottom,  rgba(117,201,200,1) 0%,rgba(117,201,200,1) 69%,rgba(117,201,200,1) 69%,rgba(63,186,243,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75c9c8', endColorstr='#3fbaf3',GradientType=0 );
-  z-index: 2;
-}
-
-.contact:after {
-  content: "";
-  background: url(../img/tiles.png) center repeat;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  background: #c8eae9;
 }
 
 .footer-top {
@@ -168,8 +102,8 @@ a:hover {
   text-decoration: none;
 }
 
-span {
-  color: #a32949;
+.home span {
+  font-weight: bold;
 }
 
 .color-red {
@@ -183,9 +117,10 @@ span {
 }
 
 .section-subtitle {
-  font-size: 20px;
-  line-height: 0.9;
-  text-shadow:2px 4px 10px rgba(0, 0, 0, 0.4);
+  font-size: 20px; /*
+  line-height: 0.9; */
+  letter-spacing: 1px; /*
+  text-shadow:2px 4px 10px rgba(0, 0, 0, 0.4); */
 }
 
 .text-center {
@@ -210,10 +145,28 @@ span {
   padding-top: 0;
   margin-top: 0;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.presentation-first {
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #42a5f5;
 }
 
 .presentation-second {
   font-size: 28px;
+  letter-spacing: 10px;
+  color: #2979ff;
+}
+
+.presentation-third {
+  color: #3d5afe;
+  letter-spacing: 3px;
+}
+
+.presentation-fourth {
+  color: #7c4dff;
 }
 
 .presentation-third,
@@ -224,18 +177,42 @@ span {
   margin-top: 0;
 }
 
+.presentation-fifth {
+  color: #ab47bc;
+}
+
 /* Section's styles */
 
 /* About */
+.about .section-title {
+  color: #2979ff;
+}
+
 .about .section-subtitle {
   font-size: 22px;
+  color: #002f80;
 }
 
 .about .section-description {
   margin: 20px;
 }
 
-/* Portfolio */
+.about .text-block {
+  text-align: justify;
+  max-width: 800px;
+  min-height: 300px;
+  margin: auto;
+}
+
+/* Portfolio */ /*
+.portfolio .section-title {
+  color: #8f66ff;
+}
+
+.portfolio .section-subtitle {
+  color: #1b0066;
+} */
+
 .portfolio-projects {
   display: flex;
   flex-direction: column;
@@ -256,6 +233,14 @@ span {
   margin-bottom: 20px;
   background: #d65c7c;
   background: #e0859d;
+  -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
+box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
+}
+
+.portfolio-block:hover {
+  transition: 0.5s;
+  transform: scale(1.025);
 }
 
 .portfolio-block p {
@@ -387,19 +372,32 @@ span {
     font-size: 28px;
   }
 
-  .presentation-second {
-    font-size: 64px;
+  .navbar-nav {
+    font-size: 24px;
   }
 
-  .presentation-third,
-  .presentation-fourth {
+  .presentation-first {
+    font-size: 54px;
+  }
+
+  .presentation-second {
+    font-size: 75px;
+  }
+
+  .presentation-third {
     font-size:34px;
     padding-top: 0;
     margin-top: 0;
   }
 
+  .presentation-fourth {
+    font-size: 51px;
+    letter-spacing: 4px;
+  }
+
   .presentation-fifth {
-    font-size: 40px;
+    font-size: 38px;
+    letter-spacing: 2px;
   }
 
   .portfolio-block p {
