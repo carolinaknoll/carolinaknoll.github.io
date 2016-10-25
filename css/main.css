@@ -57,7 +57,7 @@ body {
   display: block;
   position: relative;
   padding-top: 80px; /* for smooth scrolling */
-  background: #cfe9fc;
+  background: rgb(230, 230, 230);
 }
 
 .portfolio {
@@ -114,6 +114,9 @@ a:hover {
   padding-top: 80px; */
   font-size: 34px;
   text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
 }
 
 .section-subtitle {
@@ -188,20 +191,48 @@ a:hover {
   color: #2979ff;
 }
 
-.about .section-subtitle {
-  font-size: 22px;
+.about a {
+  display: block;
+}
+
+.about .profile-description {
+  font-size: 20px;
   color: #002f80;
+  margin: 0px;
 }
 
-.about .section-description {
-  margin: 20px;
-}
-
-.about .text-block {
-  text-align: justify;
+.about .profile-description {
+  text-align: justify; /*
   max-width: 800px;
-  min-height: 300px;
+  min-height: 300px; */
   margin: auto;
+}
+
+.about-left,
+.about-right {
+  background: #FFF;
+  padding: 10px;
+  -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
+  -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
+  box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
+
+}
+
+.about-left {
+
+}
+
+.about-right {
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  margin: auto;
+}
+
+.profile-name {
+  text-align: center;
+  margin: 5px;
 }
 
 /* Portfolio */ /*
