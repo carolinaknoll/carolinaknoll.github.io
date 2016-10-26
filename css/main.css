@@ -1,18 +1,9 @@
-/*
-* Website CSS summary list:
-* 1. Backgrounds and background styles.
-* 2. Fonts and fonts styles.
-* 3. Div objects and object styles.
-* 4. Media Queries.
-*/
-
-/* 1. Backgrounds and background styles. */
 body {
   font-family: "Questrial", sans-serif;
   color: #000;
 }
 
-/* */
+/* Navigation */
 .navbar {
   background: rgba(12, 135, 192, 0.9);
   background: rgba(0, 119, 224, 0.5);
@@ -51,50 +42,9 @@ body {
   background-color: rgb(242, 242, 242);
 }
 
-.about {
-  min-height: 900px;
-  width: 100%;
-  display: block;
-  position: relative;
-  padding-top: 80px; /* for smooth scrolling */
-  background: rgb(230, 230, 230);
-}
-
-.portfolio {
-  min-height: 1000px;
-  width: 100%;
-  display: block;
-  position: relative;
-  padding-top: 80px;
-  background: #ffffe6;
-}
-
-.contact {
-  min-height: 800px;
-  width: 100%;
-  display: block;
-  position: relative;
-  padding-top: 80px;
-  background: #c8eae9;
-}
-
-.footer-top {
-  min-height: 140px;
-  width: 100%;
-  border-top: 1px solid #FFF;
-  background: #3fbaf3;
-}
-
-.footer-bottom {
-  min-height: 60px;
-  width: 100%;
-  background: #27b1f1;
-}
-
-/* 2. Fonts and font styles. */
-
 /* Helper classes */
-a {
+.navbar a,
+.portfolio a {
   color: #000 !important;
 }
 
@@ -115,8 +65,6 @@ a:hover {
   font-size: 34px;
   text-align: center;
   letter-spacing: 4px;
-  text-transform: uppercase;
-
 }
 
 .section-subtitle {
@@ -184,46 +132,60 @@ a:hover {
   color: #ab47bc;
 }
 
-/* Section's styles */
-
 /* About */
-.about .section-title {
-  color: #2979ff;
+.about {
+  min-height: 900px;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-top: 80px; /* for smooth scrolling */
+  background: rgb(230, 230, 230);
+  background: #ddb4e4;
 }
 
-.about a {
+.about .section-title {
+  color: #222;
+}
+
+
+.about .profile-links {
   display: block;
+  font-size: 20px;
+  color: #222;
+  text-align: justify;
+  margin: auto;
+  padding-bottom: 0px;
+}
+
+.about .fa {
+  color: #cc8fd6;
+}
+
+.about .profile-location {
+  color: #222;
+}
+
+.about .profile-heading {
+  margin-top: 10px;
+  color: #111;
 }
 
 .about .profile-description {
   font-size: 20px;
-  color: #002f80;
-  margin: 0px;
-}
-
-.about .profile-description {
-  text-align: justify; /*
-  max-width: 800px;
-  min-height: 300px; */
+  color: #222;
+  text-align: justify;
   margin: auto;
+  padding-bottom: 0px;
 }
 
 .about-left,
 .about-right {
   background: #FFF;
   padding: 10px;
+  margin-bottom: 20px;
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
   -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
   box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
-
-}
-
-.about-left {
-
-}
-
-.about-right {
-  margin-bottom: 20px;
 }
 
 .profile-image {
@@ -235,7 +197,85 @@ a:hover {
   margin: 5px;
 }
 
-/* Portfolio */ /*
+.profile-sliders {
+  padding-bottom: 50px;
+}
+
+.slider {
+  max-width: 100%;
+  height: 6px;
+  background: #FFF;
+  border: 1px solid #444;
+  border-radius: 10px;
+}
+
+.slider-knob { /*
+  position: relative;
+  bottom: 20px;
+  left: 300px; */
+  margin-top: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #ddb4e4;
+
+  -webkit-box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
+-moz-box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
+box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
+
+}
+
+.slider-knob-one {
+  margin-left: 65%;
+}
+
+.slider-knob-two {
+  margin-left: 20%;
+}
+
+.slider-knob-three {
+  margin-left: 50%;
+}
+
+.slider-knob-four {
+  margin-left: 25%;
+}
+
+.slider-knob-five {
+  margin-left: 70%;
+}
+
+/*
+.about-left .profile-sliders {
+  text-align: justify;
+}
+*/
+
+.sliders-description-left,
+.sliders-description-right {
+  display: inline-block;
+  margin: 5px;
+}
+
+.sliders-description-left {
+  float: left;
+}
+
+.sliders-description-right {
+  float: right;
+}
+
+/* Portfolio */
+.portfolio {
+  min-height: 1000px;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-top: 80px;
+  background: #ffffe6;
+}
+
+/*
 .portfolio .section-title {
   color: #8f66ff;
 }
@@ -340,6 +380,15 @@ box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
 }
 
 /* Contact */
+.contact {
+  min-height: 800px;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-top: 80px;
+  background: #c8eae9;
+}
+
 .contact .section-description {
   display: inline;
   margin: 0px;
@@ -373,6 +422,19 @@ box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
 }
 
 /* Footer */
+.footer-top {
+  min-height: 140px;
+  width: 100%;
+  border-top: 1px solid #FFF;
+  background: #3fbaf3;
+}
+
+.footer-bottom {
+  min-height: 60px;
+  width: 100%;
+  background: #27b1f1;
+}
+
 .footer p {
   font-size: 20px;
   text-align: center;
