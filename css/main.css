@@ -272,17 +272,8 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   display: block;
   position: relative;
   padding-top: 80px;
-  background: #ffffe6;
+  background: #86c5f9;
 }
-
-/*
-.portfolio .section-title {
-  color: #8f66ff;
-}
-
-.portfolio .section-subtitle {
-  color: #1b0066;
-} */
 
 .portfolio-projects {
   display: flex;
@@ -295,24 +286,33 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 }
 
 .portfolio-block {
-  max-width: 500px;
-  max-height: 400px;
+  max-width: 540px;
+  max-height: 440px;
   width: 100%;
-  border: 2px solid #d8d9d9;
+
   display: block;
   overflow: hidden;
   margin-bottom: 20px;
   background: #d65c7c;
   background: #e0859d;
+  background-color: rgb(242, 242, 242);
+
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
 }
 
-.portfolio-block:hover {
+.portfolio .section-title .fa {
+  color: #3ca2f6;
+}
+
+.portfolio-block .fa {
+  color: #a6a6a6;
   transition: 0.5s;
-  transform: scale(1.025);
-  border: 2px solid #e0859d;
+}
+
+.portfolio-block:hover .fa {
+  color: #3ca2f6;
 }
 
 .portfolio-block p {
@@ -323,32 +323,45 @@ box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
 }
 
 .portfolio-image {
-  box-sizing: border-box;
+  box-sizing: border-box; /*
   max-width: 500px;
-  max-height: 225px;
+  max-height: 225px; */
+  max-width: 92%;
+  max-height: 92%;
+
   width: 100%;
   height: 100%;
   background: #555;
-  border-bottom: 1px solid #FFF;
   overflow: hidden; /* Solução paleativa problema img */
+  margin: auto;
+  margin-top: 3%;
+  -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.3);
+  -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.3);
+  box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.3);
+  border: 1px solid #86c5f9;
+  transition: 0.5s;
+}
+
+.portfolio-block:hover .portfolio-image {
+  border: 1px solid #86c5f9;
 }
 
 .portfolio-title {
-  max-width: 500px;
+  max-width: 100%;
   min-height: 20px;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #86c5f9;
 }
 
 .portfolio-description {
-  max-width: 500px;
+  max-width: 100%;
   min-height: 20px;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #86c5f9;
 }
 
 .portfolio-tags {
-  max-width: 500px;
+  max-width: 100%;
   min-height: 20px;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #86c5f9;
 }
 
 .portfolio-links {
@@ -361,22 +374,33 @@ box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
   flex-direction: row;
   text-align: center;
   min-height: 20px;
-  border-bottom: 5px solid #FFF;
+  border-bottom: 5px solid #86c5f9;
+}
+
+.portfolio-image:hover {
+  -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.5);
+  box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.5);
+  transform: scale(1.03);
+}
+
+.visit-project,
+.view-code {
+  transition: 0.5s;
 }
 
 .visit-project {
   flex: 1 50%;
-  background: #e0859d;
 }
 
 .view-code {
   flex: 1 50%;
-  background: #e0859d;
 }
 
 .visit-project:hover,
 .view-code:hover {
-  background: #db708d;
+  background: #86c5f9;
+  transition: 0.5s;
 }
 
 /* Contact */
