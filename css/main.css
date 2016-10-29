@@ -78,20 +78,6 @@ a:hover {
   text-align: center;
 }
 
-.section-box {
-  max-width: 520px;
-  min-height: 300px;
-  background: rgba(87, 195, 244, 0.2);
-  margin-bottom: 10px;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
 .presentation h1 {
   padding-top: 0;
   margin-top: 0;
@@ -141,12 +127,17 @@ a:hover {
   padding-top: 80px; /* for smooth scrolling */
   background: rgb(230, 230, 230);
   background: #ddb4e4;
+
+  background: #8265d3;
+  background: -moz-linear-gradient(-45deg,  #8265d3 0%, #fbd3e9 100%);
+  background: -webkit-linear-gradient(-45deg,  #8265d3 0%,#fbd3e9 100%);
+  background: linear-gradient(135deg,  #8265d3 0%,#fbd3e9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8265d3', endColorstr='#fbd3e9',GradientType=1 );
 }
 
 .about .section-title {
   color: #222;
 }
-
 
 .about .profile-links {
   display: block;
@@ -165,12 +156,12 @@ a:hover {
   color: #222;
 }
 
-.about .profile-heading {
+.box-heading {
   margin-top: 10px;
   color: #111;
 }
 
-.about .profile-description {
+.box-description {
   font-size: 20px;
   color: #222;
   text-align: justify;
@@ -178,8 +169,7 @@ a:hover {
   padding-bottom: 0px;
 }
 
-.about-left,
-.about-right {
+.section-box {
   background: #FFF;
   padding: 10px;
   margin-bottom: 20px;
@@ -246,7 +236,7 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 }
 
 /*
-.about-left .profile-sliders {
+.section-box .profile-sliders {
   text-align: justify;
 }
 */
@@ -272,7 +262,13 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   display: block;
   position: relative;
   padding-top: 80px;
-  background: #86c5f9;
+  background: #99ddff;
+
+  background: #2bbbff;
+  background: -moz-linear-gradient(-45deg,  #2bbbff 0%, #76f7a5 100%);
+  background: -webkit-linear-gradient(-45deg,  #2bbbff 0%,#76f7a5 100%);
+  background: linear-gradient(135deg,  #2bbbff 0%,#76f7a5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bbbff', endColorstr='#76f7a5',GradientType=1 );
 }
 
 .portfolio-projects {
@@ -332,7 +328,7 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   width: 100%;
   height: 100%;
   background: #555;
-  overflow: hidden; /* Solução paleativa problema img */
+  overflow: hidden;
   margin: auto;
   margin-top: 3%;
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.3);
@@ -410,12 +406,44 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   display: block;
   position: relative;
   padding-top: 80px;
-  background: #c8eae9;
+  background: #C9EBEA;
+
+  background: #c964ba;
+  background: -moz-linear-gradient(-45deg,  #c964ba 0%, #f2ff63 100%);
+  background: -webkit-linear-gradient(-45deg,  #c964ba 0%,#f2ff63 100%);
+  background: linear-gradient(135deg,  #c964ba 0%,#f2ff63 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c964ba', endColorstr='#f2ff63',GradientType=1 );
+}
+
+.contact-box {
+  max-width: 520px;
+  min-height: 300px;
+  background-color: rgb(242, 242, 242);
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
 }
 
 .contact .section-description {
   display: inline;
   margin: 0px;
+}
+
+.contact .social-list {
+  padding: 15px 0;
+}
+
+.contact .contact-form {
+  padding-top: 15px;
 }
 
 .contact .social-list,
@@ -429,7 +457,10 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 .social-small-box {
   display: inline-block;
   background: rgba(87, 195, 244, 0.5);
-  border: 1px solid #FFF;
+  background: #f2ff63;
+  background: #d1476c;
+  background: #CC6666;
+
   font-size: 40px;
   margin: 2px;
   padding: 2px;
@@ -438,12 +469,83 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   text-align: center;
   line-height: 1.5;
   color: #d1476c;
+  color: #f2ff63;
+
+  -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
+  -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
+  box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
 }
 
 .social-list .social-icon {
   display: block;
   color: #d1476c;
+  color: #f2ff63;
+  color: #fff;
 }
+
+.contact-form {
+  text-align: center;
+}
+
+.form-input {
+  max-width: 95%;
+  font-size: 22px;
+  background: rgb(242, 242, 242);
+  border:1px solid #CC4949;
+
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+
+  -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
+  -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
+  box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
+}
+
+.form-input:focus {
+  border:1px solid #CC4949;
+  border:1px solid #dd8888;
+}
+
+::-webkit-input-placeholder {
+  color: #9e9e9e;
+}
+:-moz-placeholder { /* older Firefox*/
+  color: #9e9e9e;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #9e9e9e;
+}
+:-ms-input-placeholder {
+  color: #9e9e9e;
+}
+
+.contact-form textarea {
+  height: 100px;
+  line-height: 100%;
+  resize:vertical;
+}
+
+.contact-form [type="submit"] {
+  width: 100%;
+  background:#CC6666;
+
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+.contact-form [type="submit"]:hover { background:#CC4949; }
+
 
 /* Footer */
 .footer-top {
@@ -474,8 +576,8 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 
 /* 3. Media Queries. */
 @media screen and (min-width: 768px) {
-  .section-box {
-    margin-bottom: 40px;
+  .contact .section-box {
+    margin-bottom: 20px;
   }
 
   .section-title {
@@ -522,14 +624,17 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
     font-size: 20px;
   }
   .social-small-box {
-    font-size: 50px;
-    margin: 2px;
+    font-size: 46px;
+    margin: 5px;
     padding: 2px;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     text-align: center;
-    line-height: 1.0;
     color: #d1476c;
+  }
+
+  .social-small-box .fa {
+    line-height: 1.3;
   }
 
   .contact .social-list,
