@@ -9,13 +9,12 @@ body {
   -moz-box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);
   height: 60px;
-  margin-bottom: 0; /*
-  border-bottom: 1px solid white; */
-  border-bottom: none;
+  margin-bottom: 0;
+  border-bottom: none; /*
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  align-content: center;
+  align-content: center; */
   font-size: 20px;
   background: rgba(66, 165, 245, 1);
   letter-spacing: 2px;
@@ -24,7 +23,13 @@ body {
 }
 
 .navbar-brand {
-  font-size: 24px;
+  font-size: 24px; /*
+  margin-top: -6px; */
+  border-bottom: none; /*
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center; */
 }
 
 .navbar-brand .fa {
@@ -35,7 +40,17 @@ body {
   color:#2979ff !important;
   background: none;
   border-bottom: 1px solid #2979ff;
+
+  background: #ccefff !important;
+}
+
+.navbar-collapse.collapse {
+  background: #eceff1;
   transition: 0.5s;
+}
+
+.navbar-collapse.collapse li a:hover {
+  background: #ccefff !important;
 }
 
 .home {
@@ -299,7 +314,7 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 
   display: block;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background: #d65c7c;
   background: #e0859d;
   background-color: rgb(242, 242, 242);
@@ -310,7 +325,7 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 }
 
 .portfolio .section-title .fa {
-  color: #3ca2f6;
+  color: #96e9e3;
 }
 
 .portfolio-block .fa {
@@ -319,14 +334,15 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 }
 
 .portfolio-block:hover .fa {
-  color: #3ca2f6;
+  color: #2bbbff;
 }
 
 .portfolio-block p {
   font-size: 18px;
-  text-align: center;
+  text-align: left;
   padding-top: 4px;
   line-height: 0.9;
+  margin-left: 10px;
 }
 
 .portfolio-image {
@@ -345,30 +361,31 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.3);
   -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.3);
   box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.3);
-  border: 1px solid #86c5f9;
+  border: 1px solid #2bbbff;
   transition: 0.5s;
 }
 
 .portfolio-block:hover .portfolio-image {
-  border: 1px solid #86c5f9;
+  border: 1px solid #2bbbff;
 }
 
 .portfolio-title {
   max-width: 100%;
   min-height: 20px;
-  border-bottom: 1px solid #86c5f9;
+  border-bottom: 1px solid #2bbbff;
+  margin-top: 5px;
 }
 
 .portfolio-description {
   max-width: 100%;
   min-height: 20px;
-  border-bottom: 1px solid #86c5f9;
+  border-bottom: 1px solid #2bbbff;
 }
 
 .portfolio-tags {
   max-width: 100%;
   min-height: 20px;
-  border-bottom: 1px solid #86c5f9;
+  border-bottom: 1px solid #2bbbff;
 }
 
 .portfolio-links {
@@ -381,7 +398,8 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   flex-direction: row;
   text-align: center;
   min-height: 20px;
-  border-bottom: 5px solid #86c5f9;
+  border-bottom: 5px solid #52dad0;
+  border-bottom: 5px solid #74d8f1;
 }
 
 .portfolio-image:hover {
@@ -406,8 +424,10 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 
 .visit-project:hover,
 .view-code:hover {
-  background: #86c5f9;
+  background: #80d7ff;
   transition: 0.5s;
+  background: #52dad0;
+  background: #74d8f1;
 }
 
 /* Contact */
@@ -468,8 +488,6 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 .social-small-box {
   display: inline-block;
   background: rgba(87, 195, 244, 0.5);
-  background: #f2ff63;
-  background: #d1476c;
   background: #CC6666;
 
   font-size: 40px;
@@ -489,8 +507,6 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 
 .social-list .social-icon {
   display: block;
-  color: #d1476c;
-  color: #f2ff63;
   color: #fff;
 }
 
@@ -557,7 +573,6 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 
 .contact-form [type="submit"]:hover { background:#CC4949; }
 
-
 /* Footer */
 .footer-top {
   min-height: 100px;
@@ -585,10 +600,20 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   padding-top: 10px;
 }
 
+.footer-bottom .fa {
+  color: #CC4949;
+}
+
 /* 3. Media Queries. */
 @media screen and (min-width: 768px) {
-  .contact .section-box {
-    margin-bottom: 20px;
+  /* Navigation menu */
+  .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,
+  .navbar-collapse.collapse li a:hover {
+    background: #eceff1 !important;
+  }
+
+  .navbar-nav li a {
+    padding-top: 20px;
   }
 
   .section-title {
@@ -607,6 +632,7 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
     font-size: 24px;
   }
 
+  /* Home page */
   .presentation-first {
     font-size: 54px;
   }
@@ -631,9 +657,17 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
     letter-spacing: 2px;
   }
 
+  /* Portfolio page */
   .portfolio-block p {
     font-size: 20px;
+    margin-left: 25px;
   }
+
+  /* Contact page */
+  .contact .section-box {
+    margin-bottom: 20px;
+  }
+
   .social-small-box {
     font-size: 46px;
     margin: 5px;
