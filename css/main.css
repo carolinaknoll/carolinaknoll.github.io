@@ -5,9 +5,6 @@ body {
 
 /* Navigation */
 .navbar {
-  background: rgba(12, 135, 192, 0.9);
-  background: rgba(0, 119, 224, 0.5);
-  background: rgba(77, 172, 255, 0.8);
   -webkit-box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);
@@ -20,11 +17,25 @@ body {
   align-items: center;
   align-content: center;
   font-size: 20px;
-  background: rgba(66, 165, 245, 0.8);
+  background: rgba(66, 165, 245, 1);
+  letter-spacing: 2px;
+  background: #cfd8dc;
+  background: #eceff1;
 }
 
 .navbar-brand {
   font-size: 24px;
+}
+
+.navbar-brand .fa {
+  color: #2979ff;
+}
+
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover {
+  color:#2979ff !important;
+  background: none;
+  border-bottom: 1px solid #2979ff;
+  transition: 0.5s;
 }
 
 .home {
@@ -549,16 +560,16 @@ box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
 
 /* Footer */
 .footer-top {
-  min-height: 140px;
+  min-height: 100px;
   width: 100%;
   border-top: 1px solid #FFF;
-  background: #3fbaf3;
+  background: #eceff1;
 }
 
 .footer-bottom {
   min-height: 60px;
   width: 100%;
-  background: #27b1f1;
+  background: #cfd8dc;
 }
 
 .footer p {
