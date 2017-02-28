@@ -17,4 +17,4 @@ Both of them are old and look like a little bit outdated templates, but helped m
 
 – JavaScript Calculator: Online calculator that allows multiple operations. Created with HTML, CSS and jQuery.    
 
-You can check all of them by [visiting my website](carolinaknoll.github.io) or exploring my [GitHub repositories](https://github.com/carolinaknoll?tab=repositories).
+You can check all of them by [visiting my website](http://carolinaknoll.github.io/) or exploring my [GitHub repositories](https://github.com/carolinaknoll?tab=repositories).
