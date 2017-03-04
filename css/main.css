@@ -250,6 +250,12 @@ a:hover {
   float: right;
 }
 
+.growth-graph {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 /*------------------------------------*\
   #Portfolio section
 \*------------------------------------*/
