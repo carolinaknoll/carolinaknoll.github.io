@@ -83,25 +83,25 @@ var growthChart = new Chart(ctx2, {
          ],
       datasets: [{
           label: "Three years ago, 2014",
-          backgroundColor: "rgba(0, 255, 153, 0.4)",
-          borderColor: "rgba(0, 255, 153, 0.8)",
+          backgroundColor: "rgba(0, 204, 122, 0.5)",
+          borderColor: "rgba(0, 204, 122, .8)",
           pointRadius: 3,
-          pointBackgroundColor: "rgba(0, 255, 153, 0.8)",
+          pointBackgroundColor: "rgba(0, 204, 122, .8)",
           pointBorderColor: "#fff",
-          pointHoverBackgroundColor: "#fff",
-          pointHoverBorderColor: "rgba(0, 255, 153, 0.8)",
+          pointHoverBackgroundColor: "rgba(0, 204, 122, .9)",
+          pointHoverBorderColor: "rgba(0, 204, 122, .9)",
           data: [60, 40, 50, 50, 50, 50, 80, 80, 50, 10, 60, 50, 30, 40, 80, 30, 20, 60, 60, 60]
         },
         {
           label: "This year, 2017",
-          backgroundColor: "rgba(0, 128, 255, 0.5)",
-          borderColor: "rgba(0, 128, 255, 0.7)",
+          backgroundColor: "rgba(0, 223, 252, 0.7)",
+          borderColor: "rgba(0, 128, 233, 0.7)",
           pointRadius: 3,
           pointLabelFontSize: 16,
-          pointBackgroundColor: "rgba(0, 128, 255, 0.9)",
+          pointBackgroundColor: "rgba(0, 128, 233, 0.9)",
           pointBorderColor: "#fff",
-          pointHoverBackgroundColor: "#fff",
-          pointHoverBorderColor: "rgba(0, 128, 255, 0.9)",
+          pointHoverBackgroundColor: "rgba(0, 128, 233, 0.9)",
+          pointHoverBorderColor: "rgba(0, 128, 233, 0.9)",
           data: [80, 60, 60, 70, 70, 60, 80, 80, 70, 30, 70, 50, 40, 50, 80, 40, 30, 80, 80, 80]
         }
       ]
@@ -112,6 +112,7 @@ var growthChart = new Chart(ctx2, {
       labels: {
         fontSize: 16,
         fontFamily: 'Questrial',
+        hoverFontColor: '#111',
       },
     },
     tooltips: {
@@ -134,6 +135,10 @@ var growthChart = new Chart(ctx2, {
         fontFamily: 'Questrial',
         fontColor: '#444',
       },
+    },
+    animation: {
+      duration: '2000',
+      easing: 'linear',
     },
   }
 });
