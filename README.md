@@ -1,6 +1,6 @@
-#### :school_satchel: Welcome to carolinaknoll.github.io 
-:octocat: This is where I keep my github portfolio website.  
-Please note this website is currently under development.
+#### :school_satchel: Welcome to carolinaknoll.github.io! :smile:
+:octocat: This is where I keep my github portfolio website files.  
+Thank you for considering this website is currently in the process of being updated. :clipboard:
 ***
 ##### Projects included:  
 ##### PSD to Code:  
@@ -18,3 +18,8 @@ Both of them are old and look like a little bit outdated templates, but helped m
 – JavaScript Calculator: Online calculator that allows multiple operations. Created with HTML, CSS and jQuery.    
 
 You can check all of them by [visiting my website](http://carolinaknoll.github.io/) or exploring my [GitHub repositories](https://github.com/carolinaknoll?tab=repositories).
+
+##### Current todos:
+– Update information in About section;  
+– Refactor chart codes in `scripts.js` file;  
+– Update colors and styles of charts;  
