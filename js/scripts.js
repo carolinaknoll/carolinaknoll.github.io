@@ -40,16 +40,16 @@ var workflowChart = new Chart(ctx, {
         '#FFF'
       ],
       borderWidth: 4
-    }]
+    }],
   },
   options: {
     responsive: true,
     maintainAspectRatio: true,
     animation: {
-      animateRotate: true
+      animateRotate: true,
     },
     legend: {
-      display: true
+      display: true,
     }
   }
 });
@@ -57,54 +57,55 @@ var workflowChart = new Chart(ctx, {
 //Growth Chart
 var ctx2 = document.getElementById('growthChart');
 var growthChart = new Chart(ctx2, {
-    type: 'radar',
-    data: {
-      labels: [
-        "Creativity",
-        "Autonomy",
-        "Self confidence",
-        "Independent mind",
-        "Stress management",
-        "Responsiveness",
-        "Patience",
-        'Respect for authority',
-         'Determination',
-         'Ambition',
-         'Work ethic',
-         'Competitive spirit',
-         'Ease in public',
-         'Opening up to others',
-         'Diplomacy',
-         'Persuasion',
-         'Leading',
-         'Taking responsibility',
-         'Organization',
-         'Vision'
-         ],
-      datasets: [{
-          label: "Three years ago, 2014",
-          backgroundColor: "rgba(0, 204, 122, 0.5)",
-          borderColor: "rgba(0, 204, 122, .8)",
-          pointRadius: 3,
-          pointBackgroundColor: "rgba(0, 204, 122, .8)",
-          pointBorderColor: "#fff",
-          pointHoverBackgroundColor: "rgba(0, 204, 122, .9)",
-          pointHoverBorderColor: "rgba(0, 204, 122, .9)",
-          data: [60, 40, 50, 50, 50, 50, 80, 80, 50, 10, 60, 50, 30, 40, 80, 30, 20, 60, 60, 60]
-        },
-        {
-          label: "This year, 2017",
-          backgroundColor: "rgba(0, 223, 252, 0.7)",
-          borderColor: "rgba(0, 128, 233, 0.7)",
-          pointRadius: 3,
-          pointLabelFontSize: 16,
-          pointBackgroundColor: "rgba(0, 128, 233, 0.9)",
-          pointBorderColor: "#fff",
-          pointHoverBackgroundColor: "rgba(0, 128, 233, 0.9)",
-          pointHoverBorderColor: "rgba(0, 128, 233, 0.9)",
-          data: [80, 60, 60, 70, 70, 60, 80, 80, 70, 30, 70, 50, 40, 50, 80, 40, 30, 80, 80, 80]
-        }
-      ]
+  type: 'radar',
+  data: {
+    labels: [
+      'Creativity',
+      'Autonomy',
+      'Self confidence',
+      'Independent mind',
+      'Stress management',
+      'Responsiveness',
+      'Patience',
+      'Respect for authority',
+      'Determination',
+      'Ambition',
+      'Work ethic',
+      'Competitive spirit',
+      'Ease in public',
+      'Opening up to others',
+      'Diplomacy',
+      'Persuasion',
+      'Leading',
+      'Taking responsibility',
+      'Organization',
+      'Vision'
+    ],
+    datasets: [
+      {
+        label: 'Three years ago, 2014',
+        backgroundColor: 'rgba(0, 204, 122, .5)',
+        borderColor: 'rgba(0, 204, 122, .8)',
+        pointRadius: 3,
+        pointBackgroundColor: 'rgba(0, 204, 122, .8)',
+        pointBorderColor: '#FFF',
+        pointHoverBackgroundColor: 'rgba(0, 204, 122, .9)',
+        pointHoverBorderColor: 'rgba(0, 204, 122, .9)',
+        data: [60, 40, 50, 50, 50, 50, 80, 80, 50, 10, 60, 50, 30, 40, 80, 30, 20, 60, 60, 60],
+      },
+      {
+        label: 'This year, 2017',
+        backgroundColor: 'rgba(0, 223, 252, .7)',
+        borderColor: 'rgba(0, 128, 233, .7)',
+        pointRadius: 3,
+        pointLabelFontSize: 16,
+        pointBackgroundColor: 'rgba(0, 128, 233, .9)',
+        pointBorderColor: '#FFF',
+        pointHoverBackgroundColor: 'rgba(0, 128, 233, .9)',
+        pointHoverBorderColor: 'rgba(0, 128, 233, .9)',
+        data: [80, 60, 60, 70, 70, 60, 80, 80, 70, 30, 70, 50, 40, 50, 80, 40, 30, 80, 80, 80],
+      }
+    ],
   },
   options: {
     legend: {
