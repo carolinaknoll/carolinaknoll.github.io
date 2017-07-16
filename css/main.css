@@ -135,11 +135,9 @@ a:hover {
   display: block;
   position: relative;
   padding-top: 80px; /* for smooth scrolling */
-  background: #8265d3;
-  background: -moz-linear-gradient(-45deg,  #8265d3 0%, #fbd3e9 100%);
-  background: -webkit-linear-gradient(-45deg,  #8265d3 0%,#fbd3e9 100%);
-  background: linear-gradient(135deg,  #8265d3 0%,#fbd3e9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8265d3', endColorstr='#fbd3e9',GradientType=1 );
+  background: #AAFFA9;
+  background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
+  background: linear-gradient(to right, #11FFBD, #AAFFA9);
 }
 
 .about .profile-links-wrapper {
@@ -156,11 +154,11 @@ a:hover {
 }
 
 .about .section-title .fa {
-  color: #e2bce4;
+  color: #00b380;
 }
 
 .about .section-box .fa {
-  color: #cc8fd6;
+  color: #11FFBD;
 }
 
 .about .profile-location {
@@ -191,6 +189,7 @@ a:hover {
 
 .profile-image {
   margin: auto;
+  border: 2px solid #11FFBD;
 }
 
 .profile-name {
@@ -215,7 +214,7 @@ a:hover {
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  background: #ddb4e4;
+  background: #11FFBD;
   -webkit-box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   -moz-box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
   box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.6);
