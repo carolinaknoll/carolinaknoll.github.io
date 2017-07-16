@@ -261,6 +261,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.codewars-badge {
+  padding: 10px 0;
+}
+
 /*------------------------------------*\
   #Portfolio section
 \*------------------------------------*/
