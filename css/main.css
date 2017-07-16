@@ -47,12 +47,12 @@ a:hover {
 }
 
 .navbar-brand .fa {
-  color: #2979ff;
+  color: #11FFBD;
 }
 
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover {
-  color:#2979ff !important;
-  border-bottom: 1px solid #2979ff;
+  color:#00b380 !important;
+  border-bottom: 2px solid #00b380;
   background: #ccefff !important;
 }
 
@@ -158,7 +158,7 @@ a:hover {
 }
 
 .about .section-box .fa {
-  color: #11FFBD;
+  color: #00b380;
 }
 
 .about .profile-location {
@@ -176,6 +176,11 @@ a:hover {
   text-align: justify;
   margin: auto;
   padding-bottom: 0px;
+}
+
+.description-link,
+.section-box a:hover {
+  color: #00b380;
 }
 
 .section-box {
