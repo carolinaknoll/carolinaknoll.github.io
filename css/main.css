@@ -429,7 +429,8 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c964ba', endColorstr='#f2ff63',GradientType=1 );
 }
 
-.contact .section-title .fa {
+.contact .section-title .fa,
+.contact .box-heading .fa {
   color: #CC6666;
 }
 
