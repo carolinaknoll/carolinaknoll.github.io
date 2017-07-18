@@ -84,13 +84,14 @@ a:hover {
 
 .home span {
   font-weight: bold;
+  color: #00b380;
 }
 
 .presentation h1 {
   padding-top: 0;
   margin-top: 0;
   text-align: center;
-  text-transform: uppercase;
+  padding: 15px 0;
 }
 
 .presentation-first {
@@ -100,8 +101,8 @@ a:hover {
 }
 
 .presentation-second {
-  font-size: 28px;
-  letter-spacing: 10px;
+  font-size: 40px !important;
+  letter-spacing: 3px;
   color: #2979ff;
 }
 
@@ -123,7 +124,7 @@ a:hover {
 }
 
 .presentation-fifth {
-  color: #ab47bc;
+  color: #2979ff;
 }
 
 /*------------------------------------*\

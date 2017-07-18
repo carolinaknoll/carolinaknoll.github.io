@@ -14,6 +14,27 @@ $(function () {
   });
 });
 
+// Home - Word texts
+var firstWordArray = ['ideas', 'knowledge', 'mindsets', 'coffee cups'];
+var secondWordArray = ['great things', 'awesome moments', 'interesting changes', 'fun times'];
+var thirdWordArray = ['happy', 'thoughtful', 'kindhearted', 'affectionate'];
+
+var index = 0;
+const generateWords = () => {
+  $('#firstWord').html(firstWordArray[index]);
+  index = (index + 1) % firstWordArray.length;
+
+  $('#secondWord').html(secondWordArray[index]);
+
+  $('#thirdWord').html(thirdWordArray[index]);
+}
+
+generateWords();
+
+setInterval(function() {
+  generateWords();
+}, 4000);
+
 // About - Introduction dates
 const now = new Date().getTime();
 const day = 1000 * 60 * 60 * 24;
