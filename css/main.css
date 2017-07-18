@@ -84,47 +84,36 @@ a:hover {
 
 .home span {
   font-weight: bold;
-  color: #00b380;
+  color: #42a5f5;
 }
 
 .presentation h1 {
   padding-top: 0;
   margin-top: 0;
   text-align: center;
-  padding: 15px 0;
+  letter-spacing: 3px;
+  color: #2979ff;
 }
 
 .presentation-first {
   font-weight: bold;
-  letter-spacing: 4px;
   color: #42a5f5;
 }
 
 .presentation-second {
-  font-size: 40px !important;
-  letter-spacing: 3px;
-  color: #2979ff;
+  padding-bottom: 35px;
 }
 
 .presentation-third {
   color: #3d5afe;
-  letter-spacing: 3px;
-}
-
-.presentation-fourth {
-  color: #7c4dff;
+  padding-bottom: 35px;
 }
 
 .presentation-third,
-.presentation-fourth,
-.presentation-fifth {
+.presentation-fourth {
   font-size:28px;
   padding-top: 0;
   margin-top: 0;
-}
-
-.presentation-fifth {
-  color: #2979ff;
 }
 
 /*------------------------------------*\
@@ -623,24 +612,10 @@ a:hover {
     font-size: 54px;
   }
 
-  .presentation-second {
-    font-size: 75px;
-  }
-
-  .presentation-third {
-    font-size:34px;
-    padding-top: 0;
-    margin-top: 0;
-  }
-
+  .presentation-second,
+  .presentation-third,
   .presentation-fourth {
-    font-size: 51px;
-    letter-spacing: 4px;
-  }
-
-  .presentation-fifth {
-    font-size: 38px;
-    letter-spacing: 2px;
+    font-size: 40px;
   }
 
   /* Portfolio page */
