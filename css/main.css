@@ -3,12 +3,12 @@
 \*------------------------------------*/
 body {
   font-family: "Questrial", sans-serif;
-  color: #000;
+  color: #e6e6e6;
 }
 
 .navbar a,
 .portfolio a {
-  color: #000 !important;
+  color: #e6e6e6 !important;
 }
 
 a:hover {
@@ -125,9 +125,7 @@ a:hover {
   display: block;
   position: relative;
   padding-top: 80px; /* for smooth scrolling */
-  background: #AAFFA9;
-  background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
-  background: linear-gradient(to right, #11FFBD, #AAFFA9);
+  background: #030305;
 }
 
 .about .profile-links-wrapper {
@@ -152,17 +150,17 @@ a:hover {
 }
 
 .about .profile-location {
-  color: #222;
+  color: #e6e6e6;
 }
 
 .box-heading {
   margin-top: 10px;
-  color: #111;
+  color: #e6e6e6;
 }
 
 .box-description {
   font-size: 20px;
-  color: #222;
+  color: #e6e6e6;
   text-align: justify;
   margin: auto;
   padding-bottom: 0px;
@@ -174,7 +172,7 @@ a:hover {
 }
 
 .section-box {
-  background: #FFF;
+  background: #1d2129;
   padding: 10px;
   margin-bottom: 20px;
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
@@ -268,11 +266,7 @@ a:hover {
   display: block;
   position: relative;
   padding-top: 80px;
-  background: #2bbbff;
-  background: -moz-linear-gradient(-45deg,  #2bbbff 0%, #76f7a5 100%);
-  background: -webkit-linear-gradient(-45deg,  #2bbbff 0%,#76f7a5 100%);
-  background: linear-gradient(135deg,  #2bbbff 0%,#76f7a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bbbff', endColorstr='#76f7a5',GradientType=1 );
+  background: #030305;
 }
 
 .portfolio-projects {
@@ -292,7 +286,7 @@ a:hover {
   display: block;
   overflow: hidden;
   margin-bottom: 30px;
-  background: rgb(242, 242, 242);
+  background: #1d2129;
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
   box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
@@ -411,12 +405,7 @@ a:hover {
   display: block;
   position: relative;
   padding-top: 80px;
-  background: #C9EBEA;
-  background: #c964ba;
-  background: -moz-linear-gradient(-45deg,  #c964ba 0%, #f2ff63 100%);
-  background: -webkit-linear-gradient(-45deg,  #c964ba 0%,#f2ff63 100%);
-  background: linear-gradient(135deg,  #c964ba 0%,#f2ff63 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c964ba', endColorstr='#f2ff63',GradientType=1 );
+  background: #030305;
 }
 
 .contact .section-title .fa,
@@ -463,7 +452,6 @@ a:hover {
 
 .social-small-box {
   display: inline-block;
-  background: rgba(87, 195, 244, 0.5);
   background: #CC6666;
   font-size: 40px;
   margin: 2px;
@@ -472,7 +460,6 @@ a:hover {
   height: 60px;
   text-align: center;
   line-height: 1.5;
-  color: #d1476c;
   color: #f2ff63;
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
   -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
@@ -530,7 +517,6 @@ a:hover {
 .contact-form [type="submit"] {
   width: 100%;
   background:#CC6666;
-
   border:0;
   cursor:pointer;
   color:white;
@@ -547,17 +533,19 @@ a:hover {
 /*------------------------------------*\
   #Footer
 \*------------------------------------*/
+.footer-top,
+.footer-bottom {
+  background: #1d2129;
+}
+
 .footer-top {
   min-height: 100px;
   width: 100%;
-  border-top: 1px solid #FFF;
-  background: #eceff1;
 }
 
 .footer-bottom {
   min-height: 60px;
   width: 100%;
-  background: #cfd8dc;
 }
 
 .footer p {
