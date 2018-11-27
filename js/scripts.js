@@ -14,6 +14,13 @@ $(function () {
   });
 });
 
+// Nightly/Mythical theme switch
+const abracadabra = () => {
+  $('#magic-boop, .themed-section').toggleClass('nightly-theme mythical-theme');
+}
+
+$('#magic-boop').click(abracadabra);
+
 // Home - Word texts
 var firstWordArray = ['ideas', 'knowledge', 'mindsets', 'coffee cups'];
 var secondWordArray = ['great things', 'awesome moments', 'interesting changes', 'fun times'];
@@ -23,9 +30,7 @@ var index = 0;
 const generateWords = () => {
   $('#firstWord').html(firstWordArray[index]);
   index = (index + 1) % firstWordArray.length;
-
   $('#secondWord').html(secondWordArray[index]);
-
   $('#thirdWord').html(thirdWordArray[index]);
 }
 
