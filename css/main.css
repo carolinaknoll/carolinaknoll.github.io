@@ -6,6 +6,10 @@ body {
   color: #e6e6e6;
 }
 
+#magic-boop {
+  background: transparent;
+}
+
 .nightly-theme .navbar a,
 .nightly-theme .portfolio a {
   color: #e6e6e6 !important;
@@ -375,6 +379,14 @@ a:hover {
   color: #2bbbff;
 }
 
+.nightly-theme .portfolio-links:hover .fa {
+  color: #FFF;
+}
+
+.mythical-theme .portfolio-links:hover .fa {
+  color: #222;
+}
+
 .portfolio-block p {
   font-size: 18px;
   text-align: left;
@@ -433,7 +445,7 @@ a:hover {
   flex-direction: row;
   text-align: center;
   min-height: 20px;
-  border-bottom: 5px solid #74d8f1;
+  border-bottom: 5px solid #2bbbff;
 }
 
 .portfolio-image:hover {
@@ -459,7 +471,7 @@ a:hover {
 .visit-project:hover,
 .view-code:hover {
   transition: 0.5s;
-  background: #74d8f1;
+  background: #2bbbff;
 }
 
 /*------------------------------------*\
@@ -542,6 +554,11 @@ a:hover {
   color: #fff;
 }
 
+.nightly-theme .social-list .social-icon,
+.nightly-theme .contact-form [type="submit"] {
+  color: #e6e6e6;
+}
+
 .contact-form {
   text-align: center;
 }
@@ -585,6 +602,12 @@ a:hover {
   resize:vertical;
 }
 
+.nightly-theme .contact-form [type="text"],
+.nightly-theme .contact-form [type="email"],
+.nightly-theme .contact-form textarea {
+  background: #15181e;
+}
+
 .contact-form [type="submit"] {
   width: 100%;
   background:#CC6666;
@@ -613,9 +636,12 @@ a:hover {
   background: #cfd8dc;
 }
 
-.nightly-theme .footer-top,
-.nightly-theme .footer-bottom {
+.nightly-theme .footer-top {
   background: #1d2129;
+}
+
+.nightly-theme .footer-bottom {
+  background: #15181e;
 }
 
 .footer-top {
@@ -650,8 +676,17 @@ a:hover {
 \*------------------------------------*/
 @media screen and (min-width: 768px) {
   /* Navigation menu */
-  .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,
-  .navbar-collapse.collapse li a:hover {
+  .nightly-theme .navbar-default .navbar-nav>.active>a,
+  .nightly-theme .navbar-default .navbar-nav>.active>a:focus,
+  .nightly-theme .navbar-default .navbar-nav>.active>a:hover,
+  .nightly-theme .navbar-collapse.collapse li a:hover {
+    background: #1d2129 !important;
+  }
+
+  .mythical-theme .navbar-default .navbar-nav>.active>a,
+  .mythical-theme .navbar-default .navbar-nav>.active>a:focus,
+  .mythical-theme .navbar-default .navbar-nav>.active>a:hover,
+  .mythical-theme .navbar-collapse.collapse li a:hover {
     background: #eceff1 !important;
   }
 
