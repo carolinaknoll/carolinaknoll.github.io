@@ -14,19 +14,22 @@ $(function () {
   });
 });
 
+// Nightly/Mythical theme switch
+const abracadabra = () => {
+  $('#magic-boop, .themed-section').toggleClass('nightly-theme mythical-theme');
+}
+
+$('#magic-boop').click(abracadabra);
+
 // Home - Word texts
 var firstWordArray = ['ideas', 'knowledge', 'mindsets', 'coffee cups'];
 var secondWordArray = ['great things', 'awesome moments', 'interesting changes', 'fun times'];
-var thirdWordArray = ['happy', 'thoughtful', 'kindhearted', 'affectionate'];
 
 var index = 0;
 const generateWords = () => {
   $('#firstWord').html(firstWordArray[index]);
   index = (index + 1) % firstWordArray.length;
-
   $('#secondWord').html(secondWordArray[index]);
-
-  $('#thirdWord').html(thirdWordArray[index]);
 }
 
 generateWords();
@@ -34,30 +37,6 @@ generateWords();
 setInterval(function() {
   generateWords();
 }, 4000);
-
-// About - Introduction dates
-const now = new Date().getTime();
-const day = 1000 * 60 * 60 * 24;
-
-// -- Learning Days
-const beganLearningDate = new Date("Oct 01, 2015").getTime();
-
-const learning = setInterval(function() {
-  let distance = now - beganLearningDate;
-  let daysLearning = Math.floor(distance / day);
-
-  $('#studyingDays').html(`${daysLearning} days`);
-}, 1000);
-
-// -- Degree Countdown
-const countdownDate = new Date("Dec 31, 2018").getTime();
-
-const countdown = setInterval(function() {
-  let distance = countdownDate - now;
-  let daysToDegree = Math.floor(distance / day);
-
-$('#degreeCountdown').html(`${daysToDegree} days `);
-}, 1000);
 
 // About - Growth Chart
 var ctx2 = document.getElementById('growthChart');

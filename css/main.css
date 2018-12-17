@@ -3,12 +3,21 @@
 \*------------------------------------*/
 body {
   font-family: "Questrial", sans-serif;
-  color: #000;
+  color: #e6e6e6;
 }
 
-.navbar a,
-.portfolio a {
-  color: #000 !important;
+#magic-boop {
+  background: transparent;
+}
+
+.nightly-theme .navbar a,
+.nightly-theme .portfolio a {
+  color: #e6e6e6 !important;
+}
+
+.mythical-theme .navbar a,
+.mythical-theme .portfolio a {
+  color: #222 !important;
 }
 
 a:hover {
@@ -26,6 +35,37 @@ a:hover {
   letter-spacing: 1px;
 }
 
+.nightly-theme {
+  background: #030305;
+  color: #e6e6e6;
+  transition: 0.5s;
+}
+
+.mythical-theme {
+  color: #222;
+  transition: 0.5s;
+}
+
+.nightly-theme .section-box,
+.nightly-theme .portfolio-block {
+  background: #1d2129;
+  color: #e6e6e6;
+}
+
+.mythical-theme .section-box,
+.mythical-theme .portfolio-block {
+  background: #FFF;
+  color: #222;
+}
+
+.nightly-theme .box-heading {
+  color: #e6e6e6;
+}
+
+.mythical-theme .box-heading {
+  color: #222;
+}
+
 /*------------------------------------*\
   #Navigation menu
 \*------------------------------------*/
@@ -41,6 +81,20 @@ a:hover {
   box-shadow: 0px 7px 14px 0px rgba(0,0,0,0.2);
 }
 
+.mythical-theme .navbar,
+.mythical-theme .navbar .navbar.navbar-collapse.collapse,
+.mythical-theme .navbar .navbar-collapse.collapse li a:hover {
+  background: #eceff1;
+  color: #222;
+}
+
+.nightly-theme .navbar,
+.nightly-theme .navbar .navbar.navbar-collapse.collapse,
+.nightly-theme .navbar .navbar-collapse.collapse li a:hover {
+  background: #1d2129;
+  color: #e6e6e6;
+}
+
 .navbar-brand {
   font-size: 24px;
   border-bottom: none;
@@ -50,19 +104,28 @@ a:hover {
   color: #11FFBD;
 }
 
-.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover {
+.mythical-theme .navbar.navbar-default .navbar-nav>.active>a,
+.mythical-theme .navbar.navbar-default .navbar-nav>.active>a:focus,
+.mythical-theme .navbar.navbar-default .navbar-nav>.active>a:hover {
   color:#00b380 !important;
   border-bottom: 2px solid #00b380;
   background: #ccefff !important;
 }
 
+.nightly-theme .navbar.navbar-default .navbar-nav>.active>a,
+.nightly-theme .navbar.navbar-default .navbar-nav>.active>a:focus,
+.nightly-theme .navbar.navbar-default .navbar-nav>.active>a:hover {
+  color:#00b380 !important;
+  border-bottom: 2px solid #00b380;
+  background: #1d2129 !important;
+}
+
 .navbar-collapse.collapse {
-  background: #eceff1;
   transition: 0.5s;
 }
 
 .navbar-collapse.collapse li a:hover {
-  background: #ccefff !important;
+  /* background: #ccefff !important; */
 }
 
 /*------------------------------------*\
@@ -79,7 +142,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: rgb(242, 242, 242);
 }
 
 .home span {
@@ -125,6 +187,9 @@ a:hover {
   display: block;
   position: relative;
   padding-top: 80px; /* for smooth scrolling */
+}
+
+.mythical-theme .about {
   background: #AAFFA9;
   background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);
   background: linear-gradient(to right, #11FFBD, #AAFFA9);
@@ -152,17 +217,15 @@ a:hover {
 }
 
 .about .profile-location {
-  color: #222;
+  color: #e6e6e6;
 }
 
 .box-heading {
   margin-top: 10px;
-  color: #111;
 }
 
 .box-description {
   font-size: 20px;
-  color: #222;
   text-align: justify;
   margin: auto;
   padding-bottom: 0px;
@@ -174,7 +237,6 @@ a:hover {
 }
 
 .section-box {
-  background: #FFF;
   padding: 10px;
   margin-bottom: 20px;
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
@@ -268,11 +330,13 @@ a:hover {
   display: block;
   position: relative;
   padding-top: 80px;
+}
+
+.mythical-theme .portfolio {
   background: #2bbbff;
   background: -moz-linear-gradient(-45deg,  #2bbbff 0%, #76f7a5 100%);
   background: -webkit-linear-gradient(-45deg,  #2bbbff 0%,#76f7a5 100%);
-  background: linear-gradient(135deg,  #2bbbff 0%,#76f7a5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bbbff', endColorstr='#76f7a5',GradientType=1 );
+  background: linear-gradient(135deg, #2bbbff 0%,#76f7a5 100%);
 }
 
 .portfolio-projects {
@@ -292,7 +356,7 @@ a:hover {
   display: block;
   overflow: hidden;
   margin-bottom: 30px;
-  background: rgb(242, 242, 242);
+  background: #1d2129;
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
   box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.75);
@@ -313,6 +377,14 @@ a:hover {
 
 .portfolio-block:hover .fa {
   color: #2bbbff;
+}
+
+.nightly-theme .portfolio-links:hover .fa {
+  color: #FFF;
+}
+
+.mythical-theme .portfolio-links:hover .fa {
+  color: #222;
 }
 
 .portfolio-block p {
@@ -373,7 +445,7 @@ a:hover {
   flex-direction: row;
   text-align: center;
   min-height: 20px;
-  border-bottom: 5px solid #74d8f1;
+  border-bottom: 5px solid #2bbbff;
 }
 
 .portfolio-image:hover {
@@ -399,7 +471,7 @@ a:hover {
 .visit-project:hover,
 .view-code:hover {
   transition: 0.5s;
-  background: #74d8f1;
+  background: #2bbbff;
 }
 
 /*------------------------------------*\
@@ -411,12 +483,12 @@ a:hover {
   display: block;
   position: relative;
   padding-top: 80px;
-  background: #C9EBEA;
-  background: #c964ba;
+}
+
+.mythical-theme .contact {
   background: -moz-linear-gradient(-45deg,  #c964ba 0%, #f2ff63 100%);
   background: -webkit-linear-gradient(-45deg,  #c964ba 0%,#f2ff63 100%);
-  background: linear-gradient(135deg,  #c964ba 0%,#f2ff63 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c964ba', endColorstr='#f2ff63',GradientType=1 );
+  background: linear-gradient(135deg, #c964ba 0%,#f2ff63 100%);
 }
 
 .contact .section-title .fa,
@@ -463,7 +535,6 @@ a:hover {
 
 .social-small-box {
   display: inline-block;
-  background: rgba(87, 195, 244, 0.5);
   background: #CC6666;
   font-size: 40px;
   margin: 2px;
@@ -472,7 +543,6 @@ a:hover {
   height: 60px;
   text-align: center;
   line-height: 1.5;
-  color: #d1476c;
   color: #f2ff63;
   -webkit-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
   -moz-box-shadow: -1px 3px 20px -1px rgba(0,0,0,0.4);
@@ -482,6 +552,11 @@ a:hover {
 .social-list .social-icon {
   display: block;
   color: #fff;
+}
+
+.nightly-theme .social-list .social-icon,
+.nightly-theme .contact-form [type="submit"] {
+  color: #e6e6e6;
 }
 
 .contact-form {
@@ -527,10 +602,15 @@ a:hover {
   resize:vertical;
 }
 
+.nightly-theme .contact-form [type="text"],
+.nightly-theme .contact-form [type="email"],
+.nightly-theme .contact-form textarea {
+  background: #15181e;
+}
+
 .contact-form [type="submit"] {
   width: 100%;
   background:#CC6666;
-
   border:0;
   cursor:pointer;
   color:white;
@@ -547,17 +627,31 @@ a:hover {
 /*------------------------------------*\
   #Footer
 \*------------------------------------*/
+.mythical-theme .footer-top {
+  border-top: 1px solid #FFF;
+  background: #eceff1;
+}
+
+.mythical-theme .footer-bottom {
+  background: #cfd8dc;
+}
+
+.nightly-theme .footer-top {
+  background: #1d2129;
+}
+
+.nightly-theme .footer-bottom {
+  background: #15181e;
+}
+
 .footer-top {
   min-height: 100px;
   width: 100%;
-  border-top: 1px solid #FFF;
-  background: #eceff1;
 }
 
 .footer-bottom {
   min-height: 60px;
   width: 100%;
-  background: #cfd8dc;
 }
 
 .footer p {
@@ -582,8 +676,17 @@ a:hover {
 \*------------------------------------*/
 @media screen and (min-width: 768px) {
   /* Navigation menu */
-  .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,
-  .navbar-collapse.collapse li a:hover {
+  .nightly-theme .navbar-default .navbar-nav>.active>a,
+  .nightly-theme .navbar-default .navbar-nav>.active>a:focus,
+  .nightly-theme .navbar-default .navbar-nav>.active>a:hover,
+  .nightly-theme .navbar-collapse.collapse li a:hover {
+    background: #1d2129 !important;
+  }
+
+  .mythical-theme .navbar-default .navbar-nav>.active>a,
+  .mythical-theme .navbar-default .navbar-nav>.active>a:focus,
+  .mythical-theme .navbar-default .navbar-nav>.active>a:hover,
+  .mythical-theme .navbar-collapse.collapse li a:hover {
     background: #eceff1 !important;
   }
 

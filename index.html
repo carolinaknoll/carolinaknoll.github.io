@@ -24,7 +24,7 @@ take a look at the source code of my website!
     <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="200">
+  <body data-spy="scroll" data-target=".navbar" data-offset="200" class="themed-section nightly-theme">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
 
@@ -35,7 +35,7 @@ take a look at the source code of my website!
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><i class="fa fa-asterisk"></i> Carolina Knoll</a>
+          <a class="navbar-brand" href="#"><i class="fa fa-asterisk"></i> Carolina Knoll <i id="magic-boop" class="fa fa-magic nightly-theme"></i></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -54,9 +54,17 @@ take a look at the source code of my website!
       <div class="container">
         <div class="presentation">
           <h1 class="presentation-first" data-sr="enter bottom and hustle 100px over 2s"><span>Hi there!</span></h1>
-          <h1 class="presentation-second" data-sr="wait 0.5s, then enter bottom and hustle 100px over 2s">Let's share <span id="firstWord"></span> and make <span id="secondWord"></span> happen together!</h1>
-          <h1 class="presentation-third" data-sr="wait 1s, then enter bottom and hustle 100px over 2s">I'm <span> Carolina,</span> a <span><span id="thirdWord"></span></span> youthful learner.</h1>
-          <h1 class="presentation-fourth" data-sr="wait 1.5s, then enter bottom and hustle 100px over 2s">I mostly love <span>frontend web</span> related content, but I'm currently learning a lot of <span>backend skills</span> as well!</h1>
+          <h1 class="presentation-second" data-sr="wait 0.5s, then enter bottom and hustle 100px over 2s">
+            Let's share <span id="firstWord"></span> and make <span id="secondWord"></span> happen together!
+          </h1>
+
+          <h1 class="presentation-third" data-sr="wait 1s, then enter bottom and hustle 100px over 2s">
+            I'm <span> Carolina,</span> a <span><span id="thirdWord"></span></span> youthful learner.
+          </h1>
+
+          <h1 class="presentation-fourth" data-sr="wait 1.5s, then enter bottom and hustle 100px over 2s">
+            I'm all about <span>frontend</span> tech: <span>React, Sass, you know it. </span>Oh, and making things look pixel-pretty.
+          </h1>
         </div>
       </div>
     </section>
@@ -145,8 +153,21 @@ take a look at the source code of my website!
           <div class="col-xs-12 col-sm-8 col-md-8">
             <div class="section-box" data-sr="wait 0.2s, then enter bottom and hustle 50px over 2s">
               <h2 class="box-heading"><i class="fa fa-asterisk" aria-hidden="true"></i> Introduction</h2>
-              <p class="box-description">Hey there! I'm Carolina. I'm 21 years old. I've been exploring front-end technologies and coding for <span id="studyingDays"></span>, and I'm currently <span id="degreeCountdown"></span> away from completing my Information Systems bachelor's degree.</p>
-              <p class="box-description">I believe in a world that is increasingly productive, yet inspiring and enjoyable. And I want to be one of those who try everyday to make the world bit by bit closer to that.</p>
+              <p class="box-description">
+                Hey there! I'm currently starting as a Junior dev.
+                During my two-year internship, I learned to use various tech tools.
+                I also practiced English for three months on an international project at work. <br/>
+                I'm that person who likes to standardize texts, behaviour and styles for components, like buttons and calendars.
+                I also enjoy working with page responsivity across devices and window/screen sizes.
+              </p>
+            </div>
+
+            <div class="section-box" data-sr="wait 0.2s, then enter bottom and hustle 50px over 2s">
+              <h2 class="box-heading"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Technical Keywords</h2>
+              <p class="box-description">
+                #React, #HTML, #CSS/SCSS/SASS, #JavaScript, #jQuery, #Bootstrap, #Highcharts, #i18n,
+                #classNames, #mdi-react, #moment, #React-Bootstrap, #react-bootstrap-daterangepicker
+              </p>
             </div>
 
             <div class="section-box" data-sr="wait 0.2s, then enter bottom and hustle 50px over 2s">
@@ -164,14 +185,9 @@ take a look at the source code of my website!
             </div>
 
             <div class="section-box" data-sr="wait 0.2s, then enter bottom and hustle 50px over 2s">
-              <h2 class="box-heading"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Technical Keywords</h2>
-              <p class="box-description">HTML, CSS, SASS, JavaScript, jQuery, Bootstrap, VS Code, Photoshop.</p>
-            </div>
-
-            <div class="section-box" data-sr="wait 0.2s, then enter bottom and hustle 50px over 2s">
               <h2 class="box-heading"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
               <p class="box-description">Bachelor's Degree in Information Systems — Estácio de Sá University.</p>
-              <p class="box-description">Currently in my sixth semester (of eight).</p>
+              <p class="box-description">Graduated! — December, 2018.</p>
               <h2 class="box-heading"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Self-Study Courses</h2>
               <a class="box-description profile-links" href="https://www.freecodecamp.com/map">Front-end Development path (ongoing) — FreeCodeCamp</a>
               <a class="box-description profile-links" href="https://br.udacity.com/course/responsive-web-design-fundamentals--ud893/">Responsive Web Design Fundamentals — Udacity</a>
@@ -341,12 +357,14 @@ take a look at the source code of my website!
 
             <div class="section-box">
               <h2 class="box-heading"><i class="fa fa-heart"></i> Thank you!</h2>
-              <p class="box-description">Thanks for spending your time here on my website. Time is the most precious thing we have, and once we spend it, we can never get it back. So thank you for sharing your time with me.</p>
+              <p class="box-description">
+                Thanks for spending your time here on my website. Time is the most precious thing we have, and once we spend it, we can never get it back.
+                Thanks for sharing yours with me!</p>
             </div>
 
             <div class="section-box">
               <h2 class="box-heading"><i class="fa fa-comments"></i> Stay connected</h2>
-              <p class="box-description">I hope we can get in touch and work together in the future.</p>
+              <p class="box-description">Let's meet and work together!</p>
               <p class="box-description">If you are interested, you can know more about me and follow my updates through these social sites:</p>
               <ul class="social-list">
                 <li class="social-small-box">
@@ -373,12 +391,12 @@ take a look at the source code of my website!
 
           <div class="col-xs-12 col-sm-6 col-md-6" data-sr="wait 0.5s, then enter bottom and hustle 50px over 1s">
             <div class="section-box">
-              <h2 class="box-heading"><i class="fa fa-coffee"></i> Want to have a coffee-chat?</h2>
-              <p class="box-description">If you want to say anything, feel free to fill the form below or send me an email! I'll answer as soon as possible.</p>
+              <h2 class="box-heading"><i class="fa fa-rocket"></i> Let's talk about spaceships.</h2>
+              <p class="box-description">Whichever works best for you, here or via direct e-mail. <br/>...do aliens exist? <i class="fa fa-reddit-alien"></i></p>
               <form action="https://formspree.io/carolinasknoll@gmail.com" method="POST" class="contact-form">
-                <input type="text" name="name" class="form-input" id="user" placeholder="Hi! My name is...">
-                <input type="email" name="_replyto" class="form-input" placeholder="My email adress is...">
-                <textarea name="text" class="form-input" placeholder="What I want to talk about is..."></textarea>
+                <input type="text" name="name" class="form-input" id="user" placeholder="Hi! I'm...">
+                <input type="email" name="_replyto" class="form-input" placeholder="My email is...">
+                <textarea name="text" class="form-input" placeholder="I believe extraterrestrial forms of life are..."></textarea>
                 <input type="submit" value="Send" class="form-input">
               </form>
             </div>
