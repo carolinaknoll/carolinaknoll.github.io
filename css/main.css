@@ -10,6 +10,11 @@ body {
   background: transparent;
 }
 
+.navbar-brand .fa:hover,
+#magic-boop:hover {
+  animation: tada 1s;
+}
+
 .nightly-theme .navbar a,
 .nightly-theme .portfolio a {
   color: #e6e6e6 !important;
@@ -108,24 +113,40 @@ a:hover {
 .mythical-theme .navbar.navbar-default .navbar-nav>.active>a:focus,
 .mythical-theme .navbar.navbar-default .navbar-nav>.active>a:hover {
   color:#00b380 !important;
+  background: #eceff1 !important;
   border-bottom: 2px solid #00b380;
-  background: #ccefff !important;
+  transition: 0.5s;
+}
+
+.mythical-theme .navbar.navbar-default .navbar-nav {
+  background: #eceff1 !important;
+}
+
+.mythical-theme .navbar.navbar-default .navbar-nav li a:hover {
+  background: #d3dade !important;
 }
 
 .nightly-theme .navbar.navbar-default .navbar-nav>.active>a,
 .nightly-theme .navbar.navbar-default .navbar-nav>.active>a:focus,
 .nightly-theme .navbar.navbar-default .navbar-nav>.active>a:hover {
   color:#00b380 !important;
-  border-bottom: 2px solid #00b380;
   background: #1d2129 !important;
+  border-bottom: 2px solid #00b380;
+  transition: 0.9s;
+}
+
+.nightly-theme .navbar.navbar-default .navbar-nav {
+  background: #1d2129 !important;
+}
+
+.nightly-theme .navbar-default .navbar-toggle:focus,
+.nightly-theme .navbar-default .navbar-toggle:hover,
+.nightly-theme .navbar.navbar-default .navbar-nav li a:hover {
+  background: #0b0c0f !important;
 }
 
 .navbar-collapse.collapse {
   transition: 0.5s;
-}
-
-.navbar-collapse.collapse li a:hover {
-  /* background: #ccefff !important; */
 }
 
 /*------------------------------------*\
@@ -264,6 +285,10 @@ a:hover {
   background: #FFF;
   border: 1px solid #444;
   border-radius: 10px;
+}
+
+.nightly-theme .slider {
+  background: #0b0c0f;
 }
 
 .slider-knob {
@@ -674,7 +699,25 @@ a:hover {
 /*------------------------------------*\
   #Media queries
 \*------------------------------------*/
-@media screen and (min-width: 768px) {
+@media (max-width: 450px) {
+  .navbar-brand {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 765px) {
+  .navbar-header {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .home .presentation {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 768px) {
   /* Navigation menu */
   .nightly-theme .navbar-default .navbar-nav>.active>a,
   .nightly-theme .navbar-default .navbar-nav>.active>a:focus,
@@ -749,5 +792,11 @@ a:hover {
   .contact .social-list,
   .footer .social-list {
     column-count: 1;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .navbar li a {
+    font-size: 20px;
   }
 }

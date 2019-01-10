@@ -67,7 +67,7 @@ var growthChart = new Chart(ctx2, {
     ],
     datasets: [
       {
-        label: 'Three years ago, 2014',
+        label: '2014',
         backgroundColor: 'rgba(0, 204, 122, .5)',
         borderColor: 'rgba(0, 204, 122, .8)',
         pointRadius: 3,
@@ -78,7 +78,7 @@ var growthChart = new Chart(ctx2, {
         data: [60, 40, 50, 50, 50, 50, 80, 80, 50, 10, 60, 50, 30, 40, 80, 30, 20, 60, 60, 60],
       },
       {
-        label: 'This year, 2017',
+        label: '2017',
         backgroundColor: 'rgba(0, 223, 252, .7)',
         borderColor: 'rgba(0, 128, 233, .7)',
         pointRadius: 3,
@@ -97,7 +97,8 @@ var growthChart = new Chart(ctx2, {
       labels: {
         fontSize: 16,
         fontFamily: 'Questrial',
-        hoverFontColor: '#111',
+        fontColor: '#2979ff',
+        hoverFontColor: '#2979ff',
       },
     },
     tooltips: {
@@ -118,7 +119,7 @@ var growthChart = new Chart(ctx2, {
       pointLabels: {
         fontSize: 16,
         fontFamily: 'Questrial',
-        fontColor: '#444',
+        fontColor: '#2979ff',
       },
     },
     animation: {
