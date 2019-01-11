@@ -1,3 +1,5 @@
+/* Peek-a-boo, I see you! :P */
+
 /*******************************************\
 |               INITIAL STYLES              |
 \*******************************************/
@@ -12,7 +14,7 @@ body {
 
 .navbar-brand .fa:hover,
 #magic-boop:hover {
-  animation: tada 1s;
+  animation: tada 1s infinite;
 }
 
 .nightly-theme .navbar a,
@@ -81,7 +83,6 @@ a:hover {
   -moz-box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.2);
   font-size: 20px;
-  height: 60px;
   letter-spacing: 2px;
   margin-bottom: 0;
 }
@@ -227,10 +228,15 @@ a:hover {
   margin: auto;
   padding-bottom: 0px;
   text-align: justify;
+  word-break: break-all;
 }
 
-.about .profile-location {
+.nightly-theme .about .profile-location {
   color: #e6e6e6;
+}
+
+.mythical-theme .about .profile-location {
+  color: #222;
 }
 
 .box-heading {
@@ -241,7 +247,8 @@ a:hover {
   font-size: 20px;
   text-align: justify;
   margin: auto;
-  padding-bottom: 0px;
+  padding-bottom: 8px;
+  line-height: 25px;
 }
 
 .about .section-title .fa,
@@ -249,6 +256,11 @@ a:hover {
 .description-link,
 .section-box a:hover {
   color: #00b380;
+}
+
+.section-title:hover .fa,
+.box-heading:hover .fa {
+  animation: swing 1s infinite;
 }
 
 .section-box {
@@ -279,6 +291,10 @@ a:hover {
   border: 1px solid #444;
   height: 6px;
   max-width: 100%;
+}
+
+.profile-sliders:hover .slider-knob {
+  animation: tada 1s infinite;
 }
 
 .nightly-theme .slider {
@@ -377,6 +393,7 @@ a:hover {
   margin-bottom: 30px;
   max-height: 440px;
   max-width: 540px;
+  padding-top: 20px;
   overflow: hidden;
   width: 100%;
 }
@@ -396,6 +413,7 @@ a:hover {
 
 .portfolio-block:hover .fa {
   color: #2bbbff;
+  animation: pulse 1s infinite;
 }
 
 .nightly-theme .portfolio-links:hover .fa {
@@ -410,7 +428,7 @@ a:hover {
   font-size: 18px;
   line-height: 0.9;
   margin-left: 10px;
-  padding-top: 4px;
+  padding-top: 8px;
   text-align: left;
 }
 
@@ -546,7 +564,6 @@ a:hover {
 
 .contact .social-list,
 .footer .social-list {
-  column-count: 3;
   margin-left: 0;
   padding-left: 0;
   text-align: center;
@@ -639,7 +656,10 @@ a:hover {
   width: 100%;
 }
 
-.contact-form [type="submit"]:hover { background:#CC4949; }
+.contact-form [type="submit"]:hover,
+.social-small-box:hover {
+  background:#CC4949;
+}
 
 /*******************************************\
 |                 FOOTER                    |
@@ -681,7 +701,11 @@ a:hover {
 }
 
 .footer-bottom p {
-  padding-top: 10px;
+  padding-top: 15px;
+}
+
+.footer-bottom p:hover .fa {
+  animation: tada 1s infinite;
 }
 
 .footer-bottom .fa {
@@ -773,13 +797,9 @@ a:hover {
     height: 65px;
     margin: 5px;
     padding: 2px;
+    transition: 0.3s;
     text-align: center;
     width: 65px;
-  }
-
-  .contact .social-list,
-  .footer .social-list {
-    column-count: 1;
   }
 }
 
