@@ -105,13 +105,13 @@ var growthChart = new Chart(ctx2, {
       titleFontSize: 18,
       titleFontStyle: 'normal',
       titleFontFamily: 'Questrial',
-
       bodyFontSize: 14,
       bodyFontStyle: 'normal',
       bodyFontFamily: 'Questrial',
     },
     scale: {
       ticks: {
+        backdropColor: 'transparent',
         beginAtZero: true,
         min: 0,
         max: 100,
@@ -124,7 +124,7 @@ var growthChart = new Chart(ctx2, {
     },
     animation: {
       duration: '2000',
-      easing: 'linear',
+      easing: 'easeInOutSine',
     },
   }
 });
