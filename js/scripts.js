@@ -72,7 +72,7 @@ var growthChart = new Chart(ctx2, {
         borderColor: 'rgba(0, 204, 122, .8)',
         pointRadius: 3,
         pointBackgroundColor: 'rgba(0, 204, 122, .8)',
-        pointBorderColor: '#FFF',
+        pointBorderColor: '#cccccc',
         pointHoverBackgroundColor: 'rgba(0, 204, 122, .9)',
         pointHoverBorderColor: 'rgba(0, 204, 122, .9)',
         data: [60, 40, 50, 50, 50, 50, 80, 80, 50, 10, 60, 50, 30, 40, 80, 30, 20, 60, 60, 60],
@@ -84,7 +84,7 @@ var growthChart = new Chart(ctx2, {
         pointRadius: 3,
         pointLabelFontSize: 16,
         pointBackgroundColor: 'rgba(0, 128, 233, .9)',
-        pointBorderColor: '#FFF',
+        pointBorderColor: '#cccccc',
         pointHoverBackgroundColor: 'rgba(0, 128, 233, .9)',
         pointHoverBorderColor: 'rgba(0, 128, 233, .9)',
         data: [80, 60, 60, 70, 70, 60, 80, 80, 70, 30, 70, 50, 40, 50, 80, 40, 30, 80, 80, 80],
@@ -97,8 +97,8 @@ var growthChart = new Chart(ctx2, {
       labels: {
         fontSize: 16,
         fontFamily: 'Questrial',
-        fontColor: '#2979ff',
-        hoverFontColor: '#2979ff',
+        fontColor: '#a6a6a6',
+        hoverFontColor: '#a6a6a6',
       },
     },
     tooltips: {
@@ -119,8 +119,10 @@ var growthChart = new Chart(ctx2, {
       pointLabels: {
         fontSize: 16,
         fontFamily: 'Questrial',
-        fontColor: '#2979ff',
+        fontColor: '#a6a6a6',
       },
+      gridLines: {color: '#a6a6a6'},
+      angleLines: {color: '#a6a6a6'},
     },
     animation: {
       duration: '2000',

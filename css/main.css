@@ -274,6 +274,11 @@ a:hover {
 .profile-image {
   border: 2px solid #11FFBD;
   margin: auto;
+  padding: 10px;
+  -moz-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 
 .profile-name {
@@ -784,6 +789,8 @@ a:hover {
   .portfolio-block p {
     font-size: 20px;
     margin-left: 25px;
+    font-size: 19px;
+    margin-left: 10px;
   }
 
   /* Contact page */
@@ -806,5 +813,41 @@ a:hover {
 @media (min-width: 766px) and (max-width: 991px) {
   .navbar li a {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .growth-graph #growthChart {
+    display: none !important;
+  }
+
+  .growth-chart-img-mythical {
+    display: none;
+  }
+
+  .mythical-theme .growth-chart-img-mythical {
+    display: block;
+  }
+
+  .growth-chart-img-nightly {
+    display: none;
+  }
+
+  .nightly-theme .growth-chart-img-nightly {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .growth-graph #growthChart {
+    display: block !important;
+  }
+
+  .growth-chart-img-mythical {
+    display: none;
+  }
+
+  .growth-chart-img-nightly {
+    display: none;
   }
 }
