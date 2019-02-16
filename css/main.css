@@ -533,8 +533,7 @@ a:hover {
   background: linear-gradient(135deg, #c964ba 0%,#f2ff63 100%);
 }
 
-.contact .section-title .fa,
-.contact .box-heading .fa {
+.contact .fa {
   color: #CC6666;
 }
 

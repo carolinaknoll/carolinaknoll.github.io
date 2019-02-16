@@ -21,26 +21,28 @@ const abracadabra = () => {
 
 $('#magic-boop').click(abracadabra);
 
-// Home - Word texts
-var firstWordArray = ['ideas', 'knowledge', 'mindsets', 'coffee cups'];
-var secondWordArray = ['great things', 'awesome moments', 'interesting changes', 'fun times'];
+// Home - Presentation Topics
+let presentationTopicsFirst = ['ideas', 'knowledge', 'mindsets', 'coffee cups'];
+let presentationTopicsSecond = ['great things', 'awesome moments', 'interesting changes', 'fun times'];
+let presentationTopicsThird = ['happy', 'thoughtful', 'kindhearted', 'affectionate'];
 
-var index = 0;
-const generateWords = () => {
-  $('#firstWord').html(firstWordArray[index]);
-  index = (index + 1) % firstWordArray.length;
-  $('#secondWord').html(secondWordArray[index]);
+let index = 0;
+const replaceTopics = () => {
+  index = (index + 1) % presentationTopicsFirst.length;
+  $('#firstTopic').html(presentationTopicsFirst[index]);
+  $('#secondTopic').html(presentationTopicsSecond[index]);
+  $('#thirdTopic').html(presentationTopicsThird[index]);
 }
 
-generateWords();
+replaceTopics();
 
 setInterval(function() {
-  generateWords();
+  replaceTopics();
 }, 4000);
 
 // About - Growth Chart
-var ctx2 = document.getElementById('growthChart');
-var growthChart = new Chart(ctx2, {
+let chartContainer = document.getElementById('growthChart');
+let growthChart = new Chart(chartContainer, {
   type: 'radar',
   data: {
     labels: [
