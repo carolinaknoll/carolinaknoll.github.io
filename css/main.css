@@ -366,8 +366,6 @@ a:hover {
 
 .mythical-theme .portfolio {
   background: #2bbbff;
-  background: -moz-linear-gradient(-45deg,  #2bbbff 0%, #76f7a5 100%);
-  background: -webkit-linear-gradient(-45deg,  #2bbbff 0%,#76f7a5 100%);
   background: linear-gradient(135deg, #2bbbff 0%,#76f7a5 100%);
 }
 
@@ -514,8 +512,7 @@ a:hover {
 }
 
 .mythical-theme .contact {
-  background: -moz-linear-gradient(-45deg,  #c964ba 0%, #f2ff63 100%);
-  background: -webkit-linear-gradient(-45deg,  #c964ba 0%,#f2ff63 100%);
+  background: #c964ba;
   background: linear-gradient(135deg, #c964ba 0%,#f2ff63 100%);
 }
 
