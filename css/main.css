@@ -185,6 +185,11 @@ a:hover {
   padding-bottom: 35px;
 }
 
+.presentation-second:hover .fa,
+.presentation-fourth:hover .fa {
+  animation: swing 1s infinite;
+}
+
 .presentation-third {
   color: #3d5afe;
   padding-bottom: 35px;
@@ -389,7 +394,7 @@ a:hover {
 }
 
 .portfolio .section-title .fa {
-  color: #96e9e3;
+  color: #2bbbff;
 }
 
 .portfolio .section-subtitle {
@@ -729,6 +734,7 @@ a:hover {
 
   .navbar-nav li a {
     padding-top: 20px;
+    transition: 0.5s;
   }
 
   .section-title {
