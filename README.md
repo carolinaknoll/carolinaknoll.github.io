@@ -1,25 +1,12 @@
-#### :school_satchel: Welcome to carolinaknoll.github.io! :smile:
+## :school_satchel: Welcome to carolinaknoll.github.io! :smile:
 :octocat: This is where I keep my github portfolio website files.  
-Thank you for considering this website is currently in the process of being updated. :clipboard:
+
 ***
-##### Projects included:  
-##### PSD to Code:  
-– Flat-Web: One-page responsive desktop-first website based on a PSD template. Uses HTML, CSS and a bit of JavaScript for the mobile menu.  
 
-– Insight: Also used the technologies above.   
+:book: Welcome to my website repository. Here you can see how it was developed, and if you [visit the website](http://carolinaknoll.github.io/) you will be able to see links to the websites and repositories of my most current projects.
 
-Both of them are old and look like a little bit outdated templates, but helped me learn a lot, so I'm ready for new and more challenging templates.  
+:mag: It was built the simplest way possible, with HTML, CSS, Bootstrap and a few JavaScript files, since it is easy to maintain it this way. I could have it updated to a React Single Page App to allow for a more organized project, but it would be a bit overkill having to update hundreds of `node_modules` dependencies only to support this simple project.
 
-##### HTML, CSS, JavaScript and jQuery (FreeCodeCamp projects):  
-– Random Quote Generator: Online quote generator where you click a button and it gives you a random quote. Created with HTML, CSS and a little bit of jQuery.  
+:books: That said, I do have many newer React, and a few older project apps created with `create-react-app`. I am currently in the process of specializing myself in the React, Redux, ESLint, Webpack stack.
 
-– Pomodoro Timer: Timer based on the Pomodoro technique. Uses HTML, CSS and jQuery.   
-
-– JavaScript Calculator: Online calculator that allows multiple operations. Created with HTML, CSS and jQuery.    
-
-You can check all of them by [visiting my website](http://carolinaknoll.github.io/) or exploring my [GitHub repositories](https://github.com/carolinaknoll?tab=repositories).
-
-##### Current todos:
-– Update information in About section;  
-– Refactor chart codes in `scripts.js` file;  
-– Update colors and styles of charts;  
+Thank you for visiting this project! :sparkles:
