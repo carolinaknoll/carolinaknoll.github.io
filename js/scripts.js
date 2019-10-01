@@ -27,8 +27,14 @@ let presentationTopicsSecond = ['great things', 'awesome moments', 'interesting 
 let presentationTopicsThird = ['happy', 'thoughtful', 'kindhearted', 'affectionate'];
 
 let index = 0;
+
+const getRandomNumber = ({min = 1, max = presentationTopicsFirst.length} = {}) => {
+    return Math.floor(Math.random() * (max - min)) + min;
+};
+
 const replaceTopics = () => {
-  index = (index + 1) % presentationTopicsFirst.length;
+  // index = (index + 1) % presentationTopicsFirst.length;
+  index = getRandomNumber();
   $('#firstTopic').html(presentationTopicsFirst[index]);
   $('#secondTopic').html(presentationTopicsSecond[index]);
   $('#thirdTopic').html(presentationTopicsThird[index]);
