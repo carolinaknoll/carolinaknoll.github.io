@@ -34,7 +34,7 @@ const getRandomNumber = ({min = 1, max = presentationTopicsFirst.length} = {}) =
 
 const replaceTopics = () => {
   // index = (index + 1) % presentationTopicsFirst.length;
-  
+  index = getRandomNumber();
   $('#firstTopic').html(presentationTopicsFirst[index]);
   $('#secondTopic').html(presentationTopicsSecond[index]);
   $('#thirdTopic').html(presentationTopicsThird[index]);
