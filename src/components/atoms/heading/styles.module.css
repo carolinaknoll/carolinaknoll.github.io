@@ -1,0 +1,44 @@
+.heading {
+  margin: 0;
+  padding: 0;
+  font-family: var(--default-title-font-family);
+  color: var(--color-dark);
+  font-weight: 400;
+
+  & strong {
+    font-weight: 700;
+  }
+}
+
+.h1 {
+  font-size: 4.5rem; /* 72px */
+  line-height: 4.5rem;
+}
+
+.h2 {
+  font-size: 4rem; /* 64px */
+  line-height: 4rem;
+}
+
+.h3 {
+  font-size: 3.5rem; /* 56px */
+  line-height: 4rem;
+}
+
+.h4 {
+  font-size: 3rem; /* 48px */
+  line-height: 3rem;
+}
+
+.h5 {
+  font-size: 2rem; /* 32px */
+  line-height: 2rem;
+}
+
+.white {
+  color: var(--color-white);
+}
+
+.bold {
+  font-weight: 700;
+}

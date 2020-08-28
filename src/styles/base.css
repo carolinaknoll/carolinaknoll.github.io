@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--default-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  overflow: hidden visible;
+}
+
+@font-face {
+  font-family: 'BraydenScriptRegular';
+  src: url('../../src/fonts/Brayden-Script-Regular.otf') format('opentype');
+}

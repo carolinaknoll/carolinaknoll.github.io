@@ -4,7 +4,17 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const resolveOptions = require('./gatsby-resolve')
+
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-plugin-alias-imports',
+      options: {
+        ...resolveOptions.resolve,
+      },
+    },
+  ],
 }
