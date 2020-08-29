@@ -1,6 +1,22 @@
-.home {
-  h2 {
+.hero {
+  height: 100vh;
+  padding-top: 5rem;
+  text-align: center;
+
+  .titleGradient {
     padding-top: 5rem;
-    text-align: center;
+    background: rgba(0, 212, 255);
+    background: linear-gradient(90deg, rgba(196, 43, 175, 1) 25%, rgba(0, 212, 255, 1) 75%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 200px;
   }
+}
+
+:global(.darkTheme) .hero {
+  background: red;
+}
+
+:global(.lightTheme) .hero {
+  background: green;
 }

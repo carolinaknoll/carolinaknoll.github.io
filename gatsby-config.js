@@ -16,5 +16,12 @@ module.exports = {
         ...resolveOptions.resolve,
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: ['Noto Serif JP:200,300,400,700'],
+        display: 'swap',
+      },
+    },
   ],
 }
