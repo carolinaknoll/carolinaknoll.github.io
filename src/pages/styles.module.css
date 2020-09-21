@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 5rem;
   text-align: center;
 
@@ -13,10 +13,25 @@
   }
 }
 
+
+.about {
+  min-height: 100vh;
+}
+
+.portfolio {
+  min-height: 100vh;
+}
+
+.contact {
+  min-height: 100vh;
+}
+
 :global(.darkTheme) .hero {
-  background: red;
+  background: #030305;
+  color: #FFF;
 }
 
 :global(.lightTheme) .hero {
-  background: green;
+  background: #FFF;
+  color: #000;
 }
