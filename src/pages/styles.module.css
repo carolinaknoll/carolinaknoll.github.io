@@ -13,7 +13,6 @@
   }
 }
 
-
 .about {
   min-height: 100vh;
 }
@@ -28,10 +27,40 @@
 
 :global(.darkTheme) .hero {
   background: #030305;
-  color: #FFF;
+  color: #fff;
 }
 
 :global(.lightTheme) .hero {
-  background: #FFF;
+  background: #fff;
+  color: #000;
+}
+
+:global(.darkTheme) .about {
+  background: #15055c;
+  color: #fff;
+}
+
+:global(.lightTheme) .about {
+  background: #fff;
+  color: #000;
+}
+
+:global(.darkTheme) .portfolio {
+  background: #360101;
+  color: #fff;
+}
+
+:global(.lightTheme) .portfolio {
+  background: #fff;
+  color: #000;
+}
+
+:global(.darkTheme) .contact {
+  background: #003f4a;
+  color: #fff;
+}
+
+:global(.lightTheme) .contact {
+  background: #fff;
   color: #000;
 }

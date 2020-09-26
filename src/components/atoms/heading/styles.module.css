@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: var(--default-print-font-family);
-  color: var(--color-dark);
   font-weight: 400;
 
   &.cursive {
@@ -66,6 +65,16 @@
     font-size: 1.125rem; /* 18px */
     line-height: 1.375rem; /* 22px */
   }
+}
+
+/* text color according to theme */
+
+:global(.lightTheme) .heading {
+  color: var(--color-dark);
+}
+
+:global(.darkTheme) .heading {
+  color: var(--color-white);
 }
 
 .white {
