@@ -8,7 +8,7 @@ import styles from './styles.module.css'
 
 const Home = () => (
   <Layout>
-    <section className={styles.hero}>
+    <section className={styles.hero} id="home">
       <Container>
         <Heading type="h5" form="print">
           Remember when they asked you...
@@ -22,7 +22,7 @@ const Home = () => (
       </Container>
     </section>
 
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <Container>
         <Heading type="h5" form="print">
           // hint... a
@@ -104,7 +104,7 @@ const Home = () => (
       </Container>
     </section>
 
-    <section className={styles.portfolio}>
+    <section className={styles.portfolio} id="portfolio">
       <Container>
         <Heading type="h5" form="print">
           // How to craft a
@@ -210,7 +210,7 @@ const Home = () => (
       </Container>
     </section>
 
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <Container>
         <Heading type="h5" form="print">
           // let's exchange virtual bits of info
