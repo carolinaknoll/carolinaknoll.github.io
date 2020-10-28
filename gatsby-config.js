@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Noto Serif JP:200,300,400,700'],
+        fonts: ['Quicksand:200,300,400,700'],
         display: 'swap',
       },
     },
