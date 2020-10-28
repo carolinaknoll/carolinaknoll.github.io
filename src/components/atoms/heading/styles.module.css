@@ -67,6 +67,16 @@
   }
 }
 
+.h6 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.5rem;
+
+  @media (--sm-viewport) {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.375rem; /* 22px */
+  }
+}
+
 /* text color according to theme */
 
 :global(.lightTheme) .heading {

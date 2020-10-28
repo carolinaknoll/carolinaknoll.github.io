@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 import styles from './styles.module.css'
 
-const HEADING_LEVELS = ['h1', 'h2', 'h3', 'h4', 'h5']
+const HEADING_LEVELS = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 const HEADING_FONTS = ['cursive', 'print']
 const HEADING_COLORS = ['default', 'white']
 
