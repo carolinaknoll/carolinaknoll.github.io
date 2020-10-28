@@ -24,15 +24,16 @@ const Home = () => (
 
     <section className={styles.about} id="about">
       <Container>
-        <Heading type="h5" form="print">
-          // hint... a
-        </Heading>
-        <Heading type="h2" form="cursive" className={styles.titleGradient}>
-          super hero!
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                // hint... a
+              </Heading>
+              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+                super hero!
+              </Heading>
+            </div>
             <Text size="20">
               We all have people around us that we can certainly call heroes. Not only the firemen
               or trash cleaners, but also that person that offered you their seat at the bus, or
@@ -45,12 +46,11 @@ const Home = () => (
           </Col>
         </Row>
 
-        <Heading type="h5" form="print">
-          // I, uh... create websites
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <Heading type="h5" form="print">
+              // I, uh... create websites
+            </Heading>
             <Text size="20">
               There's a japanese word for balance called Ikigai, and I try to pursuit it. I believe
               it helps us search inside ourselves and find what we can do best, even if it changes
@@ -63,12 +63,16 @@ const Home = () => (
           </Col>
         </Row>
 
-        <Heading type="h5" form="print">
-          // look at these magic words!
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                // look at these
+              </Heading>
+              <Heading type="h5" form="cursive">
+                magic words!
+              </Heading>
+            </div>
             <Text size="20">
               If you're super curious, I mainly work with (take a deep breath) React, Redux, Gatsby,
               CSS Modules/variables and Storybook. No, none of these are Pokémon! As a hobby, I
@@ -82,12 +86,19 @@ const Home = () => (
           </Col>
         </Row>
 
-        <Heading type="h5" form="print">
-          // please be a super hero too!
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                // please, be a
+              </Heading>
+              <Heading type="h5" form="cursive">
+                super hero
+              </Heading>
+              <Heading type="h5" form="print">
+                too!
+              </Heading>
+            </div>
             <Text size="20">
               We humans grew so accustomed with smartphones, and special effects, and VR, and
               filters, and everything tech around us that we look outside searching for this "super"
@@ -106,19 +117,20 @@ const Home = () => (
 
     <section className={styles.portfolio} id="portfolio">
       <Container>
-        <Heading type="h5" form="print">
-          // How to craft a
-        </Heading>
-        <Heading type="h2" form="cursive" className={styles.titleGradient}>
-          better world?
-        </Heading>
-
-        <Heading type="h5" form="print">
-          // hint: it's very hard!
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                // How to craft a
+              </Heading>
+              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+                better world?
+              </Heading>
+            </div>
+
+            <Heading type="h6" form="print">
+              // hint: it's very hard!
+            </Heading>
             <Text size="20">
               There's a lot that goes behind the scenes. Of course I have some projects on my GitHub
               profile if you're curious and want to take a peek. But they're mostly outdated, and
@@ -130,12 +142,16 @@ const Home = () => (
           </Col>
         </Row>
 
-        <Heading type="h5" form="print">
-          // what are your highs and lows?
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                // what are your
+              </Heading>
+              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+                highs and lows?
+              </Heading>
+            </div>
             <Text size="20">
               I'm a somewhat artistic person, but deeply enjoy coding as well. I can work
               independently on my own, and feel my best by creating pages and components from
@@ -148,12 +164,16 @@ const Home = () => (
           </Col>
         </Row>
 
-        <Heading type="h5" form="print">
-          // formally speaking... what level are you?
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                // Formally speaking... what level are
+              </Heading>
+              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+                you?
+              </Heading>
+            </div>
             <Text size="20">
               Professional human terms are sometimes vague, and one of the reasons is because they
               don't consider the human in his or her own integrality. I can have awesome visual
@@ -167,12 +187,19 @@ const Home = () => (
           </Col>
         </Row>
 
-        <Heading type="h5" form="print">
-          // outside work
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                //
+              </Heading>
+              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+                Outside
+              </Heading>
+              <Heading type="h5" form="print">
+                work
+              </Heading>
+            </div>
             <Text size="20">
               Outside work, I believe school teaches us very little about how to go on with (mature)
               life. That is, before taking sides on any opinion, habit or action, one should work
@@ -186,12 +213,16 @@ const Home = () => (
           </Col>
         </Row>
 
-        <Heading type="h5" form="print">
-          // X-Ray yourself!
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                // X-Ray
+              </Heading>
+              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+                yourself!
+              </Heading>
+            </div>
             <Text size="20">
               Over the last few years, colleagues have told me that... + I have nice attention to
               detail! + I can communicate fairly well in English. + I don't forget to remove
@@ -212,16 +243,23 @@ const Home = () => (
 
     <section className={styles.contact} id="contact">
       <Container>
-        <Heading type="h5" form="print">
-          // let's exchange virtual bits of info
-        </Heading>
-
-        <Heading type="h5" form="print">
-          // maybe eat pizza, or have some tea while listening to heavy metal
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                // let's exchange
+              </Heading>
+              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+                virtual
+              </Heading>
+              <Heading type="h5" form="print">
+                bits of info
+              </Heading>
+            </div>
+
+            <Heading type="h6" form="print">
+              // maybe eat pizza, or have some tea while listening to heavy metal
+            </Heading>
             <Text size="20">
               Humans are (kind of) social creatures, be it by quietly knowing others by reading
               their books or maybe gathering at a party. Contact forms are a (somewhat boring) way
@@ -233,12 +271,19 @@ const Home = () => (
           </Col>
         </Row>
 
-        <Heading type="h5" form="print">
-          // the world is your chalkboard
-        </Heading>
-
-        <Row>
+        <Row className={styles.row}>
           <Col md={8}>
+            <div className={styles.headingGroup}>
+              <Heading type="h5" form="print">
+                // the world is
+              </Heading>
+              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+                your
+              </Heading>
+              <Heading type="h5" form="print">
+                chalkboard
+              </Heading>
+            </div>
             <Text size="20">
               Just send a simple "hi!" if you'd like, then we can talk about dinosaurs, super
               powers, learning, and Montessori practices.

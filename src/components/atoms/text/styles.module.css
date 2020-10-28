@@ -3,6 +3,7 @@
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 300;
+  letter-spacing: 1px;
 
   &.cursive {
     font-family: var(--default-cursive-font-family);

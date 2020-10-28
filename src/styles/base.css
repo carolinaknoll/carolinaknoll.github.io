@@ -33,6 +33,16 @@ a {
   overflow: hidden visible;
 }
 
+:global(.darkTheme) {
+  background: #000;
+  color: #fff;
+}
+
+:global(.lightTheme) {
+  background: #fff;
+  color: #000;
+}
+
 @font-face {
   font-family: 'BraydenScriptRegular';
   src: url('../../src/fonts/Brayden-Script-Regular.otf') format('opentype');
