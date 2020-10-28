@@ -69,7 +69,7 @@ const Home = () => (
               <Heading type="h5" form="print">
                 // look at these
               </Heading>
-              <Heading type="h5" form="cursive">
+              <Heading type="h5" form="cursive" className={styles.purpleBlue}>
                 magic words!
               </Heading>
             </div>
@@ -92,7 +92,7 @@ const Home = () => (
               <Heading type="h5" form="print">
                 // please, be a
               </Heading>
-              <Heading type="h5" form="cursive">
+              <Heading type="h5" form="cursive" className={styles.a3a9db4b1dfdb3cfc9145}>
                 super hero
               </Heading>
               <Heading type="h5" form="print">
@@ -123,7 +123,7 @@ const Home = () => (
               <Heading type="h5" form="print">
                 // How to craft a
               </Heading>
-              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+              <Heading type="h5" form="cursive" className={styles.a523ab4b1ddefdc61fc45}>
                 better world?
               </Heading>
             </div>

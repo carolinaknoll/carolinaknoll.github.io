@@ -1,0 +1,33 @@
+.purpleBlue {
+  background: rgba(0, 212, 255);
+  background: linear-gradient(90deg, rgba(196, 43, 175, 1) 25%, rgba(0, 212, 255, 1) 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.a3a9db4b1dfdb3cfc9145 {
+  background: rgb(58, 157, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 157, 180, 1) 0%,
+    rgba(29, 253, 179, 1) 51%,
+    rgba(252, 145, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.a523ab4b1ddefdc61fc45 {
+  background: rgb(82, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 58, 180, 1) 0%,
+    rgba(29, 222, 253, 1) 51%,
+    rgba(97, 252, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
