@@ -1,4 +1,4 @@
-.purpleBlue {
+.ac4beafb00d4ff {
   background: rgba(0, 212, 255);
   background: linear-gradient(90deg, rgba(196, 43, 175, 1) 25%, rgba(0, 212, 255, 1) 75%);
   -webkit-background-clip: text;
@@ -26,6 +26,58 @@
     rgba(82, 58, 180, 1) 0%,
     rgba(29, 222, 253, 1) 51%,
     rgba(97, 252, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ae4d62eb2bd26ec2b6cd2 {
+  background: rgb(228, 214, 46);
+  background: linear-gradient(
+    90deg,
+    rgba(228, 214, 46, 1) 0%,
+    rgba(43, 210, 110, 1) 51%,
+    rgba(43, 108, 210, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ae4802ebff2600cb52323 {
+  background: rgb(228, 128, 46);
+  background: linear-gradient(
+    90deg,
+    rgba(228, 128, 46, 1) 0%,
+    rgba(255, 38, 0, 1) 51%,
+    rgba(181, 35, 35, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.a312ee4b00c2ffc05f7f4 {
+  background: rgb(49, 46, 228);
+  background: linear-gradient(
+    90deg,
+    rgba(49, 46, 228, 1) 0%,
+    rgba(0, 194, 255, 1) 51%,
+    rgba(5, 247, 244, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.a478530b00ff1dc93f1bf {
+  background: rgb(71, 133, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 133, 48, 1) 0%,
+    rgba(0, 255, 29, 1) 51%,
+    rgba(147, 241, 191, 1) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;

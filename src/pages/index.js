@@ -69,15 +69,19 @@ const Home = () => (
               <Heading type="h5" form="print">
                 // look at these
               </Heading>
-              <Heading type="h5" form="cursive" className={styles.purpleBlue}>
+              <Heading type="h5" form="cursive" className={styles.ac4beafb00d4ff}>
                 magic words!
               </Heading>
             </div>
             <Text size="20">
-              If you're super curious, I mainly work with (take a deep breath) React, Redux, Gatsby,
-              CSS Modules/variables and Storybook. No, none of these are Pokémon! As a hobby, I
-              enjoy creating activities for children's literacy in Portuguese, and deeply agree with
-              the Montessori method of guiding a child through the first stages of life.
+              If you're super curious, I mainly work with
+              <span className={styles.ac4beafb00d4ff}>
+                React, Redux, Gatsby, GraphQL, CSS Modules and Storybook
+              </span>
+              . No, none of these are Pokémon! As a hobby, I enjoy creating activities for home
+              education in Portuguese, and deeply agree with the Montessori method of guiding a
+              child to <span className={styles.ac4beafb00d4ff}>independence</span> from the first
+              stages of life.
             </Text>
           </Col>
 
@@ -100,10 +104,13 @@ const Home = () => (
               </Heading>
             </div>
             <Text size="20">
-              We humans grew so accustomed with smartphones, and special effects, and VR, and
-              filters, and everything tech around us that we look outside searching for this "super"
-              factor. But I believe in words. In acts of kindness. In building trust and empowering
-              people so that they can decide by themselves. This is our "super" factor, and everyone
+              We humans grew so accustomed with smartphones, special effects, VR, filters, and
+              everything tech around us that we look{' '}
+              <span className={styles.a3a9db4b1dfdb3cfc9145}>outside</span> searching for this
+              "super" factor. But I believe in words. In acts of kindness. In building trust and
+              empowering people so that they can{' '}
+              <span className={styles.a3a9db4b1dfdb3cfc9145}>decide by themselves</span>. This is
+              our "<span className={styles.a3a9db4b1dfdb3cfc9145}>super</span>" factor, and everyone
               can have it! Please, be a super hero too.
             </Text>
           </Col>
@@ -132,9 +139,14 @@ const Home = () => (
               // hint: it's very hard!
             </Heading>
             <Text size="20">
-              There's a lot that goes behind the scenes. Of course I have some projects on my GitHub
-              profile if you're curious and want to take a peek. But they're mostly outdated, and
-              belong to different parts of my life and learning.
+              There's a lot that goes behind the{' '}
+              <span className={styles.a523ab4b1ddefdc61fc45}>scenes</span>. Of course I have some
+              projects on my{' '}
+              <a href="https://github.com/carolinaknoll?tab=repositories">
+                <span className={styles.a523ab4b1ddefdc61fc45}>GitHub profile</span>
+              </a>{' '}
+              if you're curious and want to take a peek. But like with any other dev, they're mostly
+              outdated, and belong to different parts of my life and learning.
             </Text>
           </Col>
           <Col md={4}>
@@ -148,15 +160,19 @@ const Home = () => (
               <Heading type="h5" form="print">
                 // what are your
               </Heading>
-              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+              <Heading type="h5" form="cursive" className={styles.ae4d62eb2bd26ec2b6cd2}>
                 highs and lows?
               </Heading>
             </div>
             <Text size="20">
-              I'm a somewhat artistic person, but deeply enjoy coding as well. I can work
-              independently on my own, and feel my best by creating pages and components from
-              Invision or Figma files, but will likely need guidance when some logic is more complex
-              or a component requires a more complex behavior. So, what are your highs and lows?
+              I'm a somewhat artistic person, but{' '}
+              <span className={styles.ae4d62eb2bd26ec2b6cd2}>deeply</span> enjoy coding as well. I
+              can work independently on my own, and feel my best by creating pages and components
+              from Invision or Figma files with{' '}
+              <span className={styles.ae4d62eb2bd26ec2b6cd2}>reasonable logic</span>, but will
+              likely need <span className={styles.ae4d62eb2bd26ec2b6cd2}>guidance</span> when some
+              logic is more complex or a component requires a more complex behavior. So, what are
+              your highs and lows?
             </Text>
           </Col>
           <Col md={4}>
@@ -170,16 +186,19 @@ const Home = () => (
               <Heading type="h5" form="print">
                 // Formally speaking... what level are
               </Heading>
-              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+              <Heading type="h5" form="cursive" className={styles.ae4802ebff2600cb52323}>
                 you?
               </Heading>
             </div>
             <Text size="20">
               Professional human terms are sometimes vague, and one of the reasons is because they
-              don't consider the human in his or her own integrality. I can have awesome visual
-              skills, but if I'm not so good at deciphering complex logic, then I'm not that good
-              after all. That's why I think that terms like Junior, Mid and Senior are, on their
-              own, vague.
+              don't consider the human in his or her own{' '}
+              <span className={styles.ae4802ebff2600cb52323}>integrality</span>. I can have awesome
+              <span className={styles.ae4802ebff2600cb52323}> visual skills</span>, but if I'm not
+              so good at deciphering{' '}
+              <span className={styles.ae4802ebff2600cb52323}>complex logic</span>, then I'm not that
+              good after all. That's why I think that terms like Junior, Mid and Senior are, on
+              their own, vague.
             </Text>
           </Col>
           <Col md={4}>
@@ -193,7 +212,7 @@ const Home = () => (
               <Heading type="h5" form="print">
                 //
               </Heading>
-              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+              <Heading type="h5" form="cursive" className={styles.a3a9db4b1dfdb3cfc9145}>
                 Outside
               </Heading>
               <Heading type="h5" form="print">
@@ -201,9 +220,12 @@ const Home = () => (
               </Heading>
             </div>
             <Text size="20">
-              Outside work, I believe school teaches us very little about how to go on with (mature)
+              Outside work, I believe school teaches us very little about how to go on with{' '}
+              <span className={styles.a3a9db4b1dfdb3cfc9145}>(mature) </span>
               life. That is, before taking sides on any opinion, habit or action, one should work
-              primarily on nurturing a solid moral ground - in other words, I can deeply love
+              primarily on nurturing a{' '}
+              <span className={styles.a3a9db4b1dfdb3cfc9145}>solid moral ground</span> - in other
+              words, I can deeply <span className={styles.a3a9db4b1dfdb3cfc9145}>love</span>{' '}
               chocolate cakes, but it is unhealthy and not morally acceptable to eat them all day,
               everyday.
             </Text>
@@ -219,7 +241,7 @@ const Home = () => (
               <Heading type="h5" form="print">
                 // X-Ray
               </Heading>
-              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+              <Heading type="h5" form="cursive" className={styles.ae4d62eb2bd26ec2b6cd2}>
                 yourself!
               </Heading>
             </div>
@@ -249,7 +271,7 @@ const Home = () => (
               <Heading type="h5" form="print">
                 // let's exchange
               </Heading>
-              <Heading type="h5" form="cursive" className={styles.titleGradient}>
+              <Heading type="h5" form="cursive" className={styles.a312ee4b00c2ffc05f7f4}>
                 virtual
               </Heading>
               <Heading type="h5" form="print">
@@ -277,11 +299,8 @@ const Home = () => (
               <Heading type="h5" form="print">
                 // the world is
               </Heading>
-              <Heading type="h5" form="cursive" className={styles.titleGradient}>
-                your
-              </Heading>
-              <Heading type="h5" form="print">
-                chalkboard
+              <Heading type="h5" form="cursive" className={styles.a478530b00ff1dc93f1bf}>
+                your chalkboard
               </Heading>
             </div>
             <Text size="20">
