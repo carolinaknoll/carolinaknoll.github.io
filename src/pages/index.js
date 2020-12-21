@@ -64,18 +64,22 @@ const Home = () => (
           <Text size="20">
             There's a japanese word for balance called Ikigai, and I try to pursuit it. I believe it
             helps us search inside ourselves and find what we can do best, even if it changes over
-            time. Part of Ikigai, for me, is building magical layouts and experiences.
+            time. Part of Ikigai, for me, is building magical layouts and experiences. The other
+            part is about learning and merging different education methods so that children of today
+            aren't overfed with content and value a higher desire to keep learning.
           </Text>
 
           <Text size="20">
-            If you're super curious, I mainly work with
+            As a front-end dev, I mainly work with{' '}
             <span className={styles.ac4beafb00d4ff}>
-              React, Redux, Gatsby, GraphQL, CSS Modules and Storybook
+              React, Redux, Gatsby, CSS Modules/variables and Storybook
             </span>
-            . No, none of these are Pokémon! As a hobby, I enjoy creating activities for home
-            education in Portuguese, and deeply agree with the Montessori method of guiding a child
-            to <span className={styles.ac4beafb00d4ff}>independence</span> from the first stages of
-            life.
+            . I'm also learning about React Native and coding for Android/iOS devices, so it has
+            been an adventure! As of the human side of things, I'm all about education and how to
+            make it better. I believe current school education focuses too much on content, and with
+            so much to learn, study and apply on tests, children quickly get bored - and the spark
+            of learning turns into the boredom of repetition and acceptance. I believe something
+            isn't right when we say: "Oh, I forgot almost everything I've learned at school!"
           </Text>
 
           <Text size="20">
@@ -113,13 +117,14 @@ const Home = () => (
           </Heading>
           <Text size="20">
             There's a lot that goes behind the{' '}
-            <span className={styles.a523ab4b1ddefdc61fc45}>scenes</span>. Of course I have some
+            <span className={styles.a523ab4b1ddefdc61fc45}>scenes</span>. While I do have some
             projects on my{' '}
             <a href="https://github.com/carolinaknoll?tab=repositories">
               <span className={styles.a523ab4b1ddefdc61fc45}>GitHub profile</span>
             </a>{' '}
-            if you're curious and want to take a peek. But like with any other dev, they're mostly
-            outdated, and belong to different parts of my life and learning.
+            if you're curious and want to take a peek, they were meant for study and belong to
+            different parts of my life and learning. We can always chat about current approaches to
+            solving problems and being creative if you'd like!
           </Text>
 
           <div className={styles.headingGroup}>
