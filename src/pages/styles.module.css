@@ -9,12 +9,23 @@
   }
 }
 
-.row {
-  margin: 50px 0;
+.half {
+  width: 50%;
+}
 
-  &:nth-of-type(even) {
-    flex-direction: row-reverse;
-  }
+.content {
+  box-sizing: border-box;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.imageWrapper {
+  width: 50vw;
+  height: 100%;
+  overflow: hidden;
 }
 
 .hero {
@@ -40,20 +51,16 @@
   min-height: 100vh;
   display: flex;
   flex-direction: row;
-
-  &Row {
-    margin: 50px 0;
-
-    &:nth-of-type(even) {
-      flex-direction: row-reverse;
-    }
-  }
 }
 
 .portfolio {
   min-height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .contact {
   min-height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
