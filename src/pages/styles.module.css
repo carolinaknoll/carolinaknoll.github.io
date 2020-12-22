@@ -24,8 +24,22 @@
 
 .imageWrapper {
   width: 50vw;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  img {
+    width: 100%;
+    height: 125vh;
+  }
+}
+
+.contentWrapper {
+  position: relative;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .hero {

@@ -13,6 +13,7 @@ module.exports = {
       _pages: path.resolve(__dirname, 'src', 'pages'),
       _styles: path.resolve(__dirname, 'src', 'styles'),
       _templates: path.resolve(__dirname, 'src', 'components', 'templates'),
+      _utils: path.resolve(__dirname, 'src', 'utils'),
     },
   },
 }
