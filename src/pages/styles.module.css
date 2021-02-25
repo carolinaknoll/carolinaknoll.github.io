@@ -63,6 +63,14 @@
   margin-left: auto;
 }
 
+.separatorBlock {
+  padding: 20px 0;
+
+  &Green {
+    background: green;
+  }
+}
+
 .hero {
   min-height: 100vh;
   padding-top: 5rem;
@@ -77,16 +85,19 @@
   min-height: 100vh;
   display: flex;
   flex-direction: row;
+  padding-top: 70px;
 }
 
 .portfolio {
   min-height: 100vh;
   display: flex;
   flex-direction: row;
+  padding-top: 70px;
 }
 
 .contact {
   min-height: 100vh;
   display: flex;
   flex-direction: row;
+  padding-top: 70px;
 }

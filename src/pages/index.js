@@ -37,10 +37,19 @@ const Home = () => {
         </div>
       </section>
 
+      <section className={classNames(styles.separatorBlock, styles.separatorBlockGreen)}>
+        <Heading type="h5" form="cursive" center>
+          Per aspera ad astra!
+        </Heading>
+        <Heading type="h6" form="print" center>
+          Through hardships to the stars!
+        </Heading>
+      </section>
+
       <section className={styles.about} id="about">
         <div className={classNames(styles.contentWrapper)}>
           <div className={styles.content}>
-            <Heading type="h2" form="cursive" center className={styles.titleGradient}>
+            <Heading type="h2" form="cursive" center>
               About
             </Heading>
 
@@ -90,6 +99,15 @@ const Home = () => {
         </div>
       </section>
 
+      <section className={classNames(styles.separatorBlock, styles.separatorBlockGreen)}>
+        <Heading type="h5" form="cursive" center>
+          Macte animo! Generose puer sic itur ad astra.
+        </Heading>
+        <Heading type="h6" form="print" center>
+          Young, cheer up! This is the way to the skies.
+        </Heading>
+      </section>
+
       <section className={styles.portfolio} id="portfolio">
         <div className={classNames(styles.contentWrapper)}>
           <div className={styles.content}>
@@ -111,6 +129,12 @@ const Home = () => {
             </Text>
           </div>
         </div>
+      </section>
+
+      <section className={classNames(styles.separatorBlock, styles.separatorBlockGreen)}>
+        <Heading type="h5" form="cursive" center>
+          How many angels can dance on the head of a pin?
+        </Heading>
       </section>
 
       <section className={styles.contact} id="contact">
