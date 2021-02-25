@@ -12,13 +12,13 @@ const [h1] = HEADING_LEVELS
 const [cursive] = HEADING_FONTS
 const [defaultColor] = HEADING_COLORS
 
-const Heading = ({ children, type, form, className, color, bold, ...props }) => {
+const Heading = ({ children, type, form, className, color, bold, center, ...props }) => {
   const componentProps = {
     className: classNames(
       styles.heading,
       styles[type],
       styles[form],
-      { [styles.bold]: bold },
+      { [styles.bold]: bold, [styles.center]: center },
       color !== 'default' ? styles[color] : '',
       className
     ),
@@ -35,6 +35,7 @@ Heading.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   bold: PropTypes.bool,
+  center: PropTypes.bool,
 }
 
 Heading.defaultProps = {
@@ -44,6 +45,7 @@ Heading.defaultProps = {
   children: undefined,
   className: undefined,
   bold: false,
+  center: false,
 }
 
 export default Heading
