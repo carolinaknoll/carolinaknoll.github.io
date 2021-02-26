@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import { Heading, Text } from '_atoms'
+import { Heading, Text, ContactForm } from '_atoms'
 import { Layout } from '_templates'
 import { isInViewport } from '_utils/is-in-viewport'
 
@@ -154,6 +154,10 @@ const Home = () => {
                 on puzzles and read books instead.
               </Text>
             </Text>
+
+            <div className={styles.contactFormWrapper}>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>

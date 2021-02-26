@@ -1,0 +1,57 @@
+:global(.darkTheme) .contactForm [type='submit'] {
+  color: #e6e6e6;
+}
+
+.contactForm {
+  text-align: center;
+}
+
+.formInput {
+  background: rgb(242, 242, 242);
+  border: 1px solid rgba(0, 194, 255, 0.5);
+  font-family: var(--default-print-font-family);
+  font-size: 22px;
+  margin-bottom: 20px;
+  outline: 0;
+  padding: 13px;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.formInput:focus {
+  border: 1px solid rgba(0, 194, 255, 1);
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #9e9e9e;
+}
+
+.contactForm textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+:global(.darkTheme) .contactForm [type='text'],
+:global(.darkTheme) .contactForm [type='email'],
+:global(.darkTheme) .contactForm textarea {
+  background: #15181e;
+  color: #fff;
+}
+
+.contactForm [type='submit'] {
+  background: rgba(0, 194, 255, 0.5);
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  font-family: var(--default-cursive-font-family);
+}
+
+.contactForm [type='submit']:hover {
+  background: rgba(0, 194, 255, 0.7);
+}
