@@ -12,14 +12,13 @@ const RandomImage = ({ position, category, className }) => {
     : Math.floor(Math.random() * CATEGORIZED_IMAGES.length)
 
   return (
-    <div className={classNames(styles.randomImage, className)}>
-      <ImageWithCaption
-        position={position}
-        image={
-          category ? CATEGORIZED_IMAGES[category][randomNumber] : CATEGORIZED_IMAGES[randomNumber]
-        }
-      />
-    </div>
+    <ImageWithCaption
+      position={position}
+      image={
+        category ? CATEGORIZED_IMAGES[category][randomNumber] : CATEGORIZED_IMAGES[randomNumber]
+      }
+      className={className}
+    />
   )
 }
 

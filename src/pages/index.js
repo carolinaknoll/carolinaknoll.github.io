@@ -50,7 +50,7 @@ const Home = () => {
               About
             </Heading>
 
-            <RandomImage position="right" category="home" />
+            <RandomImage position="right" category="about" className={styles.aboutImageFirst} />
 
             <Text size="20" className={styles.startingParagraph}>
               As a kid with melancholic temperament, I was always quiet and by myself at school. I
@@ -69,20 +69,24 @@ const Home = () => {
               As of now, I currently use React, Redux, Gatsby and React Native at work.
             </Text>
 
-            <Text size="20">
-              Outside work, I'm all about education and how to make it better. I believe current
-              school education focuses too much on content, and with so much to learn, study and
-              apply on tests, children quickly get bored - and the spark of learning turns into the
-              boredom of repetition and acceptance. I believe something isn't right when we say:
-              "Oh, I forgot almost everything I've learned at school!"
-            </Text>
+            <div className={styles.marginTop50}>
+              <RandomImage position="left" category="about" className={styles.aboutImageSecond} />
 
-            <Text size="20">
-              I believe school teaches us very little about how to go on with (mature) life. That
-              is, before taking sides on any opinion, habit or action, one should work primarily on
-              nurturing a solid moral ground - in other words, I can deeply love chocolate cakes,
-              but it is unhealthy and not morally acceptable to eat them all day, everyday.
-            </Text>
+              <Text size="20" className={styles.startingParagraph}>
+                Outside work, I'm all about education and how to make it better. I believe current
+                school education focuses too much on content, and with so much to learn, study and
+                apply on tests, children quickly get bored - and the spark of learning turns into
+                the boredom of repetition and acceptance. I believe something isn't right when we
+                say: "Oh, I forgot almost everything I've learned at school!"
+              </Text>
+
+              <Text size="20">
+                I believe school teaches us very little about how to go on with (mature) life. That
+                is, before taking sides on any opinion, habit or action, one should work primarily
+                on nurturing a solid moral ground - in other words, I can deeply love chocolate
+                cakes, but it is unhealthy and not morally acceptable to eat them all day, everyday.
+              </Text>
+            </div>
           </div>
         </div>
       </section>
@@ -102,6 +106,8 @@ const Home = () => {
             <Heading type="h2" form="cursive" center className={styles.a523ab4b1ddefdc61fc45}>
               Portfolio
             </Heading>
+
+            <RandomImage position="right" category="portfolio" className={styles.aboutImageFirst} />
 
             <Text size="20" className={styles.startingParagraph}>
               Here are a few projects I have greatly spent some love and time on. I prefer to work
@@ -143,8 +149,14 @@ const Home = () => {
               </Text>
             </Text>
 
-            <div className={styles.contactFormWrapper}>
-              <ContactForm />
+            <div className={styles.contactColumnsWrapper}>
+              <div className={classNames(styles.half, styles.contactFormWrapper)}>
+                <ContactForm />
+              </div>
+
+              <div className={styles.half}>
+                <RandomImage position="right" category="contact" className={styles.contactImage} />
+              </div>
             </div>
           </div>
         </div>

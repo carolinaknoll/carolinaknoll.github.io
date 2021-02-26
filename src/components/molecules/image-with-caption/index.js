@@ -6,9 +6,9 @@ import { Text } from '_atoms'
 
 import styles from './styles.module.css'
 
-const ImageWithCaption = ({ position, image }) => (
+const ImageWithCaption = ({ position, image, className }) => (
   <div
-    className={classNames(styles.imageWithCaption, {
+    className={classNames(styles.imageWithCaption, className, {
       [styles.imageWithCaptionLeft]: position === 'left',
       [styles.imageWithCaptionRight]: position === 'right',
     })}

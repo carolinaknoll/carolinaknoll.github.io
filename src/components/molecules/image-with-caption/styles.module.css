@@ -1,7 +1,6 @@
 .imageWithCaption {
   display: inline-block;
   margin: 10px;
-  max-width: 30%;
 
   &Left {
     float: left;
@@ -14,6 +13,5 @@
   &Image {
     display: inline-block;
     margin: 10px;
-    max-width: 60%;
   }
 }
