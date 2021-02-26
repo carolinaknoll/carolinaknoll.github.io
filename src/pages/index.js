@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react'
 
-import { Heading, Text, ContactForm } from '_atoms'
+import { Heading, Text, ContactForm, Footer } from '_atoms'
+import { RandomImage } from '_organisms'
 import { Layout } from '_templates'
 import { isInViewport } from '_utils/is-in-viewport'
 
 import classNames from 'classnames'
-
-import heroFirstImage from '_images/hero-first.jpg'
-import aboutFirstImage from '_images/about-first.jpg'
-import aboutSecondImage from '_images/about-second.jpg'
 
 import styles from './styles.module.css'
 
@@ -53,16 +50,7 @@ const Home = () => {
               About
             </Heading>
 
-            <div
-              className={classNames(styles.imageBesideTextContainer, styles.imageBesideTextRight)}
-            >
-              <img
-                src={heroFirstImage}
-                alt="Well hello there!"
-                className={styles.imageBesideText}
-              />
-              <Text size="16">Image description</Text>
-            </div>
+            <RandomImage position="right" category="home" />
 
             <Text size="20" className={styles.startingParagraph}>
               As a kid with melancholic temperament, I was always quiet and by myself at school. I
@@ -161,6 +149,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </Layout>
   )
 }

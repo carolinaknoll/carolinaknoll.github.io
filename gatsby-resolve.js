@@ -10,6 +10,7 @@ module.exports = {
       _config: path.resolve(__dirname, 'src', 'config'),
       _images: path.resolve(__dirname, 'src', 'images'),
       _molecules: path.resolve(__dirname, 'src', 'components', 'molecules'),
+      _organisms: path.resolve(__dirname, 'src', 'components', 'organisms'),
       _pages: path.resolve(__dirname, 'src', 'pages'),
       _styles: path.resolve(__dirname, 'src', 'styles'),
       _templates: path.resolve(__dirname, 'src', 'components', 'templates'),

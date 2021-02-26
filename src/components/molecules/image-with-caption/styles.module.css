@@ -1,0 +1,19 @@
+.imageWithCaption {
+  display: inline-block;
+  margin: 10px;
+  max-width: 30%;
+
+  &Left {
+    float: left;
+  }
+
+  &Right {
+    float: right;
+  }
+
+  &Image {
+    display: inline-block;
+    margin: 10px;
+    max-width: 60%;
+  }
+}

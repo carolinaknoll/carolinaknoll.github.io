@@ -1,0 +1,38 @@
+.footer {
+}
+
+.footerTop {
+  background: #eceff1;
+}
+
+.footerBottom {
+  background: #cfd8dc;
+}
+
+:global(.darkTheme) .footerTop {
+  background: #1d2129;
+}
+
+:global(.darkTheme) .footerBottom {
+  background: #15181e;
+}
+
+.footerTop {
+  min-height: 100px;
+  width: 100%;
+}
+
+.footerBottom {
+  min-height: 60px;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  padding-top: 15px;
+  margin-top: 0;
+}

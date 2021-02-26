@@ -27,27 +27,6 @@
   width: 50%;
 }
 
-.imageBesideTextContainer {
-  float: right;
-  display: inline-block;
-  margin: 10px;
-  max-width: 30%;
-
-  &Left {
-    float: left;
-  }
-
-  &Right {
-    float: right;
-  }
-}
-
-.imageBesideText {
-  display: inline-block;
-  margin: 10px;
-  max-width: 60%;
-}
-
 .content {
   box-sizing: border-box;
   position: relative;
