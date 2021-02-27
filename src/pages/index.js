@@ -177,9 +177,12 @@ const Home = () => {
                 Please use the form if you would like to chat. I will try to reply as soon as I can.
               </Text>
               <Text size="20">
-                People usually have links for their own social profiles here. However, I try to keep
-                away from online social life in general because of all the noise, and prefer to work
-                on puzzles and read books instead.
+                People usually have links for their own social profiles here. However, these
+                profiles tend to become forgotten over time. I try to keep away from online social
+                life in general because of all the noise, and prefer to work on puzzles and read
+                books instead, but if you would like to know more, please take a look at my{' '}
+                <a href="https://github.com/carolinaknoll">GitHub</a> or{' '}
+                <a href="https://www.linkedin.com/in/carolinaknoll">LinkedIn</a> profiles.
               </Text>
             </Text>
 

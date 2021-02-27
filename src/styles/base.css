@@ -27,6 +27,11 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
+}
+
+:global(.darkTheme) a {
+  color: #fff;
 }
 
 .app {

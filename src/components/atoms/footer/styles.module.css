@@ -1,12 +1,29 @@
 .footer {
+  text-align: center;
+
+  span {
+    font-family: var(--default-cursive-font-family);
+  }
 }
 
 .footerTop {
   background: #eceff1;
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footerBottom {
   background: #cfd8dc;
+  min-height: 60px;
+  width: 100%;
+
+  p {
+    padding-top: 15px;
+    margin-top: 0;
+  }
 }
 
 :global(.darkTheme) .footerTop {
@@ -15,24 +32,4 @@
 
 :global(.darkTheme) .footerBottom {
   background: #15181e;
-}
-
-.footerTop {
-  min-height: 100px;
-  width: 100%;
-}
-
-.footerBottom {
-  min-height: 60px;
-  width: 100%;
-}
-
-.footer p {
-  font-size: 20px;
-  text-align: center;
-}
-
-.footerBottom p {
-  padding-top: 15px;
-  margin-top: 0;
 }
