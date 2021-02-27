@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 
 import { Heading, Text, ContactForm, Footer } from '_atoms'
+import { ImageWithCaption, PortfolioItem } from '_molecules'
 import { RandomImage } from '_organisms'
 import { Layout } from '_templates'
 import { isInViewport } from '_utils/is-in-viewport'
+import { PORTFOLIO_ITEMS } from '_utils/portfolio'
 
 import classNames from 'classnames'
 
@@ -121,6 +123,38 @@ const Home = () => {
               since I code mostly everyday for work, I prefer to keep them this way for now. We can
               always chat about current approaches to solving problems and being creative, though!
             </Text>
+
+            <div className={styles.portfolioProjects}>
+              <div className={styles.portfolioProjectsItem}>
+                <PortfolioItem item={PORTFOLIO_ITEMS.EducationalResources} hideCaption />
+              </div>
+
+              <div className={styles.portfolioProjectsGrid}>
+                <div className={styles.portfolioProjectsItem}>
+                  <PortfolioItem item={PORTFOLIO_ITEMS.AwesomeGamified} hideCaption />
+                </div>
+
+                <div className={styles.portfolioProjectsItem}>
+                  <PortfolioItem item={PORTFOLIO_ITEMS.WikipediaViewer} hideCaption />
+                </div>
+
+                <div className={styles.portfolioProjectsItem}>
+                  <PortfolioItem item={PORTFOLIO_ITEMS.PomodoroTimer} hideCaption />
+                </div>
+
+                <div className={styles.portfolioProjectsItem}>
+                  <PortfolioItem item={PORTFOLIO_ITEMS.MarkdownPreviewer} hideCaption />
+                </div>
+
+                <div className={styles.portfolioProjectsItem}>
+                  <PortfolioItem item={PORTFOLIO_ITEMS.Insight} hideCaption />
+                </div>
+
+                <div className={styles.portfolioProjectsItem}>
+                  <PortfolioItem item={PORTFOLIO_ITEMS.JavaScriptCalculator} hideCaption />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

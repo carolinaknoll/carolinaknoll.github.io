@@ -6,15 +6,17 @@ import { Text } from '_atoms'
 
 import styles from './styles.module.css'
 
-const ImageWithCaption = ({ position, image, className }) => (
+const ImageWithCaption = ({ position, image, className, hideCaption }) => (
   <div
     className={classNames(styles.imageWithCaption, className, {
       [styles.imageWithCaptionLeft]: position === 'left',
       [styles.imageWithCaptionRight]: position === 'right',
+      [styles.imageWithCaptionCenterTop]: position === 'centerTop',
     })}
   >
     <img src={image.imagePath} alt={image.imageName} className={styles.imageWithCaptionImage} />
-    <Text size="16">{image.imageName}</Text>
+
+    {!hideCaption && <Text size="16">{image.imageName}</Text>}
   </div>
 )
 

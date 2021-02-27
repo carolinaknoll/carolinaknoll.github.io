@@ -2,6 +2,14 @@
   display: inline-block;
   margin: 10px;
 
+  &CenterTop {
+    display: block;
+
+    &Image {
+      margin: auto;
+    }
+  }
+
   &Left {
     float: left;
   }
