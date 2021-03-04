@@ -7,19 +7,19 @@ import styles from './styles.module.css'
 const MenuItems = ({ closeCallback }) => (
   <div className={styles.menuItems}>
     <a title="Home" onClick={closeCallback} href="#home">
-      Home
+      <span>H</span>ome
     </a>
 
     <a title="About" onClick={closeCallback} href="#about">
-      About
+      <span>A</span>bout
     </a>
 
     <a title="Portfolio" onClick={closeCallback} href="#portfolio">
-      Portfolio
+      <span>P</span>ortfolio
     </a>
 
     <a title="Contact" onClick={closeCallback} href="#contact">
-      Contact
+      <span>C</span>ontact
     </a>
   </div>
 )

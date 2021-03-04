@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const ThemeToggle = ({ isDark, toggleTheme, showText }) => (
   <div>
-    <button onClick={toggleTheme}>{showText ? `Lights ${isDark ? 'on' : 'off'}` : null}</button>
+    <button onClick={toggleTheme}>{showText ? `${isDark ? 'on' : 'off'}` : null}</button>
   </div>
 )
 

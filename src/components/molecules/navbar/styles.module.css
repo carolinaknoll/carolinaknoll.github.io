@@ -6,9 +6,10 @@
   font-family: var(--default-print-font-family);
   align-items: center;
   position: fixed;
-  height: 80px;
+  height: 70px;
   width: 100%;
   z-index: 1;
+  transition: 0.3s;
 
   @media (--sm-viewport) {
     height: 45px;
@@ -16,12 +17,12 @@
 }
 
 :global(.lightTheme) .navbarContainer {
-  background: #fff;
+  background: rgba(200, 200, 200, 0.8);
   color: #000;
 }
 
 :global(.darkTheme) .navbarContainer {
-  background: #0a0a10;
+  background: rgba(40, 40, 40, 0.8);
   color: #fff;
 }
 

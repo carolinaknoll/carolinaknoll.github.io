@@ -7,6 +7,7 @@ import styles from './styles.module.css'
 const SIZES = {
   16: styles.size16,
   20: styles.size20,
+  22: styles.size22,
   24: styles.size24,
   28: styles.size28,
 }

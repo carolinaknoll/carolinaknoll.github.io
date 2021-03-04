@@ -14,7 +14,8 @@
 
 .menuItems a {
   display: block;
-  padding: 28px 25px;
+  font-size: 20px;
+  padding: 25px;
   text-align: center;
   text-decoration: none;
   transition: 0.3s;
@@ -38,6 +39,10 @@
     padding: 18px 15px;
     width: 100%;
   }
+}
+
+.menuItems span {
+  font-family: var(--default-cursive-font-family);
 }
 
 :global(.lightTheme) .menuItems a {

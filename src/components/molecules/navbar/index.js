@@ -46,7 +46,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
       />
       <div className={styles.navbarBrand}>
         <a href="#">
-          <Text form="cursive" size="20">
+          <Text form="cursive" size="22">
             Carolina Knoll
           </Text>
         </a>
