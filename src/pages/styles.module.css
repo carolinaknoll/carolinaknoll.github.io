@@ -40,12 +40,6 @@
   padding-right: 15px;
 }
 
-.contentWrapper {
-  position: relative;
-  margin-right: 0;
-  margin-left: auto;
-}
-
 .separatorBlock {
   padding: 20px 0;
 
@@ -54,7 +48,7 @@
   }
 }
 
-.hero {
+.home {
   min-height: 100vh;
   padding-top: 5rem;
   text-align: center;
@@ -62,6 +56,25 @@
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+  background: url(_images/Hamilton-Hamilton-Children-in-a-Spring-Landscape.jpg);
+  background-position: center 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+
+  &Description {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    margin-top: -150px;
+  }
+}
+
+:global(.darkTheme) .home {
+  background: url(_images/A-W-Crawford-Woodland-fairies-in-the-moonlight.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about {

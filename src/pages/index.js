@@ -14,11 +14,11 @@ import styles from './styles.module.css'
 const Home = () => {
   return (
     <Layout>
-      <section className={styles.hero} id="hero">
+      <section className={styles.home} id="hero">
         <div className={classNames(styles.imageWrapper)}></div>
 
         <div className={classNames(styles.contentWrapper)}>
-          <div className={styles.content}>
+          <div className={styles.homeDescription}>
             <div className={styles.headingGroup}>
               <Heading type="h2" form="print">
                 Hello, I'm
