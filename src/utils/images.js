@@ -8,6 +8,10 @@ import HarietteSutcliffeHerNewBrownShoes from '_images/Hariette-Sutcliffe-Her-Ne
 import JohnGeorgeBrownPickingBerries from '_images/John-George-Brown-Picking-Berries.jpg'
 import LauraMuntzLyallInterestingStory from '_images/Laura-Muntz-Lyall-Interesting-Story.jpg'
 import PelegFranklinBrownellTwoGirlsReading from '_images/Peleg-Franklin-Brownell-Two-Girls-Reading.jpg'
+import ClaudeMonetInTheWoods from '_images/Claude-Monet-In-The-Woods.jpg'
+import DanielGerhartzInHerCare from '_images/Daniel-Gerhartz-In-Her-Care.jpg'
+import MaryCassattMotherAndChildInBoat from '_images/Mary-Cassatt-Mother-And-Child-In-Boat.jpg'
+import MaryCassattYoungMotherSewing from '_images/Mary-Cassatt-Young-Mother-Sewing.jpg'
 
 export const CATEGORIZED_IMAGES = {
   about: [
@@ -54,6 +58,22 @@ export const CATEGORIZED_IMAGES = {
       uploaderUrl: 'c',
       license: 'd',
     },
+    {
+      imagePath: ClaudeMonetInTheWoods,
+      imageName: 'Claude Monet - In The Woods',
+      imageUrl: 'a',
+      uploader: 'b',
+      uploaderUrl: 'c',
+      license: 'd',
+    },
+    {
+      imagePath: MaryCassattYoungMotherSewing,
+      imageName: 'Mary Cassatt - Young Mother Sewing',
+      imageUrl: 'a',
+      uploader: 'b',
+      uploaderUrl: 'c',
+      license: 'd',
+    },
   ],
 
   contact: [
@@ -92,6 +112,22 @@ export const CATEGORIZED_IMAGES = {
     {
       imagePath: PelegFranklinBrownellTwoGirlsReading,
       imageName: 'Peleg Franklin Brownell - Two Girls Reading',
+      imageUrl: 'a',
+      uploader: 'b',
+      uploaderUrl: 'c',
+      license: 'd',
+    },
+    {
+      imagePath: DanielGerhartzInHerCare,
+      imageName: 'Daniel Gerhartz - In Her Care',
+      imageUrl: 'a',
+      uploader: 'b',
+      uploaderUrl: 'c',
+      license: 'd',
+    },
+    {
+      imagePath: MaryCassattMotherAndChildInBoat,
+      imageName: 'Mary Cassatt - Mother And Child In Boat',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
