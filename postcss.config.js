@@ -19,6 +19,7 @@ const gridBreakpoints = {
 
 module.exports = {
   plugins: [
+    postCSSImport,
     postCSSCssVariables({
       variables: cssVariables,
     }),
@@ -35,7 +36,6 @@ module.exports = {
       },
     }),
     postCSSAutoprefixer,
-    postCSSImport,
     postCSSNested,
   ],
 }

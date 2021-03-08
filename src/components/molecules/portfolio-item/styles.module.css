@@ -1,22 +1,29 @@
 @import '../../../styles/gradients.css';
 
-.portfolioProjectsItemImage {
-  text-align: center;
-  margin-bottom: 10px;
+.portfolioItem {
+  &Image {
+    text-align: center;
+    margin-bottom: 10px;
 
-  img {
-    border: 1px solid rgba(0, 194, 255, 0.5);
-    max-width: 400px;
-    height: 200px;
+    img {
+      border: 1px solid rgba(0, 194, 255, 0.5);
+      max-width: 400px;
+      height: 200px;
+    }
   }
-}
 
-.startingParagraph:first-letter {
-  font-family: var(--default-cursive-font-family);
-  float: left;
-  color: red;
-  font-size: 1.5em;
-  line-height: 25px;
-  padding: 0px 0px 25px 0;
-  margin-bottom: -30px;
+  &Text:first-letter {
+    font-family: var(--default-cursive-font-family);
+    float: left;
+    color: var(--blue-1);
+    font-size: 1.5em;
+    line-height: 25px;
+    padding: 0px 0px 25px 0;
+    margin-bottom: -30px;
+  }
+
+  .portfolioItemText a {
+    font-weight: 400;
+    color: var(--blue-1);
+  }
 }

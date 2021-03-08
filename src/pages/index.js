@@ -22,7 +22,7 @@ const Home = () => {
               <Heading type="h2" form="print">
                 Hello, I'm
               </Heading>
-              <Heading type="h2" form="cursive" className={styles.a523ab4b1ddefdc61fc45}>
+              <Heading type="h2" form="cursive" className={styles.a1e8257bffdf87}>
                 Carolina!
               </Heading>
             </Fade>
@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={classNames(styles.separatorBlock, styles.separatorBlockGreen)}>
+      <section className={classNames(styles.separatorBlock, styles.separatorBlockFirst)}>
         <Fade>
           <Heading type="h5" form="cursive" center>
             Per aspera ad astra!
@@ -55,7 +55,7 @@ const Home = () => {
       <section className={styles.about} id="about">
         <div className={styles.content}>
           <Fade>
-            <Heading type="h2" form="cursive" center>
+            <Heading type="h2" form="cursive" center className={styles.a1e8257bffdf87}>
               About
             </Heading>
           </Fade>
@@ -108,7 +108,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={classNames(styles.separatorBlock, styles.separatorBlockGreen)}>
+      <section className={classNames(styles.separatorBlock, styles.separatorBlockSecond)}>
         <Fade>
           <Heading type="h5" form="cursive" center>
             Macte animo! Generose puer sic itur ad astra.
@@ -124,7 +124,7 @@ const Home = () => {
       <section className={styles.portfolio} id="portfolio">
         <div className={styles.content}>
           <Fade>
-            <Heading type="h2" form="cursive" center className={styles.a523ab4b1ddefdc61fc45}>
+            <Heading type="h2" form="cursive" center className={styles.ablue1bgreen1}>
               Portfolio
             </Heading>
 
@@ -182,7 +182,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={classNames(styles.separatorBlock, styles.separatorBlockGreen)}>
+      <section className={classNames(styles.separatorBlock, styles.separatorBlockThird)}>
         <Fade>
           <Heading type="h5" form="cursive" center>
             How many angels can dance on the head of a pin?
@@ -193,7 +193,7 @@ const Home = () => {
       <section className={styles.contact} id="contact">
         <div className={styles.content}>
           <Fade>
-            <Heading type="h2" form="cursive" center className={styles.a312ee4b00c2ffc05f7f4}>
+            <Heading type="h2" form="cursive" center className={styles.aorange1borange2}>
               Contact
             </Heading>
 

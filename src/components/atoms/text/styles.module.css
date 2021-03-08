@@ -60,7 +60,7 @@
 }
 
 .default {
-  color: var(--color-dark);
+  color: var(--dark);
 }
 
 .bold {

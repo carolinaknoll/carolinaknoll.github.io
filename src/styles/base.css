@@ -44,7 +44,8 @@ a {
 }
 
 :global(.lightTheme) {
-  background: #fff;
+  background: #eceff1;
+
   color: #000;
 }
 

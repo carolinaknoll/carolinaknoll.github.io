@@ -83,3 +83,43 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.a1e8257bffdf87 {
+  background: #1e8257;
+  background: linear-gradient(135deg, #1e8257 0%, #ffdf87 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ablue1bgreen1 {
+  background: var(--blue-1);
+  background: linear-gradient(135deg, var(--blue-1) 0%, var(--green-1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aorange1borange2 {
+  background: var(--orange-1);
+  background: linear-gradient(135deg, var(--orange-1) 0%, var(--orange-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:global(.lightTheme) .aorange1borange2 {
+  background: var(--orange-1);
+  background: linear-gradient(135deg, var(--orange-1) 0%, var(--orange-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:global(.darkTheme) .aorange1borange2 {
+  background: var(--orange-1);
+  background: linear-gradient(135deg, var(--gray-1) 0%, var(--orange-1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

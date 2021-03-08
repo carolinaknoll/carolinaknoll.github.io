@@ -80,15 +80,15 @@
 /* text color according to theme */
 
 :global(.lightTheme) .heading {
-  color: var(--color-dark);
+  color: var(--dark);
 }
 
 :global(.darkTheme) .heading {
-  color: var(--color-white);
+  color: var(--white);
 }
 
 .white {
-  color: var(--color-white);
+  color: var(--white);
 }
 
 .bold {
