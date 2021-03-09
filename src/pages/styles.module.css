@@ -99,6 +99,12 @@
   flex-direction: row;
   padding-top: 70px;
 
+  &ImageFirst img,
+  &ImageSecond img {
+    padding: 10px;
+    border: 1px solid #1e8257;
+  }
+
   &ImageFirst {
     display: inline-block;
     max-width: 30%;
@@ -124,6 +130,16 @@
 
   .startingParagraph:first-letter {
     color: var(--blue-1);
+  }
+
+  &Image {
+    display: inline-block;
+    max-width: 30%;
+
+    img {
+      padding: 10px;
+      border: 1px solid var(--blue-1);
+    }
   }
 
   &Projects {
@@ -163,6 +179,15 @@
 
     img {
       max-height: 500px;
+      padding: 10px;
     }
+  }
+
+  :global(.darkTheme) &Image img {
+    border: 1px solid var(--orange-2);
+  }
+
+  :global(.lightTheme) &Image img {
+    border: 1px solid var(--orange-1);
   }
 }

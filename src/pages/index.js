@@ -128,7 +128,7 @@ const Home = () => {
               Portfolio
             </Heading>
 
-            <RandomImage position="right" category="portfolio" className={styles.aboutImageFirst} />
+            <RandomImage position="right" category="portfolio" className={styles.portfolioImage} />
 
             <Text size="20" className={styles.startingParagraph}>
               Here are a few projects I have greatly spent some love and time on. I prefer to work

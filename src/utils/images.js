@@ -17,7 +17,7 @@ export const CATEGORIZED_IMAGES = {
   about: [
     {
       imagePath: AugustAllebeDeVinders,
-      imageName: 'August Allebe - De Vinders',
+      imageName: 'August Allebe — De Vinders',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -25,15 +25,7 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: BertheMorisotEugeneManet,
-      imageName: 'Berthe Morisot - Eugene Manet',
-      imageUrl: 'a',
-      uploader: 'b',
-      uploaderUrl: 'c',
-      license: 'd',
-    },
-    {
-      imagePath: VittorioReggianiniAnUnwelcomeGuest,
-      imageName: 'Vittorio Reggianini - An Unwelcome Guest',
+      imageName: 'Berthe Morisot — Eugene Manet',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -41,7 +33,7 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: ViggoJohansenChildrenpaintingspringflowers,
-      imageName: 'Viggo Johansen Children painting spring flowers',
+      imageName: 'Viggo Johansen — Children Painting Spring Flowers',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -52,7 +44,7 @@ export const CATEGORIZED_IMAGES = {
   portfolio: [
     {
       imagePath: MaryCassattInTheGarden,
-      imageName: 'Mary Cassatt - In The Garden',
+      imageName: 'Mary Cassatt — In The Garden',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -60,7 +52,7 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: ClaudeMonetInTheWoods,
-      imageName: 'Claude Monet - In The Woods',
+      imageName: 'Claude Monet — In The Woods',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -68,7 +60,7 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: MaryCassattYoungMotherSewing,
-      imageName: 'Mary Cassatt - Young Mother Sewing',
+      imageName: 'Mary Cassatt — Young Mother Sewing',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -79,7 +71,7 @@ export const CATEGORIZED_IMAGES = {
   contact: [
     {
       imagePath: DorotheaSharpSpringtime,
-      imageName: 'Dorothea Sharp - Springtime',
+      imageName: 'Dorothea Sharp — Springtime',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -87,7 +79,7 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: HarietteSutcliffeHerNewBrownShoes,
-      imageName: 'Hariette Sutcliffe - Her New Brown Shoes',
+      imageName: 'Hariette Sutcliffe — Her New Brown Shoes',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -95,7 +87,7 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: JohnGeorgeBrownPickingBerries,
-      imageName: 'John George Brown - Picking Berries',
+      imageName: 'John George Brown — Picking Berries',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -103,7 +95,7 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: LauraMuntzLyallInterestingStory,
-      imageName: 'Laura Muntz Lyall - Interesting Story',
+      imageName: 'Laura Muntz Lyall — Interesting Story',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -111,7 +103,7 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: PelegFranklinBrownellTwoGirlsReading,
-      imageName: 'Peleg Franklin Brownell - Two Girls Reading',
+      imageName: 'Peleg Franklin Brownell — Two Girls Reading',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -119,7 +111,7 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: DanielGerhartzInHerCare,
-      imageName: 'Daniel Gerhartz - In Her Care',
+      imageName: 'Daniel Gerhartz — In Her Care',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',
@@ -127,7 +119,15 @@ export const CATEGORIZED_IMAGES = {
     },
     {
       imagePath: MaryCassattMotherAndChildInBoat,
-      imageName: 'Mary Cassatt - Mother And Child In Boat',
+      imageName: 'Mary Cassatt — Mother And Child In Boat',
+      imageUrl: 'a',
+      uploader: 'b',
+      uploaderUrl: 'c',
+      license: 'd',
+    },
+    {
+      imagePath: VittorioReggianiniAnUnwelcomeGuest,
+      imageName: 'Vittorio Reggianini — An Unwelcome Guest',
       imageUrl: 'a',
       uploader: 'b',
       uploaderUrl: 'c',

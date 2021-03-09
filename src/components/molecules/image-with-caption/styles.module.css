@@ -22,4 +22,13 @@
     display: inline-block;
     margin: 10px;
   }
+
+  &Text {
+    margin-top: 0;
+    margin-left: 10px;
+
+    &:first-letter {
+      font-family: var(--default-cursive-font-family);
+    }
+  }
 }
