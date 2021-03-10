@@ -18,7 +18,7 @@ const ImageWithCaption = ({ position, image, className, hideCaption }) => (
 
     {!hideCaption && (
       <Text size="16" className={styles.imageWithCaptionText}>
-        {image.imageName}
+        <a href={image.imageUrl}>{image.imageName}</a>
       </Text>
     )}
   </div>
