@@ -79,7 +79,9 @@ const Home = () => {
             </Text>
 
             <Text size="20">
-              As of now, I currently use React, Redux, Gatsby and React Native at work.
+              As of now, I currently use React, Redux, Gatsby and React Native at work to build
+              pages, components and charts, and also explain internal practices and project setups
+              to new colleagues.
             </Text>
           </Fade>
 
