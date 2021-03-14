@@ -6,10 +6,15 @@
     margin-bottom: 10px;
 
     img {
-      border: 1px solid rgba(0, 194, 255, 0.5);
-      max-width: 400px;
-      height: 200px;
+      border: 1px solid var(--blue-1);
+      padding: 10px;
+      max-width: 410px;
+      height: 210px;
     }
+  }
+
+  &Text {
+    margin-top: -10px;
   }
 
   &Text:first-letter {

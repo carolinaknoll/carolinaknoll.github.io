@@ -77,6 +77,16 @@
   }
 }
 
+.cursive {
+  &.h2 {
+    line-height: 5rem;
+  }
+
+  &.h5 {
+    line-height: 4.2rem;
+  }
+}
+
 /* text color according to theme */
 
 :global(.lightTheme) .heading {

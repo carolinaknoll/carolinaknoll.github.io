@@ -21,8 +21,7 @@ const Footer = () => (
           /{' '}
           <a href="https://www.linkedin.com/in/carolinaknoll">
             <span>L</span>inkedIn
-          </a>{' '}
-          profile
+          </a>
         </Text>
       </Fade>
     </div>
