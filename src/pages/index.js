@@ -51,7 +51,6 @@ const Home = () => {
           </Heading>
         </Fade>
       </section>
-
       <section className={styles.about} id="about">
         <div className={styles.content}>
           <Fade>
@@ -73,15 +72,17 @@ const Home = () => {
             </Text>
 
             <Text size="20">
-              I choose Information Systems as my bachelor's on distance learning because I was young
-              and needed it, and also because I was sure university wouldn't teach everything I
-              needed so I had more time to focus on self learning the skills needed for work.
+              I chose Information Systems as my bachelor's degree on Online Distance Learning
+              modality because I was sure university would not teach everything I desired for my
+              career. I wanted more time to focus on learning by myself the skills necessary for
+              work, and less time on filler subjects I could learn faster anywhere else.
             </Text>
 
             <Text size="20">
               As of now, I currently use React, Redux, Gatsby and React Native at work to build
-              pages, components and charts, and also explain internal practices and project setups
-              to new colleagues.
+              pages, components and charts, and also act as a buddy to new colleagues, gradually
+              explaining internal cultural and technical practices, and also gently helping clear up
+              any questions and obstacles they might have.
             </Text>
           </Fade>
 
@@ -93,23 +94,24 @@ const Home = () => {
             <Fade>
               <Text size="20" className={styles.startingParagraph}>
                 Outside work, I'm all about education and how to make it better. I believe current
-                school education focuses too much on content, and with so much to learn, study and
-                apply on tests, children quickly get bored - and the spark of learning turns into
-                the boredom of repetition and acceptance. I believe something isn't right when we
-                say: "Oh, I forgot almost everything I've learned at school!"
+                school education focuses too much on just reading and filling book content, and with
+                so much to learn, study and apply on tests, children quickly get bored - and the
+                spark of learning turns into the boredom of repetition and acceptance. I believe
+                something isn't right when we say: "Oh, I forgot almost everything I've learned at
+                school!"
               </Text>
 
               <Text size="20">
-                I believe school teaches us very little about how to go on with (mature) life. That
-                is, before taking sides on any opinion, habit or action, one should work primarily
-                on nurturing a solid moral ground - in other words, I can deeply love chocolate
-                cakes, but it is unhealthy and not morally acceptable to eat them all day, everyday.
+                I believe school has a lot of filler work, and yet it teaches us very little about
+                how to go on with (mature) life. That is, before taking sides on any opinion, habit
+                or action, one should work primarily on nurturing a solid moral ground - in other
+                words, I can deeply love chocolate cakes, but it is unhealthy and not morally
+                acceptable to eat them all day, everyday.
               </Text>
             </Fade>
           </div>
         </div>
       </section>
-
       <section className={classNames(styles.separatorBlock, styles.separatorBlockSecond)}>
         <Fade>
           <Heading type="h5" form="cursive" center>
@@ -122,16 +124,13 @@ const Home = () => {
           </Heading>
         </Fade>
       </section>
-
       <section className={styles.portfolio} id="portfolio">
         <div className={styles.content}>
           <Fade>
             <Heading type="h2" form="cursive" center className={styles.ablue1bgreen1}>
               Portfolio
             </Heading>
-
             <RandomImage position="right" category="portfolio" className={styles.portfolioImage} />
-
             <Text size="20" className={styles.startingParagraph}>
               Here are a few projects I have greatly spent some love and time on. I prefer to work
               on one or two projects at a time so that I can pour love on them over time, so I am
@@ -139,10 +138,15 @@ const Home = () => {
             </Text>
             <Text size="20">
               I have also worked on a few other personal projects that are a bit heavier on code,
-              although still simple, but needed to better comprehend certain skills during the last
-              few years. Because of it, however, they are not updated with my current code. And
-              since I code mostly everyday for work, I prefer to keep them this way for now. We can
-              always chat about current approaches to solving problems and being creative, though!
+              although still simple, but created to better comprehend certain skills during the last
+              few years. Because of it, however, they are not updated with my most current code.
+            </Text>
+            <Text size="20">
+              Since I code mostly everyday for work, I prefer to spend most off-time far away from
+              screens and building relationships with the people I love dearly while building
+              puzzles, discussing book reads and watching action movies. So I prefer to keep my
+              projects this way for now. We can always chat about current approaches to solving
+              problems and being creative, though!
             </Text>
           </Fade>
 

@@ -15,11 +15,13 @@ export const PORTFOLIO_ITEMS = {
     },
     texts: {
       title: 'Educational Resources',
-      description: `Education is a delicate topic here in Brazil. Public schools are crowded and low
-      on quality, while private schools are heavy on cost. Homeschooling or educating
-      oneself without a school is still a new topic, and many people and families are
-      still afraid of it. This project aims to help spread it as another available path
-      they can choose. It also aims to make good books, resources, communities and
+      description: `Education is a delicate topic here in Brazil. Public schools are crowded and low on
+      quality, while private schools are heavy on cost. Not only that, students often depend on guidance
+      which doesn't always come, since both parents commonly work during the day and have no extra
+      time to teach things and see how school studies are going, and teachers are usually too busy with
+      book work. Homeschooling or educating oneself without a school is still a new topic, and many
+      people and families are still afraid of it. This project aims to help spread it as another
+      available path they can choose. It also aims to make good books, resources, communities and
       educational/social events known.`,
       technologies: 'Markdown files and docsify',
       page: 'https://carolinaknoll.github.io/recursos-educacionais/#/',
@@ -86,7 +88,7 @@ export const PORTFOLIO_ITEMS = {
     texts: {
       title: 'Wikipedia Viewer',
       description: `Search Wikipedia article snippets and random articles, and get your screen
-      flooded with the results of your search. Careful if you search for food too
+      (gently) flooded with the results of your search. Careful if you search for food too
       close to lunch time, though!`,
       technologies: 'React, Axios, html-react-parser, HTML/CSS, JavaScript',
       page: 'https://carolinaknoll.github.io/wikipedia-viewer/',
