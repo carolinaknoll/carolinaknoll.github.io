@@ -36,35 +36,6 @@
   padding-right: 15px;
 }
 
-.separatorBlock {
-  padding: 20px 0;
-  transition: 0.5s;
-
-  :global(.lightTheme) &First {
-    background: linear-gradient(135deg, #1e8257 0%, #ffdf87 100%);
-  }
-
-  :global(.darkTheme) &First {
-    background: linear-gradient(135deg, #1e8257 0%, #ffdf87 100%);
-  }
-
-  :global(.lightTheme) &Second {
-    background: linear-gradient(135deg, var(--blue-1) 0%, var(--green-1) 100%);
-  }
-
-  :global(.darkTheme) &Second {
-    background: linear-gradient(135deg, var(--blue-2) 0%, var(--green-2) 100%);
-  }
-
-  :global(.lightTheme) &Third {
-    background: linear-gradient(135deg, var(--orange-1) 0%, var(--orange-2) 100%);
-  }
-
-  :global(.darkTheme) &Third {
-    background: linear-gradient(135deg, var(--gray-1) 0%, var(--orange-1) 100%);
-  }
-}
-
 .home {
   min-height: 100vh;
   padding-top: 5rem;

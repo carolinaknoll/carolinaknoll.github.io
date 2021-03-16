@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Fade } from 'react-reveal'
 
 import { Heading, Text, ContactForm, Footer } from '_atoms'
-import { ImageWithCaption, PortfolioItem } from '_molecules'
+import { ImageWithCaption, SeparatorBlock, PortfolioItem } from '_molecules'
 import { RandomImage } from '_organisms'
 import { Layout } from '_templates'
 import { isInViewport } from '_utils/is-in-viewport'
@@ -38,19 +38,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={classNames(styles.separatorBlock, styles.separatorBlockFirst)}>
-        <Fade>
-          <Heading type="h5" form="cursive" center>
-            Per aspera ad astra!
-          </Heading>
-        </Fade>
+      <SeparatorBlock
+        name="home"
+        title="Per aspera ad astra!"
+        subtitle="Through hardships to the stars!"
+      />
 
-        <Fade delay={300}>
-          <Heading type="h6" form="print" center>
-            Through hardships to the stars!
-          </Heading>
-        </Fade>
-      </section>
       <section className={styles.about} id="about">
         <div className={styles.content}>
           <Fade>
@@ -112,18 +105,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className={classNames(styles.separatorBlock, styles.separatorBlockSecond)}>
-        <Fade>
-          <Heading type="h5" form="cursive" center>
-            Macte animo! Generose puer sic itur ad astra.
-          </Heading>
-        </Fade>
-        <Fade delay={300}>
-          <Heading type="h6" form="print" center>
-            Young, cheer up! This is the way to the skies.
-          </Heading>
-        </Fade>
-      </section>
+
+      <SeparatorBlock
+        name="about"
+        title="Macte animo! Generose puer sic itur ad astra."
+        subtitle="Young, cheer up! This is the way to the skies."
+      />
+
       <section className={styles.portfolio} id="portfolio">
         <div className={styles.content}>
           <Fade>
@@ -188,13 +176,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={classNames(styles.separatorBlock, styles.separatorBlockThird)}>
-        <Fade>
-          <Heading type="h5" form="cursive" center>
-            How many angels can dance on the head of a pin?
-          </Heading>
-        </Fade>
-      </section>
+      <SeparatorBlock name="portfolio" title="How many angels can dance on the head of a pin?" />
 
       <section className={styles.contact} id="contact">
         <div className={styles.content}>
