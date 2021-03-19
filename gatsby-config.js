@@ -5,6 +5,7 @@
  */
 
 const resolveOptions = require('./gatsby-resolve')
+const path = require('path')
 
 module.exports = {
   /* Your site config here */
@@ -25,6 +26,15 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-react-helmet',
+    },
+    {
+      resolve: 'gatsby-plugin-intl',
+      options: {
+        path: path.resolve(__dirname, 'src', 'locales'),
+        languages: ['en', 'pt'],
+        defaultLanguage: 'en',
+        redirect: false,
+      },
     },
   ],
 }

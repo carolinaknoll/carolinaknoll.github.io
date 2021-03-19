@@ -7,12 +7,15 @@ import { RandomImage } from '_organisms'
 import { Layout } from '_templates'
 import { isInViewport } from '_utils/is-in-viewport'
 import { PORTFOLIO_ITEMS } from '_utils/portfolio'
+import { FormattedMessage, useIntl } from 'gatsby-plugin-intl'
 
 import classNames from 'classnames'
 
 import styles from './styles.module.css'
 
 const Home = () => {
+  const intl = useIntl()
+
   return (
     <Layout>
       <section className={styles.home} id="hero">
@@ -20,19 +23,17 @@ const Home = () => {
           <div className={styles.headingGroup}>
             <Fade>
               <Heading type="h2" form="print">
-                Hello, I'm
+                <FormattedMessage id="home.description1" />
               </Heading>
               <Heading type="h2" form="cursive" className={styles.a1e8257bffdf87}>
-                Carolina!
+                <FormattedMessage id="home.description2" />
               </Heading>
             </Fade>
           </div>
 
           <Fade delay={300}>
             <Heading type="h6" form="print">
-              I am a Jr. Software Engineer passionate about education practices and hopeful about a
-              future where society looks up to a higher truth with humility and love to one another,
-              regardless of physical or intelectual differences.
+              <FormattedMessage id="home.description3" />
             </Heading>
           </Fade>
         </div>
@@ -40,15 +41,15 @@ const Home = () => {
 
       <SeparatorBlock
         name="home"
-        title="Per aspera ad astra!"
-        subtitle="Through hardships to the stars!"
+        title={intl.formatMessage({ id: 'separators.separator1Title' })}
+        subtitle={intl.formatMessage({ id: 'separators.separator1Subtitle' })}
       />
 
       <section className={styles.about} id="about">
         <div className={styles.content}>
           <Fade>
             <Heading type="h2" form="cursive" center className={styles.a1e8257bffdf87}>
-              About
+              <FormattedMessage id="about.title" />
             </Heading>
           </Fade>
 
@@ -58,24 +59,15 @@ const Home = () => {
 
           <Fade delay={300}>
             <Text size="20" className={styles.startingParagraph}>
-              As a kid with melancholic temperament, I was always quiet and by myself at school. I
-              remember thinking "I could've stayed home and have learned the exact same thing my
-              teachers said"! Truth is, they were just following school books. Recess and time off
-              school were quietly spent on studying, reading books and playing computer games.
+              <FormattedMessage id="about.description1" />
             </Text>
 
             <Text size="20">
-              I chose Information Systems as my bachelor's degree on Online Distance Learning
-              modality because I was sure university would not teach everything I desired for my
-              career. I wanted more time to focus on learning by myself the skills necessary for
-              work, and less time on filler subjects I could learn faster anywhere else.
+              <FormattedMessage id="about.description2" />
             </Text>
 
             <Text size="20">
-              As of now, I currently use React, Redux, Gatsby and React Native at work to build
-              pages, components and charts, and also act as a buddy to new colleagues, gradually
-              explaining internal cultural and technical practices, and also gently helping clear up
-              any questions and obstacles they might have.
+              <FormattedMessage id="about.description3" />
             </Text>
           </Fade>
 
@@ -86,20 +78,11 @@ const Home = () => {
 
             <Fade>
               <Text size="20" className={styles.startingParagraph}>
-                Outside work, I'm all about education and how to make it better. I believe current
-                school education focuses too much on just reading and filling book content, and with
-                so much to learn, study and apply on tests, children quickly get bored - and the
-                spark of learning turns into the boredom of repetition and acceptance. I believe
-                something isn't right when we say: "Oh, I forgot almost everything I've learned at
-                school!"
+                <FormattedMessage id="about.description4" />
               </Text>
 
               <Text size="20">
-                I believe school has a lot of filler work, and yet it teaches us very little about
-                how to go on with (mature) life. That is, before taking sides on any opinion, habit
-                or action, one should work primarily on nurturing a solid moral ground - in other
-                words, I can deeply love chocolate cakes, but it is unhealthy and not morally
-                acceptable to eat them all day, everyday.
+                <FormattedMessage id="about.description5" />
               </Text>
             </Fade>
           </div>
@@ -108,33 +91,25 @@ const Home = () => {
 
       <SeparatorBlock
         name="about"
-        title="Macte animo! Generose puer sic itur ad astra."
-        subtitle="Young, cheer up! This is the way to the skies."
+        title={intl.formatMessage({ id: 'separators.separator2Title' })}
+        subtitle={intl.formatMessage({ id: 'separators.separator2Subtitle' })}
       />
 
       <section className={styles.portfolio} id="portfolio">
         <div className={styles.content}>
           <Fade>
             <Heading type="h2" form="cursive" center className={styles.ablue1bgreen1}>
-              Portfolio
+              <FormattedMessage id="portfolio.title" />
             </Heading>
             <RandomImage position="right" category="portfolio" className={styles.portfolioImage} />
             <Text size="20" className={styles.startingParagraph}>
-              Here are a few projects I have greatly spent some love and time on. I prefer to work
-              on one or two projects at a time so that I can pour love on them over time, so I am
-              currently working on one about resources for education.
+              <FormattedMessage id="portfolio.description1" />
             </Text>
             <Text size="20">
-              I have also worked on a few other personal projects that are a bit heavier on code,
-              although still simple, but created to better comprehend certain skills during the last
-              few years. Because of it, however, they are not updated with my most current code.
+              <FormattedMessage id="portfolio.description2" />
             </Text>
             <Text size="20">
-              Since I code mostly everyday for work, I prefer to spend most off-time far away from
-              screens and building relationships with the people I love dearly while building
-              puzzles, discussing book reads and watching action movies. So I prefer to keep my
-              projects this way for now. We can always chat about current approaches to solving
-              problems and being creative, though!
+              <FormattedMessage id="portfolio.description3" />
             </Text>
           </Fade>
 
@@ -176,26 +151,27 @@ const Home = () => {
         </div>
       </section>
 
-      <SeparatorBlock name="portfolio" title="How many angels can dance on the head of a pin?" />
+      <SeparatorBlock
+        name="portfolio"
+        title={intl.formatMessage({ id: 'separators.separator3Title' })}
+      />
 
       <section className={styles.contact} id="contact">
         <div className={styles.content}>
           <Fade>
             <Heading type="h2" form="cursive" center className={styles.aorange1borange2}>
-              Contact
+              <FormattedMessage id="contact.title" />
             </Heading>
 
             <Text size="20" className={styles.startingParagraph}>
               <Text size="20" className={styles.startingParagraph}>
-                Please use the form if you would like to chat. I will try to reply as soon as I can.
+                <FormattedMessage id="contact.description1" />
               </Text>
               <Text size="20">
-                People usually have links for their own social profiles here. However, these
-                profiles tend to become forgotten over time. I try to keep away from online social
-                life in general because of all the noise, and prefer to work on puzzles and read
-                books instead, but if you would like to know more, please take a look at my{' '}
-                <a href="https://github.com/carolinaknoll">GitHub</a> or{' '}
-                <a href="https://www.linkedin.com/in/carolinaknoll">LinkedIn</a> profiles.
+                <FormattedMessage id="contact.description2" />{' '}
+                <a href="https://github.com/carolinaknoll">GitHub</a>{' '}
+                <FormattedMessage id="common.or" />{' '}
+                <a href="https://www.linkedin.com/in/carolinaknoll">LinkedIn</a>.
               </Text>
             </Text>
           </Fade>

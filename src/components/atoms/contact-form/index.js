@@ -1,33 +1,47 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
+import { useIntl } from 'gatsby-plugin-intl'
 
 import styles from './styles.module.css'
 
-const ContactForm = () => (
-  <form
-    action="https://formspree.io/carolinasknoll@gmail.com"
-    method="POST"
-    className={styles.contactForm}
-  >
-    <input
-      type="text"
-      name="name"
-      className={styles.formInput}
-      id="user"
-      placeholder="Hi! I'm..."
-    />
+const ContactForm = () => {
+  const intl = useIntl()
 
-    <input type="email" name="_replyto" className={styles.formInput} placeholder="My email is..." />
+  return (
+    <form
+      action="https://formspree.io/carolinasknoll@gmail.com"
+      method="POST"
+      className={styles.contactForm}
+    >
+      <input
+        type="text"
+        name="name"
+        className={styles.formInput}
+        id="user"
+        placeholder={intl.formatMessage({ id: 'contactForm.namePlaceholder' })}
+      />
 
-    <textarea
-      name="text"
-      className={styles.formInput}
-      placeholder="I would like to chat about..."
-    ></textarea>
+      <input
+        type="email"
+        name="_replyto"
+        className={styles.formInput}
+        placeholder={intl.formatMessage({ id: 'contactForm.emailPlaceholder' })}
+      />
 
-    <input type="submit" value="Send email!" className={classNames(styles.formInput)} />
-  </form>
-)
+      <textarea
+        name="text"
+        className={styles.formInput}
+        placeholder={intl.formatMessage({ id: 'contactForm.messagePlaceholder' })}
+      ></textarea>
+
+      <input
+        type="submit"
+        value={intl.formatMessage({ id: 'contactForm.sendEmail' })}
+        className={classNames(styles.formInput)}
+      />
+    </form>
+  )
+}
 
 export default ContactForm
