@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Quicksand:200,300,400,700'],
+        fonts: ['EB Garamond:200,300,400,700'],
         display: 'swap',
       },
     },

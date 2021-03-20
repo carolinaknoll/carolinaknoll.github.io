@@ -2,7 +2,7 @@ const styles = {}
 
 styles['default-font-family'] = 'Arial, sans-serif'
 styles['default-cursive-font-family'] = "'BraydenScriptRegular', sans-serif"
-styles['default-print-font-family'] = "'Quicksand', sans-serif"
+styles['default-print-font-family'] = "'EB Garamond', sans-serif"
 
 styles['white'] = '#fff'
 styles['dark'] = '#000'
