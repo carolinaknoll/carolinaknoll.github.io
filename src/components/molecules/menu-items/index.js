@@ -1,25 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 
 import styles from './styles.module.css'
 
 const MenuItems = ({ closeCallback }) => (
   <div className={styles.menuItems}>
     <a title="Home" onClick={closeCallback} href="#home">
-      <span>H</span>ome
+      <FormattedMessage id="menu.home" />
     </a>
 
     <a title="About" onClick={closeCallback} href="#about">
-      <span>A</span>bout
+      <FormattedMessage id="menu.about" />
     </a>
 
     <a title="Portfolio" onClick={closeCallback} href="#portfolio">
-      <span>P</span>ortfolio
+      <FormattedMessage id="menu.portfolio" />
     </a>
 
     <a title="Contact" onClick={closeCallback} href="#contact">
-      <span>C</span>ontact
+      <FormattedMessage id="menu.contact" />
     </a>
   </div>
 )

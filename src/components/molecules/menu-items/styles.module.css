@@ -21,15 +21,6 @@
   transition: 0.3s;
   vertical-align: middle;
 
-  &::before {
-    content: attr(title);
-    display: block;
-    font-family: var(--default-print-font-family);
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-  }
-
   @media (--xl-viewport) {
     padding: 28px 8px;
   }
@@ -41,7 +32,7 @@
   }
 }
 
-.menuItems span {
+.menuItems a:first-letter {
   font-family: var(--default-cursive-font-family);
 }
 

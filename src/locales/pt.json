@@ -1,4 +1,10 @@
 {
+  "menu": {
+    "home": "Início",
+    "about": "Sobre",
+    "portfolio": "Portfólio",
+    "contact": "Contato"
+  },
   "home": {
     "description1": "Olá! Me chamo",
     "description2": "Carolina!",
