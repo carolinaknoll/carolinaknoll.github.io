@@ -60,6 +60,10 @@
     "separator3Title": "How many angels can dance on the head of a pin?"
   },
   "common": {
-    "or": "or"
+    "or": "or",
+    "thisProjectUses": "This project uses",
+    "view": "View",
+    "page": "Page",
+    "code": "Code"
   }
 }

@@ -4,6 +4,7 @@ import classNames from 'classnames'
 
 import { Heading, Text } from '_atoms'
 import { ImageWithCaption } from '_molecules'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 
 import styles from './styles.module.css'
 
@@ -20,10 +21,19 @@ const PortfolioItem = ({ item, hideCaption }) => (
       {item.texts.title}
     </Heading>
     <Text size="20" className={styles.portfolioItemText}>
-      {item.texts.description} View <a href={item.texts.page}>Page</a>/
-      <a href={item.texts.code}>Code</a>.
+      {item.texts.description} <FormattedMessage id="common.view" />{' '}
+      <a href={item.texts.page}>
+        <FormattedMessage id="common.page" />
+      </a>
+      /
+      <a href={item.texts.code}>
+        <FormattedMessage id="common.code" />
+      </a>
+      .
     </Text>
-    <Text size="20">This project uses {item.texts.technologies}.</Text>
+    <Text size="20">
+      <FormattedMessage id="common.thisProjectUses" /> {item.texts.technologies}
+    </Text>
   </div>
 )
 

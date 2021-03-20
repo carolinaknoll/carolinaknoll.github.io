@@ -6,7 +6,7 @@ import { ImageWithCaption, SeparatorBlock, PortfolioItem } from '_molecules'
 import { RandomImage } from '_organisms'
 import { Layout } from '_templates'
 import { isInViewport } from '_utils/is-in-viewport'
-import { PORTFOLIO_ITEMS } from '_utils/portfolio'
+import { getPortfolioItems } from '_utils/portfolio'
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl'
 
 import classNames from 'classnames'
@@ -15,6 +15,7 @@ import styles from './styles.module.css'
 
 const Home = () => {
   const intl = useIntl()
+  const PORTFOLIO_ITEMS = getPortfolioItems()
 
   return (
     <Layout>

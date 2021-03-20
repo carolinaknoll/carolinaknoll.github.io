@@ -21,7 +21,7 @@
   "projects": {
     "project1Title": "Recursos Educacionais",
     "project1Description": "Educação é um tema delicado aqui no Brasil. As escolas públicas são lotadas e de baixa qualidade, enquanto as escolas privadas levam consigo grandes custos. Além disso, os alunos muitas vezes dependem de uma orientação que nem sempre vem, já que ambos os pais costumam trabalhar durante o dia e não têm tempo extra para ensinar coisas e ver como estão os estudos escolares, e os professores geralmente estão muito ocupados com repassar o conteúdo dos livros. Ensinar em casa ou educar-se sem uma escola ainda é um assunto novo, e muitas pessoas e famílias ainda têm medo disso. Este projeto visa ajudar a difundi-lo como mais um caminho disponível que eles possam escolher. Também visa divulgar bons livros, recursos, comunidades e eventos educacionais/sociais.",
-    "project1Tech": "Arquivos em Markdown e docsify.",
+    "project1Tech": "arquivos em Markdown e docsify.",
     "project2Title": "Awesome Gamificado",
     "project2Description": "Enraíza-se nas populares listas Awesome, com a ideia de exibir o conteúdo markdown dessas listas diretamente no navegador e também permitir ao usuário salvar, adicionar como favorito e excluir itens salvos. A interface do usuário é um pouco desajeitada e confusa, mas dá para sacar a ideia.",
     "project2Tech": "React, Marked, Axios, Webpack, ESLint.",
@@ -35,10 +35,10 @@
     "project5Description": "Campo de treinamento Markdown para testar, memorizar e ver como o Markdown é compilado diretamente enquanto você digita. Também tem um link de dicas, caso você precise.",
     "project5Tech": "React, Marked, HTML/CSS.",
     "project6Title": "Insight",
-    "project6Description": "O Insight é uma página desenvolvida com base em um modelo PSD do PhotoShop. É responsivo e segue uma abordagem desktop-first.",
+    "project6Description": "Insight é uma página desenvolvida com base em um modelo PSD do PhotoShop. É responsivo e segue uma abordagem desktop-first.",
     "project6Tech": "HTML/CSS, JavaScript.",
     "project7Title": "Calculadora em JavaScript",
-    "project7Description": "O projeto da Calculadora Básica em que todo desenvolvedor trabalha durante o início de seus anos de aprendizagem.",
+    "project7Description": "Projeto da Calculadora Básica em que todo desenvolvedor trabalha durante o início de seus anos de aprendizagem.",
     "project7Tech": "React, HTML/CSS, JavaScript."
   },
   "contact": {
@@ -60,6 +60,10 @@
     "separator3Title": "Quantos anjos podem dançar na cabeça de um alfinete?"
   },
   "common": {
-    "or": "ou"
+    "or": "ou",
+    "thisProjectUses": "Este projeto usa",
+    "view": "Ver",
+    "page": "Página",
+    "code": "Código"
   }
 }

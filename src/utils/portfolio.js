@@ -6,125 +6,115 @@ import Insight from '_images/portfolio/insight.png'
 import WikipediaViewer from '_images/portfolio/wikipedia-viewer.png'
 import JavaScriptCalculator from '_images/portfolio/javascript-calculator.png'
 
-export const PORTFOLIO_ITEMS = {
-  EducationalResources: {
-    imagePosition: 'left',
-    image: {
-      imagePath: EducationalResources,
-      imageName: 'Educational Resources',
-    },
-    texts: {
-      title: 'Educational Resources',
-      description: `Education is a delicate topic here in Brazil. Public schools are crowded and low on
-      quality, while private schools are heavy on cost. Not only that, students often depend on guidance
-      which doesn't always come, since both parents commonly work during the day and have no extra
-      time to teach things and see how school studies are going, and teachers are usually too busy with
-      book work. Homeschooling or educating oneself without a school is still a new topic, and many
-      people and families are still afraid of it. This project aims to help spread it as another
-      available path they can choose. It also aims to make good books, resources, communities and
-      educational/social events known.`,
-      technologies: 'Markdown files and docsify',
-      page: 'https://carolinaknoll.github.io/recursos-educacionais/#/',
-      code: 'https://github.com/carolinaknoll/recursos-educacionais/',
-    },
-  },
+import { useIntl } from 'gatsby-plugin-intl'
 
-  AwesomeGamified: {
-    imagePosition: 'centerTop',
-    image: {
-      imagePath: AwesomeGamified,
-      imageName: 'Awesome Gamified',
-    },
-    texts: {
-      title: 'Awesome Gamified',
-      description: `Roots itself on the popular Awesome lists, with the idea of displaying the
-      markdown content of these lists directly on the browser and also allowing the
-      user to save, favorite and delete saved items. The user interface is a bit
-      clunky and messy, but you get the idea.`,
-      technologies: 'React, Marked, Axios, Webpack, ESLint',
-      page: 'https://carolinaknoll.github.io/awesome-gamified/',
-      code: 'https://github.com/carolinaknoll/awesome-gamified/',
-    },
-  },
+export const getPortfolioItems = () => {
+  const intl = useIntl()
 
-  MarkdownPreviewer: {
-    imagePosition: 'centerTop',
-    image: {
-      imagePath: MarkdownPreviewer,
-      imageName: 'Markdown Previewer',
+  return {
+    EducationalResources: {
+      imagePosition: 'left',
+      image: {
+        imagePath: EducationalResources,
+        imageName: 'Educational Resources',
+      },
+      texts: {
+        title: intl.formatMessage({ id: 'projects.project1Title' }),
+        description: intl.formatMessage({ id: 'projects.project1Description' }),
+        technologies: intl.formatMessage({ id: 'projects.project1Tech' }),
+        page: 'https://carolinaknoll.github.io/recursos-educacionais/#/',
+        code: 'https://github.com/carolinaknoll/recursos-educacionais/',
+      },
     },
-    texts: {
-      title: 'Markdown Previewer',
-      description: `Markdown training ground to test, memorise and see how Markdown is compiled
-      directly as you type. Also has a cheatsheet link in case you would need.`,
-      technologies: 'React, Marked, HTML/CSS',
-      page: 'https://carolinaknoll.github.io/markdown-previewer/',
-      code: 'https://github.com/carolinaknoll/markdown-previewer/',
-    },
-  },
 
-  PomodoroTimer: {
-    imagePosition: 'centerTop',
-    image: {
-      imagePath: PomodoroTimer,
-      imageName: 'Pomodoro Timer',
+    AwesomeGamified: {
+      imagePosition: 'centerTop',
+      image: {
+        imagePath: AwesomeGamified,
+        imageName: 'Awesome Gamified',
+      },
+      texts: {
+        title: intl.formatMessage({ id: 'projects.project2Title' }),
+        description: intl.formatMessage({ id: 'projects.project2Description' }),
+        technologies: intl.formatMessage({ id: 'projects.project2Tech' }),
+        page: 'https://carolinaknoll.github.io/awesome-gamified/',
+        code: 'https://github.com/carolinaknoll/awesome-gamified/',
+      },
     },
-    texts: {
-      title: 'Pomodoro Timer',
-      description: `Based on the Pomodoro technique, it's a timer where you can set session/work
-      and break minutes, and it will play a sound once the time is over.`,
-      technologies: 'React, HTML/CSS',
-      page: 'https://carolinaknoll.github.io/pomodoro-timer/',
-      code: 'https://github.com/carolinaknoll/pomodoro-timer/',
-    },
-  },
 
-  WikipediaViewer: {
-    imagePosition: 'centerTop',
-    image: {
-      imagePath: WikipediaViewer,
-      imageName: 'Wikipedia Viewer',
+    MarkdownPreviewer: {
+      imagePosition: 'centerTop',
+      image: {
+        imagePath: MarkdownPreviewer,
+        imageName: 'Markdown Previewer',
+      },
+      texts: {
+        title: intl.formatMessage({ id: 'projects.project3Title' }),
+        description: intl.formatMessage({ id: 'projects.project3Description' }),
+        technologies: intl.formatMessage({ id: 'projects.project3Tech' }),
+        page: 'https://carolinaknoll.github.io/markdown-previewer/',
+        code: 'https://github.com/carolinaknoll/markdown-previewer/',
+      },
     },
-    texts: {
-      title: 'Wikipedia Viewer',
-      description: `Search Wikipedia article snippets and random articles, and get your screen
-      (gently) flooded with the results of your search. Careful if you search for food too
-      close to lunch time, though!`,
-      technologies: 'React, Axios, html-react-parser, HTML/CSS, JavaScript',
-      page: 'https://carolinaknoll.github.io/wikipedia-viewer/',
-      code: 'https://github.com/carolinaknoll/wikipedia-viewer/',
-    },
-  },
 
-  Insight: {
-    imagePosition: 'centerTop',
-    image: {
-      imagePath: Insight,
-      imageName: `Insight`,
+    PomodoroTimer: {
+      imagePosition: 'centerTop',
+      image: {
+        imagePath: PomodoroTimer,
+        imageName: 'Pomodoro Timer',
+      },
+      texts: {
+        title: intl.formatMessage({ id: 'projects.project4Title' }),
+        description: intl.formatMessage({ id: 'projects.project4Description' }),
+        technologies: intl.formatMessage({ id: 'projects.project4Tech' }),
+        page: 'https://carolinaknoll.github.io/pomodoro-timer/',
+        code: 'https://github.com/carolinaknoll/pomodoro-timer/',
+      },
     },
-    texts: {
-      title: `Insight`,
-      description: `Insight is a page developed based on a PSD template from PhotoShop.
-      It is responsive and follows a desktop-first approach.`,
-      technologies: 'HTML/CSS, JavaScript',
-      page: 'https://carolinaknoll.github.io/insight/',
-      code: 'https://github.com/carolinaknoll/insight/',
-    },
-  },
 
-  JavaScriptCalculator: {
-    imagePosition: 'centerTop',
-    image: {
-      imagePath: JavaScriptCalculator,
-      imageName: 'JavaScript Calculator',
+    WikipediaViewer: {
+      imagePosition: 'centerTop',
+      image: {
+        imagePath: WikipediaViewer,
+        imageName: 'Wikipedia Viewer',
+      },
+      texts: {
+        title: intl.formatMessage({ id: 'projects.project5Title' }),
+        description: intl.formatMessage({ id: 'projects.project5Description' }),
+        technologies: intl.formatMessage({ id: 'projects.project5Tech' }),
+        page: 'https://carolinaknoll.github.io/wikipedia-viewer/',
+        code: 'https://github.com/carolinaknoll/wikipedia-viewer/',
+      },
     },
-    texts: {
-      title: 'JavaScript Calculator',
-      description: `Basic Calculator project every developer kind of works on during the start of
-      their learning years.`,
-      technologies: 'React, HTML/CSS, JavaScript',
-      page: 'http://carolinaknoll.github.io/javascript-calculator/',
-      code: 'https://github.com/carolinaknoll/javascript-calculator/',
+
+    Insight: {
+      imagePosition: 'centerTop',
+      image: {
+        imagePath: Insight,
+        imageName: `Insight`,
+      },
+      texts: {
+        title: intl.formatMessage({ id: 'projects.project6Title' }),
+        description: intl.formatMessage({ id: 'projects.project6Description' }),
+        technologies: intl.formatMessage({ id: 'projects.project6Tech' }),
+        page: 'https://carolinaknoll.github.io/insight/',
+        code: 'https://github.com/carolinaknoll/insight/',
+      },
     },
-  },
+
+    JavaScriptCalculator: {
+      imagePosition: 'centerTop',
+      image: {
+        imagePath: JavaScriptCalculator,
+        imageName: 'JavaScript Calculator',
+      },
+      texts: {
+        title: intl.formatMessage({ id: 'projects.project7Title' }),
+        description: intl.formatMessage({ id: 'projects.project7Description' }),
+        technologies: intl.formatMessage({ id: 'projects.project7Tech' }),
+        page: 'http://carolinaknoll.github.io/javascript-calculator/',
+        code: 'https://github.com/carolinaknoll/javascript-calculator/',
+      },
+    },
+  }
 }
