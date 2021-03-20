@@ -2,6 +2,11 @@
   padding: 20px 0;
   transition: 0.5s;
 
+  .subtitle {
+    color: #d6fffc;
+    margin-top: -6px;
+  }
+
   :global(.lightTheme) &.home {
     background: linear-gradient(135deg, #1e8257 0%, #ffdf87 100%);
   }

@@ -42,6 +42,7 @@ const Home = () => {
 
       <SeparatorBlock
         name="home"
+        className={styles.homeSeparator}
         title={intl.formatMessage({ id: 'separators.separator1Title' })}
         subtitle={intl.formatMessage({ id: 'separators.separator1Subtitle' })}
       />
@@ -92,6 +93,7 @@ const Home = () => {
 
       <SeparatorBlock
         name="about"
+        className={styles.aboutSeparator}
         title={intl.formatMessage({ id: 'separators.separator2Title' })}
         subtitle={intl.formatMessage({ id: 'separators.separator2Subtitle' })}
       />
@@ -154,6 +156,7 @@ const Home = () => {
 
       <SeparatorBlock
         name="portfolio"
+        className={styles.portfolioSeparator}
         title={intl.formatMessage({ id: 'separators.separator3Title' })}
       />
 

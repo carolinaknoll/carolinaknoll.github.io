@@ -55,6 +55,11 @@
     margin: auto;
     text-align: center;
   }
+
+  &Separator {
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
 }
 
 :global(.darkTheme) .home {
@@ -69,6 +74,7 @@
   display: flex;
   flex-direction: row;
   padding-top: 70px;
+  padding-bottom: 50px;
 
   &ImageFirst img,
   &ImageSecond img {
@@ -88,6 +94,11 @@
     padding-right: 20px;
   }
 
+  &Separator {
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+
   .startingParagraph:first-letter {
     color: #1e8257;
   }
@@ -98,6 +109,7 @@
   display: flex;
   flex-direction: row;
   padding-top: 70px;
+  padding-bottom: 50px;
 
   .startingParagraph:first-letter {
     color: var(--blue-1);
@@ -122,6 +134,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
+
+  &Separator {
+    padding: 0;
+  }
 }
 
 .contact {
@@ -129,6 +145,7 @@
   display: flex;
   flex-direction: row;
   padding-top: 70px;
+  padding-bottom: 50px;
 
   .startingParagraph:first-letter {
     color: var(--orange-1);
