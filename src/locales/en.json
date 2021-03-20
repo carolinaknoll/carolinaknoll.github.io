@@ -52,6 +52,10 @@
     "messagePlaceholder": "I would like to chat about...",
     "sendEmail": "Send email!"
   },
+  "footer": {
+    "description1": "Handcrafted with love by",
+    "description2": "and art from"
+  },
   "separators": {
     "separator1Title": "Per aspera ad astra!",
     "separator1Subtitle": "Through hardships to the stars!",

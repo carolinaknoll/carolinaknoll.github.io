@@ -1,7 +1,8 @@
 .footer {
   text-align: center;
 
-  span {
+  span,
+  .footerBottom p:first-letter {
     font-family: var(--default-cursive-font-family);
   }
 }

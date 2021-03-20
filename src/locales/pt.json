@@ -52,6 +52,10 @@
     "messagePlaceholder": "Gostaria de conversar sobre...",
     "sendEmail": "Enviar email!"
   },
+  "footer": {
+    "description1": "Desenvolvido artesanalmente por",
+    "description2": "e com a arte de"
+  },
   "separators": {
     "separator1Title": "Per aspera ad astra!",
     "separator1Subtitle": "Por adversidades, para as estrelas!",
