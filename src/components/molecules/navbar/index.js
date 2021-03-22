@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { ThemeToggle, Text } from '_atoms'
+import { ThemeToggle, LanguageToggle, Text } from '_atoms'
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
 import { MenuItems } from '_molecules'
@@ -50,8 +50,11 @@ const Navbar = ({ isDark, toggleTheme }) => {
             Carolina Knoll
           </Text>
         </a>
+      </div>
 
-        <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} />
+      <div className={styles.navbarOptions}>
+        <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} /> -{' '}
+        <LanguageToggle isDark={isDark} />
       </div>
 
       <div className={styles.desktopNav}>

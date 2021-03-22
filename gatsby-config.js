@@ -34,6 +34,7 @@ module.exports = {
         languages: ['en', 'pt'],
         defaultLanguage: 'en',
         redirect: false,
+        prefixDefaultLanguage: false,
       },
     },
   ],

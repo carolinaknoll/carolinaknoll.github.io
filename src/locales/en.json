@@ -74,6 +74,12 @@
     "thisProjectUses": "This project uses",
     "view": "View",
     "page": "Page",
-    "code": "Code"
+    "code": "Code",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "language": "Language",
+    "english": "English",
+    "portuguese": "Portuguese"
   }
 }

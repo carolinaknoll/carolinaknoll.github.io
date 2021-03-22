@@ -1,11 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { FormattedMessage } from 'gatsby-plugin-intl'
 
-const ThemeToggle = ({ isDark, toggleTheme, showText }) => (
-  <div>
-    <button onClick={toggleTheme}>{showText ? `${isDark ? 'on' : 'off'}` : null}</button>
-  </div>
-)
+const ThemeToggle = ({ isDark, toggleTheme }) => {
+  const currentTheme = <FormattedMessage id={isDark ? 'common.dark' : 'common.light'} />
+
+  return (
+    <p onClick={toggleTheme}>
+      <FormattedMessage id="common.theme" />: {currentTheme}
+    </p>
+  )
+}
 
 ThemeToggle.propTypes = {
   isDark: PropTypes.bool.isRequired,

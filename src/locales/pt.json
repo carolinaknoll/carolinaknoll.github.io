@@ -74,6 +74,12 @@
     "thisProjectUses": "Este projeto usa",
     "view": "Ver",
     "page": "Página",
-    "code": "Código"
+    "code": "Código",
+    "theme": "Tema",
+    "dark": "Escuro",
+    "light": "Claro",
+    "language": "Idioma",
+    "english": "Inglês",
+    "portuguese": "Português"
   }
 }
