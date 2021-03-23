@@ -5,7 +5,6 @@ import { Heading, Text, ContactForm, Footer } from '_atoms'
 import { ImageWithCaption, SeparatorBlock, PortfolioItem } from '_molecules'
 import { RandomImage } from '_organisms'
 import { Layout } from '_templates'
-import { isInViewport } from '_utils/is-in-viewport'
 import { getPortfolioItems } from '_utils/portfolio'
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl'
 
@@ -47,7 +46,7 @@ const Home = () => {
         subtitle={intl.formatMessage({ id: 'separators.separator1Subtitle' })}
       />
 
-      <section className={styles.about} id="about">
+      <section className={classNames(styles.sectionPadding, styles.about)} id="about">
         <div className={styles.content}>
           <Fade>
             <Heading type="h2" form="cursive" center className={styles.a1e8257bffdf87}>
@@ -98,7 +97,7 @@ const Home = () => {
         subtitle={intl.formatMessage({ id: 'separators.separator2Subtitle' })}
       />
 
-      <section className={styles.portfolio} id="portfolio">
+      <section className={classNames(styles.sectionPadding, styles.portfolio)} id="portfolio">
         <div className={styles.content}>
           <Fade>
             <Heading type="h2" form="cursive" center className={styles.ablue1bgreen1}>
@@ -160,7 +159,7 @@ const Home = () => {
         title={intl.formatMessage({ id: 'separators.separator3Title' })}
       />
 
-      <section className={styles.contact} id="contact">
+      <section className={classNames(styles.sectionPadding, styles.contact)} id="contact">
         <div className={styles.content}>
           <Fade>
             <Heading type="h2" form="cursive" center className={styles.aorange1borange2}>

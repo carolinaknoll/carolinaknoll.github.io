@@ -31,6 +31,15 @@
   margin-top: 50px;
 }
 
+.sectionPadding {
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  @media (--md-viewport) {
+    padding: 20px 0;
+  }
+}
+
 .content {
   box-sizing: border-box;
   position: relative;
@@ -81,17 +90,11 @@
   min-height: 100vh;
   display: flex;
   flex-direction: row;
-  padding-top: 70px;
-  padding-bottom: 50px;
-
-  @media (--md-viewport) {
-    padding: 20px 0;
-  }
 
   &ImageFirst img,
   &ImageSecond img {
     padding: 10px;
-    border: 1px solid #1e8257;
+    border: 1px solid var(--green-3);
   }
 
   &ImageFirst {
@@ -125,18 +128,12 @@
   }
 
   .startingParagraph:first-letter {
-    color: #1e8257;
+    color: var(--green-3);
   }
 }
 
 .portfolio {
   min-height: 100vh;
-  padding-top: 70px;
-  padding-bottom: 50px;
-
-  @media (--md-viewport) {
-    padding: 20px 0;
-  }
 
   .startingParagraph:first-letter {
     color: var(--blue-1);
@@ -183,12 +180,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: row;
-  padding-top: 70px;
-  padding-bottom: 50px;
-
-  @media (--md-viewport) {
-    padding: 20px 0;
-  }
 
   .startingParagraph:first-letter {
     color: var(--orange-1);
