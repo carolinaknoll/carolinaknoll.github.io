@@ -4,8 +4,6 @@ import classNames from 'classnames'
 import { ImageWithCaption } from '_molecules'
 import { CATEGORIZED_IMAGES } from '_utils/images'
 
-import styles from './styles.module.css'
-
 const RandomImage = ({ position, category, className }) => {
   let randomNumber = category
     ? Math.floor(Math.random() * CATEGORIZED_IMAGES[category].length)
