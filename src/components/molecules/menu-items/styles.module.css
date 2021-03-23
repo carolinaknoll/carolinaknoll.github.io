@@ -37,11 +37,11 @@
 }
 
 :global(.lightTheme) .menuItems a {
-  color: #000;
+  color: var(--dark);
 }
 
 :global(.darkTheme) .menuItems a {
-  color: #fff;
+  color: var(--white);
 }
 
 .menuItems a:hover {

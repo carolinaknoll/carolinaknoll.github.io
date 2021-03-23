@@ -85,8 +85,8 @@
 }
 
 .a1e8257bffdf87 {
-  background: #1e8257;
-  background: linear-gradient(135deg, #1e8257 0%, #ffdf87 100%);
+  background: var(--green-3);
+  background: linear-gradient(135deg, var(--green-3) 0%, #ffdf87 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

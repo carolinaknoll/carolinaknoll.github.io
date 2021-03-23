@@ -1,5 +1,5 @@
 :global(.darkTheme) .contactForm [type='submit'] {
-  color: #e6e6e6;
+  color: var(--white-5);
 }
 
 .contactForm {
@@ -7,7 +7,7 @@
 }
 
 .formInput {
-  background: #dce2e6;
+  background: var(--white-3);
   border: 1px solid var(--orange-1);
   font-family: var(--default-print-font-family);
   font-size: 22px;
@@ -30,7 +30,7 @@
 :-moz-placeholder,
 ::-moz-placeholder,
 :-ms-input-placeholder {
-  color: #9e9e9e;
+  color: var(--gray-3);
 }
 
 .contactForm textarea {
@@ -41,12 +41,12 @@
 :global(.darkTheme) .contactForm [type='text'],
 :global(.darkTheme) .contactForm [type='email'],
 :global(.darkTheme) .contactForm textarea {
-  background: #15181e;
-  color: #fff;
+  background: var(--dark-3);
+  color: var(--white);
 }
 
 .contactForm [type='submit'] {
-  background: rgba(0, 194, 255, 0.5);
+  background: var(--blue-3);
   background: var(--orange-1);
   border: 0;
   color: var(--dark);
@@ -58,6 +58,6 @@
 }
 
 .contactForm [type='submit']:hover {
-  background: rgba(0, 194, 255, 0.7);
+  background: var(--blue-4);
   background: var(--orange-2);
 }

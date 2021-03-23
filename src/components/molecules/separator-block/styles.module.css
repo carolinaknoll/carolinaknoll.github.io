@@ -3,7 +3,7 @@
   transition: 0.5s;
 
   .subtitle {
-    color: #d6fffc;
+    color: var(--blue-5);
     margin-top: -6px;
   }
 
@@ -19,11 +19,11 @@
   }
 
   :global(.lightTheme) &.home {
-    background: linear-gradient(135deg, #1e8257 0%, #ffdf87 100%);
+    background: linear-gradient(135deg, var(--green-3) 0%, #ffdf87 100%);
   }
 
   :global(.darkTheme) &.home {
-    background: linear-gradient(135deg, #1e8257 0%, #ffdf87 100%);
+    background: linear-gradient(135deg, var(--green-3) 0%, #ffdf87 100%);
   }
 
   :global(.lightTheme) &.about {

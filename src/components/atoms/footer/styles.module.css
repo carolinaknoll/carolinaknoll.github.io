@@ -8,7 +8,7 @@
 }
 
 .footerTop {
-  background: #dce2e6;
+  background: var(--white-3);
   min-height: 100px;
   width: 100%;
   display: flex;
@@ -17,7 +17,7 @@
 }
 
 .footerBottom {
-  background: #cfd8dc;
+  background: var(--white-4);
   min-height: 60px;
   width: 100%;
 
@@ -28,9 +28,9 @@
 }
 
 :global(.darkTheme) .footerTop {
-  background: #1d2129;
+  background: var(--dark-2);
 }
 
 :global(.darkTheme) .footerBottom {
-  background: #15181e;
+  background: var(--dark-3);
 }

@@ -3,7 +3,7 @@
     display: flex;
     height: 100%;
     align-items: center;
-    color: #000;
+    color: var(--dark);
     font-family: var(--default-print-font-family);
     align-items: center;
     position: fixed;
