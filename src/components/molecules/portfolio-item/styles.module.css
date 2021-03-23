@@ -10,6 +10,11 @@
       padding: 10px;
       max-width: 410px;
       height: 210px;
+      width: 100%;
+
+      @media (--sm-viewport) {
+        max-width: 320px;
+      }
     }
   }
 

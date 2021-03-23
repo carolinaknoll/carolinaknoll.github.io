@@ -18,6 +18,13 @@
     float: right;
   }
 
+  @media (--sm-viewport) {
+    &Left,
+    &Right {
+      float: none;
+    }
+  }
+
   &Image {
     display: inline-block;
     margin: 10px;

@@ -11,7 +11,7 @@ const SeparatorBlock = ({ name, title, subtitle, className }) => (
   <div className={classNames(styles.separatorBlock, styles[name], className)}>
     {title && (
       <Fade>
-        <Heading type="h5" form="cursive" center>
+        <Heading type="h5" form="cursive" center className={styles.title}>
           {title}
         </Heading>
       </Fade>

@@ -7,6 +7,17 @@
     margin-top: -6px;
   }
 
+  .title,
+  .subtitle {
+    margin: 0 15px;
+  }
+
+  @media (--sm-viewport) {
+    .title {
+      line-height: 2.5rem;
+    }
+  }
+
   :global(.lightTheme) &.home {
     background: linear-gradient(135deg, #1e8257 0%, #ffdf87 100%);
   }
