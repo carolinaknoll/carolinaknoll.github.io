@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { ThemeToggle, LanguageToggle, Text } from '_atoms'
+
 import CheeseburgerMenu from 'cheeseburger-menu'
 import HamburgerMenu from 'react-hamburger-menu'
+
+import { ThemeToggle, LanguageToggle, Text } from '_atoms'
 import { MenuItems } from '_molecules'
 import { Link } from 'gatsby'
+
+import variables from '_config/css-variables'
 
 import styles from './styles.module.css'
 
@@ -19,10 +23,16 @@ const Navbar = ({ isDark, toggleTheme }) => {
     setMenuOpen(false)
   }
 
+  const navbarOptions = (
+    <div className={styles.navbarOptions}>
+      <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} /> - <LanguageToggle isDark={isDark} />
+    </div>
+  )
+
   return (
     <nav className={styles.navbarContainer} id="navbarContainer">
       <CheeseburgerMenu
-        backgroundColor={isDark ? '#000' : '#FFF'}
+        backgroundColor={isDark ? variables['gray-2'] : variables['white-2']}
         closeCallback={closeMenu}
         innerClassName={styles.navbarInner}
         isOpen={menuOpen}
@@ -30,13 +40,16 @@ const Navbar = ({ isDark, toggleTheme }) => {
         outerClassName={styles.navbarOuter}
         topOffset="45px"
       >
-        <MenuItems closeCallback={closeMenu} />
+        <div>
+          {navbarOptions}
+          <MenuItems closeCallback={closeMenu} />
+        </div>
       </CheeseburgerMenu>
       <HamburgerMenu
         animationDuration={0.5}
         borderRadius={0}
         className={styles.navbarNavigation}
-        color={isDark ? '#FFF' : '#000'}
+        color={isDark ? variables['white'] : variables['dark']}
         height={15}
         isOpen={menuOpen}
         menuClicked={openMenu}
@@ -45,19 +58,15 @@ const Navbar = ({ isDark, toggleTheme }) => {
         width={25}
       />
       <div className={styles.navbarBrand}>
-        <a href="#">
+        <Link to="/">
           <Text form="cursive" size="22">
             Carolina Knoll
           </Text>
-        </a>
-      </div>
-
-      <div className={styles.navbarOptions}>
-        <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} /> -{' '}
-        <LanguageToggle isDark={isDark} />
+        </Link>
       </div>
 
       <div className={styles.desktopNav}>
+        {navbarOptions}
         <MenuItems />
       </div>
     </nav>

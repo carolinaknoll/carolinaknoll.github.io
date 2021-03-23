@@ -5,7 +5,7 @@
   height: 80px;
   letter-spacing: 2px;
 
-  @media (--sm-viewport) {
+  @media (--md-viewport) {
     display: block;
     height: 100%;
     margin-top: 0;
@@ -25,7 +25,7 @@
     padding: 28px 8px;
   }
 
-  @media (--sm-viewport) {
+  @media (--md-viewport) {
     border-bottom: none;
     padding: 18px 15px;
     width: 100%;
