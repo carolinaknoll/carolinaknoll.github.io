@@ -27,11 +27,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--dark);
 }
 
 :global(.darkTheme) a {
-  color: #fff;
+  color: var(--white-5);
 }
 
 .app {
@@ -39,14 +39,14 @@ a {
 }
 
 :global(.darkTheme) {
-  background: #000;
-  color: #fff;
+  background: var(--dark);
+  color: var(--white-5);
 }
 
 :global(.lightTheme) {
   background: #eceff1;
 
-  color: #000;
+  color: var(--dark);
 }
 
 @font-face {

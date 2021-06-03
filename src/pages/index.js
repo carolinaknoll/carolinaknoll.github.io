@@ -72,7 +72,7 @@ const Home = () => {
             </Text>
           </Fade>
 
-          <div className={styles.marginTop50}>
+          <div className={styles.marginTop80}>
             <Fade>
               <RandomImage position="left" category="about" className={styles.aboutImageSecond} />
             </Fade>
