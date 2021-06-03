@@ -30,6 +30,11 @@ export const CATEGORIZED_IMAGES = {
       imageName: 'Viggo Johansen — Children Painting Spring Flowers',
       imageUrl: 'https://search.creativecommons.org/photos/7c5d5de4-1274-461d-9695-48f6f116c0bf',
     },
+    {
+      imagePath: HarietteSutcliffeHerNewBrownShoes,
+      imageName: 'Hariette Sutcliffe — Her New Brown Shoes',
+      imageUrl: 'https://search.creativecommons.org/photos/8ff42b8f-938a-41f8-b812-52af88aa84c5',
+    },
   ],
 
   portfolio: [
@@ -44,9 +49,9 @@ export const CATEGORIZED_IMAGES = {
       imageUrl: 'https://search.creativecommons.org/photos/3b830fdd-0238-41a3-8dbd-c0ffbed5af71',
     },
     {
-      imagePath: MaryCassattYoungMotherSewing,
-      imageName: 'Mary Cassatt — Young Mother Sewing',
-      imageUrl: 'https://search.creativecommons.org/photos/18d43d6b-a544-4867-941d-caf58e179f93',
+      imagePath: PelegFranklinBrownellTwoGirlsReading,
+      imageName: 'Peleg Franklin Brownell — Two Girls Reading',
+      imageUrl: 'https://search.creativecommons.org/photos/bc259e0c-6e61-4cc1-9735-620a38588c6c',
     },
   ],
 
@@ -57,11 +62,6 @@ export const CATEGORIZED_IMAGES = {
       imageUrl: 'https://search.creativecommons.org/photos/14078547-66ff-4fb1-b3f8-6923a576e262',
     },
     {
-      imagePath: HarietteSutcliffeHerNewBrownShoes,
-      imageName: 'Hariette Sutcliffe — Her New Brown Shoes',
-      imageUrl: 'https://search.creativecommons.org/photos/8ff42b8f-938a-41f8-b812-52af88aa84c5',
-    },
-    {
       imagePath: JohnGeorgeBrownPickingBerries,
       imageName: 'John George Brown — Picking Berries',
       imageUrl: 'https://search.creativecommons.org/photos/9bbdd6ae-3ae5-4a0c-8e08-f893fee8a427',
@@ -70,11 +70,6 @@ export const CATEGORIZED_IMAGES = {
       imagePath: LauraMuntzLyallInterestingStory,
       imageName: 'Laura Muntz Lyall — Interesting Story',
       imageUrl: 'https://search.creativecommons.org/photos/4cdc9739-3691-439d-bbfe-f60ada7d0047',
-    },
-    {
-      imagePath: PelegFranklinBrownellTwoGirlsReading,
-      imageName: 'Peleg Franklin Brownell — Two Girls Reading',
-      imageUrl: 'https://search.creativecommons.org/photos/bc259e0c-6e61-4cc1-9735-620a38588c6c',
     },
     {
       imagePath: DanielGerhartzInHerCare,
@@ -90,6 +85,11 @@ export const CATEGORIZED_IMAGES = {
       imagePath: VittorioReggianiniAnUnwelcomeGuest,
       imageName: 'Vittorio Reggianini — An Unwelcome Guest',
       imageUrl: 'https://search.creativecommons.org/photos/f0f2f147-e106-4d20-881a-613a0fc39447',
+    },
+    {
+      imagePath: MaryCassattYoungMotherSewing,
+      imageName: 'Mary Cassatt — Young Mother Sewing',
+      imageUrl: 'https://search.creativecommons.org/photos/18d43d6b-a544-4867-941d-caf58e179f93',
     },
   ],
 }
