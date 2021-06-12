@@ -19,23 +19,25 @@ const Home = () => {
   return (
     <Layout>
       <section className={styles.home} id="home">
-        <div className={styles.homeDescription}>
-          <div className={styles.headingGroup}>
-            <Fade>
-              <Heading type="h2" form="print">
-                <FormattedMessage id="home.description1" />
-              </Heading>
-              <Heading type="h2" form="cursive" className={styles.a1e8257bffdf87}>
-                <FormattedMessage id="home.description2" />
+        <div className={styles.homeDescriptionWrapper}>
+          <div className={styles.homeDescription}>
+            <div className={styles.headingGroup}>
+              <Fade>
+                <Heading type="h2" form="print">
+                  <FormattedMessage id="home.description1" />
+                </Heading>
+                <Heading type="h2" form="cursive" className={styles.a1e8257bffdf87}>
+                  <FormattedMessage id="home.description2" />
+                </Heading>
+              </Fade>
+            </div>
+
+            <Fade delay={300}>
+              <Heading type="h6" form="print">
+                <FormattedMessage id="home.description3" />
               </Heading>
             </Fade>
           </div>
-
-          <Fade delay={300}>
-            <Heading type="h6" form="print">
-              <FormattedMessage id="home.description3" />
-            </Heading>
-          </Fade>
         </div>
       </section>
 
