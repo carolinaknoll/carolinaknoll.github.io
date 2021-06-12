@@ -9,6 +9,7 @@ const SIZES = {
   20: styles.size20,
   22: styles.size22,
   24: styles.size24,
+  26: styles.size26,
   28: styles.size28,
 }
 

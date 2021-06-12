@@ -7,7 +7,7 @@
     font-family: var(--default-print-font-family);
     align-items: center;
     position: fixed;
-    height: 70px;
+    height: 60px;
     width: 100%;
     z-index: 1;
     transition: 0.3s;

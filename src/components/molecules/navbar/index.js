@@ -25,7 +25,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
 
   const navbarOptions = (
     <div className={styles.navbarOptions}>
-      <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} /> - <LanguageToggle isDark={isDark} />
+      <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} /> / <LanguageToggle isDark={isDark} />
     </div>
   )
 
@@ -59,7 +59,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
       />
       <div className={styles.navbarBrand}>
         <Link to="/">
-          <Text form="cursive" size="22">
+          <Text form="cursive" size="26">
             Carolina Knoll
           </Text>
         </Link>
