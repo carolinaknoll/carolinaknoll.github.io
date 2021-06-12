@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Fade } from 'react-reveal'
 
 import { Heading, Text, ContactForm, Footer } from '_atoms'
-import { ImageWithCaption, SeparatorBlock, PortfolioItem } from '_molecules'
+import { ImageWithCaption, PortfolioItem } from '_molecules'
 import { RandomImage } from '_organisms'
 import { Layout } from '_templates'
 import { getPortfolioItems } from '_utils/portfolio'
@@ -38,13 +38,6 @@ const Home = () => {
           </Fade>
         </div>
       </section>
-
-      <SeparatorBlock
-        name="home"
-        className={styles.homeSeparator}
-        title={intl.formatMessage({ id: 'separators.separator1Title' })}
-        subtitle={intl.formatMessage({ id: 'separators.separator1Subtitle' })}
-      />
 
       <section className={classNames(styles.sectionPadding, styles.about)} id="about">
         <div className={styles.content}>
@@ -89,13 +82,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <SeparatorBlock
-        name="about"
-        className={styles.aboutSeparator}
-        title={intl.formatMessage({ id: 'separators.separator2Title' })}
-        subtitle={intl.formatMessage({ id: 'separators.separator2Subtitle' })}
-      />
 
       <section className={classNames(styles.sectionPadding, styles.portfolio)} id="portfolio">
         <div className={styles.content}>
@@ -152,12 +138,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <SeparatorBlock
-        name="portfolio"
-        className={styles.portfolioSeparator}
-        title={intl.formatMessage({ id: 'separators.separator3Title' })}
-      />
 
       <section className={classNames(styles.sectionPadding, styles.contact)} id="contact">
         <div className={styles.content}>

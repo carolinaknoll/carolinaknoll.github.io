@@ -62,13 +62,6 @@
     "description1": "Desenvolvido artesanalmente por",
     "description2": "e com a arte de"
   },
-  "separators": {
-    "separator1Title": "Per aspera ad astra!",
-    "separator1Subtitle": "Por adversidades, para as estrelas!",
-    "separator2Title": "Macte animo! Generose puer sic itur ad astra.",
-    "separator2Subtitle": "Jovem, anime-se! Este é o caminho para os céus.",
-    "separator3Title": "Quantos anjos podem dançar na cabeça de um alfinete?"
-  },
   "common": {
     "or": "ou",
     "thisProjectUses": "Este projeto usa",

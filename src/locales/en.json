@@ -62,13 +62,6 @@
     "description1": "Handcrafted with love by",
     "description2": "and art from"
   },
-  "separators": {
-    "separator1Title": "Per aspera ad astra!",
-    "separator1Subtitle": "Through hardships to the stars!",
-    "separator2Title": "Macte animo! Generose puer sic itur ad astra.",
-    "separator2Subtitle": "Young, cheer up! This is the way to the skies.",
-    "separator3Title": "How many angels can dance on the head of a pin?"
-  },
   "common": {
     "or": "or",
     "thisProjectUses": "This project uses",
