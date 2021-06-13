@@ -48,7 +48,7 @@ Text.defaultProps = {
   bold: false,
   children: undefined,
   className: undefined,
-  color: COLORS.default,
+  color: 'default',
   form: 'print',
   size: SIZES[16],
 }

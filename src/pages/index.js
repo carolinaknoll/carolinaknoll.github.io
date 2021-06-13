@@ -121,15 +121,13 @@ const Home = () => {
             </Heading>
 
             <Text size="20" className={styles.startingParagraph}>
-              <Text size="20" className={styles.startingParagraph}>
-                <FormattedMessage id="contact.description1" />
-              </Text>
-              <Text size="20">
-                <FormattedMessage id="contact.description2" />{' '}
-                <a href="https://github.com/carolinaknoll">GitHub</a>{' '}
-                <FormattedMessage id="common.or" />{' '}
-                <a href="https://www.linkedin.com/in/carolinaknoll">LinkedIn</a>.
-              </Text>
+              <FormattedMessage id="contact.description1" />
+            </Text>
+            <Text size="20">
+              <FormattedMessage id="contact.description2" />{' '}
+              <a href="https://github.com/carolinaknoll">GitHub</a>{' '}
+              <FormattedMessage id="common.or" />{' '}
+              <a href="https://www.linkedin.com/in/carolinaknoll">LinkedIn</a>.
             </Text>
           </Fade>
 

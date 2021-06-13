@@ -26,7 +26,11 @@ const MenuItems = ({ closeCallback }) => (
 )
 
 MenuItems.propTypes = {
-  closeCallback: PropTypes.node.isRequired,
+  closeCallback: PropTypes.func.isRequired,
+}
+
+MenuItems.defaultProps = {
+  closeCallback: () => {},
 }
 
 export default MenuItems

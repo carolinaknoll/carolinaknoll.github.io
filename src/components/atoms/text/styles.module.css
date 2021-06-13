@@ -70,6 +70,10 @@
 }
 
 .default {
+  color: var(--white);
+}
+
+:global(.lightTheme) .default {
   color: var(--dark);
 }
 
