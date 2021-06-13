@@ -27,8 +27,8 @@
   }
 }
 
-.marginTop80 {
-  margin-top: 80px;
+.marginTop120 {
+  margin-top: 120px;
 }
 
 .sectionPadding {
@@ -150,6 +150,15 @@
 
   &Projects {
     margin-top: 100px;
+
+    &ItemFirst {
+      margin-bottom: 40px;
+      padding-top: 40px;
+
+      img {
+        min-height: 290px;
+      }
+    }
   }
 
   &ProjectsGrid {

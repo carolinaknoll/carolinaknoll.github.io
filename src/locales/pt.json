@@ -8,21 +8,19 @@
   "home": {
     "description1": "Olá! Me chamo",
     "description2": "Carolina!",
-    "description3": "Sou uma Engenheira de Software Jr. apaixonada por práticas educacionais e esperançosa com um futuro onde a sociedade olhe para uma verdade superior com humildade e amor uns pelos outros, independentemente de diferenças físicas ou intelectuais."
+    "description3": "Sou uma Engenheira de Software/Mobile Jr. que acredita que nós, seres humanos, também temos nossos próprios superpoderes: virtudes e qualidades como gentileza e compreensão, e que deseja uní-los ao código para tornar o mundo mais humano, desde seus processos iniciais de educação."
   },
   "about": {
     "title": "Sobre",
-    "description1": "Enquanto criança com temperamento melancólico, sempre fui quieta e reservada na escola. Lembro-me de pensar \"Eu poderia ter ficado em casa e aprendido exatamente a mesma coisa que meus professores disseram\"! A verdade é que eles estavam apenas seguindo os livros escolares. O recesso e o tempo fora da escola eram passados discretamente no estudo, na leitura de livros e nos jogos de computador.",
-    "description2": "Escolhi Sistemas de Informação como meu bacharelado na modalidade Educação a Distância Online porque tinha certeza de que a universidade não ensinaria tudo o que eu desejava para minha carreira. Eu queria mais tempo para me concentrar em aprender por mim mesma as habilidades necessárias para o trabalho, e menos tempo em assuntos de enchimento que eu pudesse aprender mais rápido em qualquer outro lugar.",
-    "description3": "Atualmente, eu uso React, Redux, Gatsby e React Native no trabalho para construir páginas, componentes e gráficos, e também atuo como uma acolhedora para novos colegas, explicando gradualmente práticas culturais e técnicas internas e também ajudando gentilmente a esclarecer qualquer perguntas e obstáculos que possam ter.",
-    "description4": "Fora do trabalho, meu foco é a educação e como torná-la melhor. Acredito que a educação escolar atual concentra-se muito em ler e preencher o conteúdo do livro, e com tanto para aprender, estudar e aplicar em testes, as crianças ficam entediadas rapidamente - e a centelha de aprendizagem se transforma no tédio da repetição e aceitação. Acredito que algo não está certo quando dizemos: \"Ah, esqueci quase tudo que aprendi na escola!\"",
-    "description5": "Acredito que a escola aborda inúmeros assuntos, mas pouco nos ensina sobre como prosseguir com a vida madura. Ou seja, antes de tomar partido sobre qualquer opinião, hábito ou ação, deve-se trabalhar principalmente em cultivar uma base moral sólida - em outras palavras, posso amar profundamente bolos de chocolate, mas não é saudável e moralmente aceitável comê-los o dia todo, todo dia."
+    "description1": "Eu acredito que cada um de nós tem a capacidade de deixar o mundo um pouquinho melhor do que era antes de chegarmos. Para isso, gosto de unir lógica e tecnologia a um aspecto humano compreensivo e gentil. As tecnologias que mais uso para isso atualmente são React, React Native, Context e TypeScript. Elas servem para criar e estilizar páginas e componentes, que desenvolvo tanto em projetos de trabalho como pessoais.",
+    "description2": "Valorizo também o cuidado para consigo, dado que nosso momento pela Terra é efêmero e curto, para que a vida seja repleta de doses de serenidade, esforço, aprendizado e coragem. Para isso, pratico Kung Fu como atividade física e leitura para alimentar uma mente aberta e firmada na Verdade.",
+    "description3": "Fora do trabalho, um grande foco é sobre a educação atual e sobretudo em como torná-la melhor. Acredito que a socialização que vem com a escola comum é incompleta, e que há um foco exagerado na leitura e absorção de conteúdos que nem sempre trazem uma conexão clara com seu valor e com a realidade. Com isso, a centelha de aprendizagem se transforma no tédio da repetição e aceitação. Naturalmente, a curiosidade de aprender independente de diplomas e certificados se esvai.",
+    "description4": "Como curiosidade, meu temperamento é melancólico e meu MBTI é INFJ, que significa Introversão (I), Intuição (N), Sentimento (F), Julgamento (J). Ambos demonstram que consigo falar através do coração, ainda que sob uma visão lógica e objetiva."
   },
   "portfolio": {
     "title": "Portfólio",
-    "description1": "Aqui estão alguns projetos nos quais dediquei muito tempo e amor. Prefiro trabalhar em um ou dois projetos de cada vez para que possa derramar amor sobre eles ao longo do tempo, por isso estou trabalhando atualmente em um sobre recursos para a educação.",
-    "description2": "Também trabalhei em alguns outros projetos pessoais que são um pouco mais extensos em código, embora ainda simples, mas criados para compreender melhor certas habilidades durante os últimos anos. Por causa disso, no entanto, eles não são atualizados com meu código mais recente.",
-    "description3": "Já que eu passo praticamente todos os dias programando, prefiro passar a maior parte do tempo livre que tenho longe das telas, construindo relacionamentos com as pessoas que amo enquanto monto quebra-cabeças, discuto livros e assisto a filmes de ação. Portanto, prefiro manter meus projetos assim por enquanto. Mas sempre podemos conversar sobre abordagens atuais para resolver problemas e ser criativos!"
+    "description1": "Aqui estão alguns projetos nos quais dediquei muito tempo e amor. Também trabalhei em alguns outros projetos pessoais que são um pouco mais extensos em código, embora ainda simples, mas criados para compreender melhor certas habilidades durante os últimos anos. Por causa disso, no entanto, eles não são atualizados com meu código mais recente.",
+    "description2": "Já que eu passo praticamente todos os dias programando, prefiro passar a maior parte do tempo livre que tenho longe das telas, construindo relacionamentos com as pessoas que amo enquanto monto quebra-cabeças, discuto livros e assisto a filmes de ação. Portanto, prefiro manter meus projetos assim por enquanto. Mas sempre podemos conversar sobre abordagens atuais para resolver problemas e ser criativos!"
   },
   "projects": {
     "project1Title": "Recursos Educacionais",
@@ -30,7 +28,7 @@
     "project1Tech": "arquivos em Markdown e docsify.",
     "project2Title": "Awesome Gamificado",
     "project2Description": "Enraíza-se nas populares listas Awesome, com a ideia de exibir o conteúdo markdown dessas listas diretamente no navegador e também permitir ao usuário salvar, adicionar como favorito e excluir itens salvos. A interface do usuário é um pouco desajeitada e confusa, mas dá para sacar a ideia.",
-    "project2Tech": "React, Marked, Axios, Webpack, ESLint.",
+    "project2Tech": "React, Marked, Axios, Webpack.",
     "project3Title": "Visualizador da Wikipedia",
     "project3Description": "Pesquise trechos de artigos da Wikipedia e artigos aleatórios e tenha sua tela (suavemente) inundada com os resultados de sua pesquisa. Mas tome cuidado se você pesquisar por comida muito perto da hora do almoço!",
     "project3Tech": "React, Axios, html-react-parser, HTML/CSS, JavaScript.",
@@ -59,7 +57,7 @@
     "sendEmail": "Enviar email!"
   },
   "footer": {
-    "description1": "Desenvolvido artesanalmente por",
+    "description1": "Desenvolvido com carinho por",
     "description2": "e com a arte de"
   },
   "common": {

@@ -21,7 +21,8 @@ const PortfolioItem = ({ item, hideCaption }) => (
       {item.texts.title}
     </Heading>
     <Text size="20" className={styles.portfolioItemText}>
-      {item.texts.description} <FormattedMessage id="common.view" />{' '}
+      {item.texts.description} <FormattedMessage id="common.thisProjectUses" />{' '}
+      {item.texts.technologies} <FormattedMessage id="common.view" />{' '}
       <a href={item.texts.page}>
         <FormattedMessage id="common.page" />
       </a>
@@ -30,9 +31,6 @@ const PortfolioItem = ({ item, hideCaption }) => (
         <FormattedMessage id="common.code" />
       </a>
       .
-    </Text>
-    <Text size="20">
-      <FormattedMessage id="common.thisProjectUses" /> {item.texts.technologies}
     </Text>
   </div>
 )

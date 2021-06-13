@@ -8,21 +8,19 @@
   "home": {
     "description1": "Hello! I'm",
     "description2": "Carolina!",
-    "description3": "I am a Jr. Software Engineer passionate about education practices and hopeful about a future where society looks up to a higher truth with humility and love to one another, regardless of physical or intelectual differences."
+    "description3": "I'm a Jr. Software/Mobile Engineer who believes that we humans also have our own superpowers: virtues and qualities such as kindness and understanding, and who wants to unite them with code to make the world more human, starting from the initial processes of Education."
   },
   "about": {
     "title": "About",
-    "description1": "As a kid with melancholic temperament, I was always quiet and by myself at school. I remember thinking \"I could've stayed home and have learned the exact same thing my teachers said\"! Truth is, they were just following school books. Recess and time off school were quietly spent on studying, reading books and playing computer games.",
-    "description2": "I chose Information Systems as my bachelor's degree on Online Distance Learning modality because I was sure university would not teach everything I desired for my career. I wanted more time to focus on learning by myself the skills necessary for work, and less time on filler subjects I could learn faster anywhere else.",
-    "description3": "As of now, I currently use React, Redux, Gatsby and React Native at work to build pages, components and charts, and also act as a buddy to new colleagues, gradually explaining internal cultural and technical practices, and also gently helping clear up any questions and obstacles they might have.",
-    "description4": "Outside work, I'm all about education and how to make it better. I believe current school education focuses too much on just reading and filling book content, and with so much to learn, study and apply on tests, children quickly get bored - and the spark of learning turns into the boredom of repetition and acceptance. I believe something isn't right when we say: \"Oh, I forgot almost everything I've learned at school!\"",
-    "description5": "I believe school has a lot of filler work, and yet it teaches us very little about how to go on with mature life. That is, before taking sides on any opinion, habit or action, one should work primarily on nurturing a solid moral ground - in other words, I can deeply love chocolate cakes, but it is unhealthy and not morally acceptable to eat them all day, everyday."
+    "description1": "I believe that each one of us has the ability to make the world a little better than it was before we arrived. For that, I like to combine logic and technology with a human aspect of kindness and understanding. The technolgies I currently use for this are React, React Native, Context and TypeScript. They serve to create and style pages and components, which I develop in both work and personal projects.",
+    "description2": "I also value taking care of oneself, given that our time on Earth is ephemeral and short, so that life is abundant in of doses of serenity, effort, learning and courage. For this, I practice Kung Fu as a physical activity, and reading to fortify a mind that is open and firm in the Truth.",
+    "description3": "Outside of work, a big focus is on current education and above all on how to make it better. I believe that the socialization that comes with the regular school is incomplete, and that there is an exaggerated focus on reading and absorbing content that does not always provide a clear connection with its value and reality. With that, the spark of learning turns into the tedium of repetition and acceptance. Naturally, the curiosity to learn independently of diplomas and certificates vanishes.",
+    "description4": "As a curiosity, my temperament is melancholic and my MBTI is  INFJ, which stands for Introversion (I), Intuition (N), Feeling (F), Judgment (J). Both demonstrate that I can speak through the heart, albeit under a logical and objective view."
   },
   "portfolio": {
     "title": "Portfolio",
-    "description1": "Here are a few projects I have greatly spent some love and time on. I prefer to work on one or two projects at a time so that I can pour love on them over time, so I am currently working on one about resources for education.",
-    "description2": "I have also worked on a few other personal projects that are a bit heavier on code, although still simple, but created to better comprehend certain skills during the last few years. Because of it, however, they are not updated with my most current code.",
-    "description3": "Since I code mostly everyday for work, I prefer to spend most off-time far away from screens and building relationships with the people I love dearly while building puzzles, discussing book reads and watching action movies. So I prefer to keep my projects this way for now. We can always chat about current approaches to solving problems and being creative, though!"
+    "description1": "Here are a few projects I have greatly spent some love and time on. I have also worked on a few other personal projects that are a bit heavier on code, although still simple, but created to better comprehend certain skills during the last few years. Because of it, however, they are not updated with my most current code.",
+    "description2": "Since I code mostly everyday for work, I prefer to spend most off-time far away from screens and building relationships with the people I love dearly while building puzzles, discussing book reads and watching action movies. So I prefer to keep my projects this way for now. We can always chat about current approaches to solving problems and being creative, though!"
   },
   "projects": {
     "project1Title": "Educational Resources",
@@ -30,7 +28,7 @@
     "project1Tech": "Markdown files and docsify.",
     "project2Title": "Awesome Gamified",
     "project2Description": "Roots itself on the popular Awesome lists, with the idea of displaying the markdown content of these lists directly on the browser and also allowing the user to save, favorite and delete saved items. The user interface is a bit clunky and messy, but you get the idea.",
-    "project2Tech": "React, Marked, Axios, Webpack, ESLint.",
+    "project2Tech": "React, Marked, Axios, Webpack.",
     "project3Title": "Wikipedia Viewer",
     "project3Description": "Search Wikipedia article snippets and random articles, and get your screen (gently) flooded with the results of your search. Careful if you search for food too close to lunch time, though!",
     "project3Tech": "React, Axios, html-react-parser, HTML/CSS, JavaScript.",
@@ -59,8 +57,8 @@
     "sendEmail": "Send email!"
   },
   "footer": {
-    "description1": "Handcrafted with love by",
-    "description2": "and art from"
+    "description1": "Handcrafted with care by",
+    "description2": "and with art from"
   },
   "common": {
     "or": "or",

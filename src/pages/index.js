@@ -61,24 +61,19 @@ const Home = () => {
             <Text size="20">
               <FormattedMessage id="about.description2" />
             </Text>
-
-            <Text size="20">
-              <FormattedMessage id="about.description3" />
-            </Text>
           </Fade>
 
-          <div className={styles.marginTop80}>
+          <div className={styles.marginTop120}>
             <Fade>
               <RandomImage position="left" category="about" className={styles.aboutImageSecond} />
             </Fade>
 
             <Fade>
               <Text size="20" className={styles.startingParagraph}>
-                <FormattedMessage id="about.description4" />
+                <FormattedMessage id="about.description3" />
               </Text>
-
               <Text size="20">
-                <FormattedMessage id="about.description5" />
+                <FormattedMessage id="about.description4" />
               </Text>
             </Fade>
           </div>
@@ -98,43 +93,28 @@ const Home = () => {
             <Text size="20">
               <FormattedMessage id="portfolio.description2" />
             </Text>
-            <Text size="20">
-              <FormattedMessage id="portfolio.description3" />
-            </Text>
           </Fade>
 
           <div className={styles.portfolioProjects}>
             <Fade>
-              <div className={styles.portfolioProjectsItem}>
+              <div className={styles.portfolioProjectsItemFirst}>
                 <PortfolioItem item={PORTFOLIO_ITEMS.EducationalResources} hideCaption />
               </div>
             </Fade>
 
             <div className={styles.portfolioProjectsGrid}>
               <Fade>
-                <div className={styles.portfolioProjectsItem}>
-                  <PortfolioItem item={PORTFOLIO_ITEMS.AwesomeGamified} hideCaption />
-                </div>
+                <PortfolioItem item={PORTFOLIO_ITEMS.AwesomeGamified} hideCaption />
 
-                <div className={styles.portfolioProjectsItem}>
-                  <PortfolioItem item={PORTFOLIO_ITEMS.WikipediaViewer} hideCaption />
-                </div>
+                <PortfolioItem item={PORTFOLIO_ITEMS.WikipediaViewer} hideCaption />
 
-                <div className={styles.portfolioProjectsItem}>
-                  <PortfolioItem item={PORTFOLIO_ITEMS.PomodoroTimer} hideCaption />
-                </div>
+                <PortfolioItem item={PORTFOLIO_ITEMS.PomodoroTimer} hideCaption />
 
-                <div className={styles.portfolioProjectsItem}>
-                  <PortfolioItem item={PORTFOLIO_ITEMS.MarkdownPreviewer} hideCaption />
-                </div>
+                <PortfolioItem item={PORTFOLIO_ITEMS.MarkdownPreviewer} hideCaption />
 
-                <div className={styles.portfolioProjectsItem}>
-                  <PortfolioItem item={PORTFOLIO_ITEMS.Insight} hideCaption />
-                </div>
+                <PortfolioItem item={PORTFOLIO_ITEMS.Insight} hideCaption />
 
-                <div className={styles.portfolioProjectsItem}>
-                  <PortfolioItem item={PORTFOLIO_ITEMS.JavaScriptCalculator} hideCaption />
-                </div>
+                <PortfolioItem item={PORTFOLIO_ITEMS.JavaScriptCalculator} hideCaption />
               </Fade>
             </div>
           </div>
