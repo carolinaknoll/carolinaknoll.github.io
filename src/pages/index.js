@@ -98,24 +98,16 @@ const Home = () => {
           <div className={styles.portfolioProjects}>
             <Fade>
               <div className={styles.portfolioProjectsItemFirst}>
-                <PortfolioItem item={PORTFOLIO_ITEMS.EducationalResources} hideCaption />
+                <PortfolioItem item={PORTFOLIO_ITEMS[0]} hideCaption />
               </div>
             </Fade>
 
             <div className={styles.portfolioProjectsGrid}>
-              <Fade>
-                <PortfolioItem item={PORTFOLIO_ITEMS.AwesomeGamified} hideCaption />
-
-                <PortfolioItem item={PORTFOLIO_ITEMS.WikipediaViewer} hideCaption />
-
-                <PortfolioItem item={PORTFOLIO_ITEMS.PomodoroTimer} hideCaption />
-
-                <PortfolioItem item={PORTFOLIO_ITEMS.MarkdownPreviewer} hideCaption />
-
-                <PortfolioItem item={PORTFOLIO_ITEMS.Insight} hideCaption />
-
-                <PortfolioItem item={PORTFOLIO_ITEMS.JavaScriptCalculator} hideCaption />
-              </Fade>
+              {PORTFOLIO_ITEMS.slice(1).map((item, index) => (
+                <Fade key={`portfolio-item-${index}`}>
+                  <PortfolioItem item={item} hideCaption />
+                </Fade>
+              ))}
             </div>
           </div>
         </div>

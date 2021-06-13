@@ -26,7 +26,7 @@ const ImageWithCaption = ({ position, image, className, hideCaption }) => (
 
 ImageWithCaption.propTypes = {
   position: PropTypes.string.isRequired,
-  image: PropTypes.shape.isRequired,
+  image: PropTypes.shape(),
 }
 
 ImageWithCaption.defaultProps = {

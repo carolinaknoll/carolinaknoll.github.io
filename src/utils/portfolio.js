@@ -11,8 +11,8 @@ import { useIntl } from 'gatsby-plugin-intl'
 export const getPortfolioItems = () => {
   const intl = useIntl()
 
-  return {
-    EducationalResources: {
+  return [
+    {
       imagePosition: 'left',
       image: {
         imagePath: EducationalResources,
@@ -27,7 +27,7 @@ export const getPortfolioItems = () => {
       },
     },
 
-    AwesomeGamified: {
+    {
       imagePosition: 'centerTop',
       image: {
         imagePath: AwesomeGamified,
@@ -42,7 +42,7 @@ export const getPortfolioItems = () => {
       },
     },
 
-    MarkdownPreviewer: {
+    {
       imagePosition: 'centerTop',
       image: {
         imagePath: MarkdownPreviewer,
@@ -57,7 +57,7 @@ export const getPortfolioItems = () => {
       },
     },
 
-    PomodoroTimer: {
+    {
       imagePosition: 'centerTop',
       image: {
         imagePath: PomodoroTimer,
@@ -72,7 +72,7 @@ export const getPortfolioItems = () => {
       },
     },
 
-    WikipediaViewer: {
+    {
       imagePosition: 'centerTop',
       image: {
         imagePath: WikipediaViewer,
@@ -87,7 +87,7 @@ export const getPortfolioItems = () => {
       },
     },
 
-    Insight: {
+    {
       imagePosition: 'centerTop',
       image: {
         imagePath: Insight,
@@ -102,7 +102,7 @@ export const getPortfolioItems = () => {
       },
     },
 
-    JavaScriptCalculator: {
+    {
       imagePosition: 'centerTop',
       image: {
         imagePath: JavaScriptCalculator,
@@ -116,5 +116,5 @@ export const getPortfolioItems = () => {
         code: 'https://github.com/carolinaknoll/javascript-calculator/',
       },
     },
-  }
+  ]
 }
