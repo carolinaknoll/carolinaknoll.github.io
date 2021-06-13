@@ -77,15 +77,6 @@
     margin: auto;
     text-align: center;
   }
-
-  &Separator {
-    padding-top: 0;
-    padding-bottom: 15px;
-
-    @media (--sm-viewport) {
-      padding: 10px 0;
-    }
-  }
 }
 
 :global(.darkTheme) .home {
@@ -131,15 +122,6 @@
     }
   }
 
-  &Separator {
-    padding-top: 0;
-    padding-bottom: 15px;
-
-    @media (--sm-viewport) {
-      padding: 10px 0;
-    }
-  }
-
   .startingParagraph:first-letter {
     color: var(--green-3);
   }
@@ -177,14 +159,6 @@
 
     @media (--sm-viewport) {
       grid-template-columns: repeat(1, 1fr);
-    }
-  }
-
-  &Separator {
-    padding: 0;
-
-    @media (--sm-viewport) {
-      padding: 10px 0;
     }
   }
 }
