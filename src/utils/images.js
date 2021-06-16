@@ -11,7 +11,7 @@ import PelegFranklinBrownellTwoGirlsReading from '_images/Peleg-Franklin-Brownel
 import ClaudeMonetInTheWoods from '_images/Claude-Monet-In-The-Woods.jpg'
 import DanielGerhartzInHerCare from '_images/Daniel-Gerhartz-In-Her-Care.jpg'
 import MaryCassattMotherAndChildInBoat from '_images/Mary-Cassatt-Mother-And-Child-In-Boat.jpg'
-import MaryCassattYoungMotherSewing from '_images/Mary-Cassatt-Young-Mother-Sewing.jpg'
+import DorotheaSharpSundayPicnic from '_images/Dorothea-Sharp-Sunday-Picnic.jpeg'
 
 export const CATEGORIZED_IMAGES = {
   about: [
@@ -87,9 +87,9 @@ export const CATEGORIZED_IMAGES = {
       imageUrl: 'https://search.creativecommons.org/photos/f0f2f147-e106-4d20-881a-613a0fc39447',
     },
     {
-      imagePath: MaryCassattYoungMotherSewing,
-      imageName: 'Mary Cassatt — Young Mother Sewing',
-      imageUrl: 'https://search.creativecommons.org/photos/18d43d6b-a544-4867-941d-caf58e179f93',
+      imagePath: DorotheaSharpSundayPicnic,
+      imageName: 'Dorothea Sharp — Sunday Picnic',
+      imageUrl: 'https://search.creativecommons.org/photos/04edb25e-613b-4515-8fbe-1f1aaf6eb542',
     },
   ],
 }
