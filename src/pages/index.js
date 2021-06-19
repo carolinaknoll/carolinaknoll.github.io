@@ -26,7 +26,7 @@ const Home = () => {
                 <Heading type="h2" form="print">
                   <FormattedMessage id="home.description1" />
                 </Heading>
-                <Heading type="h2" form="cursive" className={styles.a1e8257bffdf87}>
+                <Heading type="h2" form="cursive" className={styles.homeTitle}>
                   <FormattedMessage id="home.description2" />
                 </Heading>
               </Fade>
@@ -44,7 +44,7 @@ const Home = () => {
       <section className={classNames(styles.sectionPadding, styles.about)} id="about">
         <div className={styles.content}>
           <Fade>
-            <Heading type="h2" form="cursive" center className={styles.a1e8257bffdf87}>
+            <Heading type="h2" form="cursive" center className={styles.aboutTitle}>
               <FormattedMessage id="about.title" />
             </Heading>
           </Fade>
@@ -83,7 +83,7 @@ const Home = () => {
       <section className={classNames(styles.sectionPadding, styles.portfolio)} id="portfolio">
         <div className={styles.content}>
           <Fade>
-            <Heading type="h2" form="cursive" center className={styles.ablue1bgreen1}>
+            <Heading type="h2" form="cursive" center className={styles.portfolioTitle}>
               <FormattedMessage id="portfolio.title" />
             </Heading>
             <RandomImage position="right" category="portfolio" className={styles.portfolioImage} />
@@ -116,7 +116,7 @@ const Home = () => {
       <section className={classNames(styles.sectionPadding, styles.contact)} id="contact">
         <div className={styles.content}>
           <Fade>
-            <Heading type="h2" form="cursive" center className={styles.aorange1borange2}>
+            <Heading type="h2" form="cursive" center className={styles.contactTitle}>
               <FormattedMessage id="contact.title" />
             </Heading>
 

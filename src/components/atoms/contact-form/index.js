@@ -17,7 +17,7 @@ const ContactForm = () => {
       <input
         type="text"
         name="name"
-        className={styles.formInput}
+        className={styles.contactFormInput}
         id="user"
         placeholder={intl.formatMessage({ id: 'contactForm.namePlaceholder' })}
       />
@@ -25,20 +25,20 @@ const ContactForm = () => {
       <input
         type="email"
         name="_replyto"
-        className={styles.formInput}
+        className={styles.contactFormInput}
         placeholder={intl.formatMessage({ id: 'contactForm.emailPlaceholder' })}
       />
 
       <textarea
         name="text"
-        className={styles.formInput}
+        className={styles.contactFormInput}
         placeholder={intl.formatMessage({ id: 'contactForm.messagePlaceholder' })}
       ></textarea>
 
       <input
         type="submit"
         value={intl.formatMessage({ id: 'contactForm.sendEmail' })}
-        className={classNames(styles.formInput)}
+        className={classNames([styles.contactFormInput, styles.contactFormInputSend])}
       />
     </form>
   )

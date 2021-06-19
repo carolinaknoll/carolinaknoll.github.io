@@ -77,6 +77,10 @@
     margin: auto;
     text-align: center;
   }
+
+  .homeTitle {
+    color: var(--green-3);
+  }
 }
 
 :global(.darkTheme) .home {
@@ -94,6 +98,11 @@
   min-height: 100vh;
   display: flex;
   flex-direction: row;
+
+  .aboutTitle,
+  .startingParagraph:first-letter {
+    color: var(--green-3);
+  }
 
   &ImageFirst img,
   &ImageSecond img {
@@ -121,15 +130,12 @@
       margin: auto;
     }
   }
-
-  .startingParagraph:first-letter {
-    color: var(--green-3);
-  }
 }
 
 .portfolio {
   min-height: 100vh;
 
+  .portfolioTitle,
   .startingParagraph:first-letter {
     color: var(--blue-1);
   }
@@ -177,6 +183,7 @@
   display: flex;
   flex-direction: row;
 
+  .contactTitle,
   .startingParagraph:first-letter {
     color: var(--orange-1);
   }

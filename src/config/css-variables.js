@@ -30,6 +30,7 @@ styles['green-3'] = '#1e8257'
 
 styles['orange-1'] = '#ba8b02'
 styles['orange-2'] = '#f0db9e'
+styles['orange-3'] = '#ffd147'
 
 styles['gray-1'] = '#181818'
 styles['gray-2'] = 'rgba(40, 40, 40, 0.8)'
