@@ -28,6 +28,10 @@
   &Image {
     display: inline-block;
     margin: 10px;
+
+    @media (--xs-viewport) {
+      margin: 0;
+    }
   }
 
   &Text {

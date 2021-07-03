@@ -6,6 +6,10 @@
 }
 
 .contactForm {
+  @media (--xs-viewport) {
+    margin-bottom: 20px;
+  }
+
   &Input {
     background: var(--white-3);
     border: 1px solid var(--orange-1);

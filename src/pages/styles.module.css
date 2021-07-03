@@ -10,12 +10,22 @@
   margin-bottom: -20px;
 }
 
+@media (--xs-viewport) {
+  .startingParagraph {
+    padding-top: 20px;
+  }
+}
+
 .headingGroup {
   display: inline-flex;
 
   h4,
   h5 {
     margin-right: 10px;
+  }
+
+  @media (--xs-viewport) {
+    flex-direction: column;
   }
 }
 
@@ -29,6 +39,10 @@
 
 .marginTop120 {
   margin-top: 120px;
+
+  @media (--xs-viewport) {
+    margin-top: 20px;
+  }
 }
 
 .sectionPadding {
@@ -68,7 +82,7 @@
     display: flex;
     height: 60vh;
     justify-content: center;
-    margin: auto;
+    margin: auto 20px;
     width: 80vw;
   }
 
@@ -98,6 +112,12 @@
   min-height: 100vh;
   display: flex;
   flex-direction: row;
+
+  @media (--xs-viewport) {
+    &Title {
+      padding: 20px 0;
+    }
+  }
 
   .aboutTitle,
   .startingParagraph:first-letter {
@@ -163,6 +183,14 @@
 
       img {
         min-height: 290px;
+      }
+    }
+
+    @media (--xs-viewport) {
+      margin-top: 0;
+
+      &ItemFirst {
+        padding-top: 0;
       }
     }
   }

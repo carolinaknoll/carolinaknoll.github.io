@@ -79,7 +79,7 @@
 
 .cursive {
   &.h2 {
-    line-height: 5rem;
+    line-height: unset;
   }
 
   &.h5 {
