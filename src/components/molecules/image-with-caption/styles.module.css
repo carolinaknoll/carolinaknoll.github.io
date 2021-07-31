@@ -33,17 +33,4 @@
       margin: 0;
     }
   }
-
-  &Text {
-    margin-top: 0;
-    margin-left: 10px;
-
-    &:first-letter {
-      font-family: var(--default-cursive-font-family);
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  }
 }
