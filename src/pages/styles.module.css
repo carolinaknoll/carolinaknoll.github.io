@@ -17,7 +17,7 @@
 }
 
 .headingGroup {
-  display: inline-flex;
+  display: inline-block;
 
   h4,
   h5 {
@@ -64,30 +64,31 @@
 }
 
 .home {
-  min-height: 100vh;
-  padding-top: 4rem;
+  height: 100vh;
+  padding-top: 120px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  background: url(_images/Hamilton-Hamilton-Children-in-a-Spring-Landscape.jpg);
-  background-position: center 85%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 0.5s;
+
+  &Background {
+    background: url(_images/Sally_Swatland-By_the_Sea.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    width: 60%;
+    height: 100vh;
+  }
 
   &DescriptionWrapper {
-    background: var(--white-2);
     display: flex;
-    height: 60vh;
-    justify-content: center;
     margin: auto 20px;
-    width: 80vw;
+    width: 40%;
   }
 
   &Description {
-    max-width: 700px;
     margin: auto;
     text-align: center;
   }
@@ -98,13 +99,11 @@
 }
 
 :global(.darkTheme) .home {
-  background: url(_images/A-W-Crawford-Woodland-fairies-in-the-moonlight.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  &DescriptionWrapper {
-    background: var(--gray-2);
+  &Background {
+    background: url(_images/Alexander_Rossi-A_Summers_Tale.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

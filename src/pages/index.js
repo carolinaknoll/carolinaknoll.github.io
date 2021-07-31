@@ -19,6 +19,7 @@ const Home = () => {
   return (
     <Layout>
       <section className={styles.home} id="home">
+        <div className={styles.homeBackground}></div>
         <div className={styles.homeDescriptionWrapper}>
           <div className={styles.homeDescription}>
             <div className={styles.headingGroup}>
