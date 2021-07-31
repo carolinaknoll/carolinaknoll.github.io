@@ -93,3 +93,13 @@ export const CATEGORIZED_IMAGES = {
     },
   ],
 }
+
+export const HOME_LIGHT_THEME_IMAGE_PROPS = {
+  imageName: 'Sally Swatland - By the Sea',
+  imageUrl: 'https://search.creativecommons.org/photos/6fdb8d79-6def-403c-b24e-bcfa52edca29',
+}
+
+export const HOME_DARK_THEME_IMAGE_PROPS = {
+  imageName: "Alexander Rossi - A Summer's Tale",
+  imageUrl: 'https://search.creativecommons.org/photos/d4d46ead-4775-4fab-8e79-adb0ff67548e',
+}

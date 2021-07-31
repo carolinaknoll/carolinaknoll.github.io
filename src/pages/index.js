@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import { Fade } from 'react-reveal'
 
-import { Heading, Text, ContactForm, Footer } from '_atoms'
+import { Heading, Text, ContactForm, Footer, Caption } from '_atoms'
 import { ImageWithCaption, PortfolioItem } from '_molecules'
 import { RandomImage } from '_organisms'
 import { Layout } from '_templates'
 import { getPortfolioItems } from '_utils/portfolio'
+import { HOME_LIGHT_THEME_IMAGE_PROPS, HOME_DARK_THEME_IMAGE_PROPS } from '_utils/images'
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl'
 
 import classNames from 'classnames'
@@ -38,6 +39,29 @@ const Home = () => {
                 <FormattedMessage id="home.description3" />
               </Heading>
             </Fade>
+
+            <div className={styles.homeImageAttribution}>
+              <hr className={styles.homeImageAttributionSeparator} />
+              <Fade delay={400}>
+                <Text size="16">
+                  <FormattedMessage id="home.imageAttribution1" />
+                </Text>
+
+                <div className={styles.homeImageAttributionText}>
+                  <Text size="16">
+                    <FormattedMessage id="home.imageAttribution2" />
+                  </Text>
+                  <Caption data={HOME_LIGHT_THEME_IMAGE_PROPS} />
+                </div>
+
+                <div className={styles.homeImageAttributionText}>
+                  <Text size="16">
+                    <FormattedMessage id="home.imageAttribution3" />
+                  </Text>
+                  <Caption data={HOME_DARK_THEME_IMAGE_PROPS} />
+                </div>
+              </Fade>
+            </div>
           </div>
         </div>
       </section>

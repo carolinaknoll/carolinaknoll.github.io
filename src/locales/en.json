@@ -8,7 +8,10 @@
   "home": {
     "description1": "Hello! I'm",
     "description2": "Carolina!",
-    "description3": "I'm a Jr. Software/Mobile Engineer who believes that we humans also have our own superpowers: virtues and qualities such as kindness and understanding, and who wants to unite them with code to make the world more human, starting from the initial processes of Education."
+    "description3": "I'm a Jr. Software/Mobile Engineer who believes that we humans also have our own superpowers: virtues and qualities such as kindness and understanding, and who wants to unite them with code to make the world more human, starting from the initial processes of Education.",
+    "imageAttribution1": "*Credit attribution for the images:",
+    "imageAttribution2": "Dark theme:",
+    "imageAttribution3": "Light theme:"
   },
   "about": {
     "title": "About",
