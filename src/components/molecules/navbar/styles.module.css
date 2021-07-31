@@ -34,6 +34,10 @@
 
   &Inner {
     padding-bottom: 0 !important;
+
+    @media (--md-viewport) {
+      height: auto;
+    }
   }
 
   &Brand {

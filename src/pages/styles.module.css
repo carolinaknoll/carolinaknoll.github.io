@@ -229,6 +229,7 @@
   &FormWrapper {
     @media (--sm-viewport) {
       max-width: 100vh;
+      margin: auto;
     }
   }
 
