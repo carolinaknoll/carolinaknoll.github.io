@@ -62,6 +62,7 @@ const Home = () => {
                 </div>
               </Fade>
             </div>
+            <hr className={styles.homeDescriptionWrapperSeparator} />
           </div>
         </div>
       </section>
