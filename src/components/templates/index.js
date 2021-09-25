@@ -1,1 +1,5 @@
-export { default as Layout } from './layout'
+export { default as HomeTemplate } from './home'
+export { default as HeroSection } from './home/hero'
+export { default as AboutSection } from './home/about'
+export { default as PortfolioSection } from './home/portfolio'
+export { default as ContactSection } from './home/contact'

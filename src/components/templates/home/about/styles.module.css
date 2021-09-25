@@ -1,0 +1,52 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+
+  @media (--xs-viewport) {
+    &Title {
+      padding: 20px 0;
+    }
+  }
+
+  .aboutTitle,
+  :global(.startingParagraph:first-letter) {
+    color: var(--green-3);
+  }
+
+  .secondSection {
+    margin-top: 120px;
+
+    @media (--xs-viewport) {
+      margin-top: 20px;
+    }
+  }
+
+  &ImageFirst img,
+  &ImageSecond img {
+    padding: 10px;
+    border: 1px solid var(--green-3);
+  }
+
+  &ImageFirst {
+    display: inline-block;
+    max-width: 30%;
+  }
+
+  &ImageSecond {
+    display: inline-block;
+    max-width: 30%;
+    margin-left: -10px;
+    padding-right: 20px;
+  }
+
+  @media (--sm-viewport) {
+    &ImageFirst,
+    &ImageSecond {
+      display: block;
+      max-width: 320px;
+      margin: auto;
+    }
+  }
+}

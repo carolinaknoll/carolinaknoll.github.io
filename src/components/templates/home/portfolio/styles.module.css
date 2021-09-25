@@ -1,0 +1,53 @@
+.portfolio {
+  min-height: 100vh;
+
+  .portfolioTitle,
+  :global(.startingParagraph:first-letter) {
+    color: var(--blue-1);
+  }
+
+  &Image {
+    display: inline-block;
+    max-width: 30%;
+
+    @media (--sm-viewport) {
+      max-width: 320px;
+    }
+
+    img {
+      padding: 10px;
+      border: 1px solid var(--blue-1);
+    }
+  }
+
+  &Projects {
+    margin-top: 100px;
+
+    &ItemFirst {
+      margin-bottom: 40px;
+      padding-top: 40px;
+
+      img {
+        min-height: 290px;
+      }
+    }
+
+    @media (--xs-viewport) {
+      margin-top: 0;
+
+      &ItemFirst {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &ProjectsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @media (--sm-viewport) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

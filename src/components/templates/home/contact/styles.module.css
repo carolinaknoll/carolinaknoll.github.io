@@ -1,0 +1,37 @@
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  .title,
+  :global(.startingParagraph:first-letter) {
+    color: var(--orange-1);
+  }
+}
+
+.columnsWrapper {
+  display: flex;
+  flex-direction: row;
+
+  @media (--xs-viewport) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.imageWrapper {
+  margin-top: -10px;
+
+  img {
+    max-height: 500px;
+    padding: 10px;
+  }
+}
+
+:global(.darkTheme) .imageWrapper img {
+  border: 1px solid var(--orange-2);
+}
+
+:global(.lightTheme) .imageWrapper img {
+  border: 1px solid var(--orange-1);
+}
