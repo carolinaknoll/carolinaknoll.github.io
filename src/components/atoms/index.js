@@ -1,8 +1,0 @@
-export { default as Heading } from './heading'
-export { default as Text } from './text'
-export { default as ThemeToggle } from './theme-toggle'
-export { default as LanguageToggle } from './language-toggle'
-export { default as ContactForm } from './contact-form'
-export { default as Footer } from './footer'
-export { default as SEO } from './seo'
-export { default as Caption } from './caption'

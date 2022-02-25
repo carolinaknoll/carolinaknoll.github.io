@@ -1,12 +1,17 @@
-const autoprefixer = require('autoprefixer')
-const postCSSCssVariables = require('postcss-css-variables')
-const postCSSCustomMedia = require('postcss-custom-media')
-const postCSSImport = require('postcss-import')()
-const postCSSNested = require('postcss-nested')
+const autoprefixer = require('autoprefixer');
+const postCSSCssVariables = require('postcss-css-variables');
+const postCSSCustomMedia = require('postcss-custom-media');
+const postCSSImport = require('postcss-import')();
+const postCSSNested = require('postcss-nested');
 
-const cssVariables = require('./src/config/css-variables')
+const postCSSAutoprefixer = autoprefixer();
 
-const postCSSAutoprefixer = autoprefixer()
+var fs = require('fs');
+
+var cssVariables = fs.readFileSync('src/app/config/css-variables.css', 'utf8');
+console.log('🚀 ~ file: postcss.config.js ~ line 12 ~ cssVariables', cssVariables);
+
+// const cssVariables = require('app/config/css-variables');
 
 const gridBreakpoints = {
   xs: '480px',
@@ -15,14 +20,14 @@ const gridBreakpoints = {
   lg: '1024px',
   xl: '1200px',
   xxl: '1440px',
-}
+};
 
 module.exports = {
   plugins: [
     postCSSImport,
-    postCSSCssVariables({
-      variables: cssVariables,
-    }),
+    // postCSSCssVariables({
+    //   variables: cssVariables,
+    // }),
     postCSSCustomMedia({
       importFrom: {
         customMedia: {
@@ -38,4 +43,4 @@ module.exports = {
     postCSSAutoprefixer,
     postCSSNested,
   ],
-}
+};

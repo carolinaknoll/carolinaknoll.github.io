@@ -7,13 +7,6 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  settings: {
-    'import/resolver': {
-      webpack: {
-        config: 'gatsby-resolve.js',
-      },
-    },
-  },
   rules: {
     'react/jsx-props-no-spreading': 'off',
     'import/no-extraneous-dependencies': [
@@ -31,4 +24,4 @@ module.exports = {
     ],
   },
   globals: {},
-}
+};
