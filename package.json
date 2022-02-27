@@ -21,7 +21,6 @@
     "babel-eslint": "^10.1.0",
     "cheeseburger-menu": "0.0.13",
     "classnames": "^2.3.1",
-    "postcss-css-variables": "^0.18.0",
     "postcss-custom-media": "^8.0.0",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",

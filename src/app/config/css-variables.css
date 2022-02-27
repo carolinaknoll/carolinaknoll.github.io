@@ -1,37 +1,39 @@
+@charset "UTF-8";
+
 :root {
-  --default-font-family: 'Arial, sans-serif';
-  --default-cursive-font-family: "'BraydenScriptRegular', sans-serif";
-  --default-print-font-family: "'EB Garamond', sans-serif";
+  --default-font-family: Arial, sans-serif;
+  --default-cursive-font-family: BraydenScriptRegular, sans-serif;
+  --default-print-font-family: EB Garamond, sans-serif;
 
-  --white: '#fff';
-  --white-2: 'rgba(200, 200, 200, 0.8)';
-  --white-3: '#dce2e6';
-  --white-4: '#cfd8dc';
-  --white-5: '#e6e6e6';
+  --white: #ffffff;
+  --white-2: rgba(200, 200, 200, 0.8);
+  --white-3: #dce2e6;
+  --white-4: #cfd8dc;
+  --white-5: #e6e6e6;
 
-  --dark: '#000';
-  --dark-2: '#1d2129';
-  --dark-3: '#15181e';
+  --dark: #000000;
+  --dark-2: #1d2129;
+  --dark-3: #15181e;
 
-  --blue-1: '#2bbbff';
-  --blue-2: '#156f99';
-  --blue-3: 'rgba(0, 194, 255, 0.5)';
-  --blue-4: 'rgba(0, 194, 255, 0.7)';
-  --blue-5: '#d6fffc';
+  --blue-1: #2bbbff;
+  --blue-2: #156f99;
+  --blue-3: rgba(0, 194, 255, 0.5);
+  --blue-4: rgba(0, 194, 255, 0.7);
+  --blue-5: #d6fffc;
 
-  --purple-1: '#c28cff';
-  --purple-2: '#5f2d91';
-  --purple-3: '#c58cff';
+  --purple-1: #c28cff;
+  --purple-2: #5f2d91;
+  --purple-3: #c58cff;
 
-  --green-1: '#76f7a5';
-  --green-2: '#3f915d';
-  --green-3: '#1e8257';
+  --green-1: #76f7a5;
+  --green-2: #3f915d;
+  --green-3: #1e8257;
 
-  --orange-1: '#ba8b02';
-  --orange-2: '#f0db9e';
-  --orange-3: '#ffd147';
+  --orange-1: #ba8b02;
+  --orange-2: #f0db9e;
+  --orange-3: #ffd147;
 
-  --gray-1: '#181818';
-  --gray-2: 'rgba(40, 40, 40, 0.8)';
-  --gray-3: '#9e9e9e';
+  --gray-1: #181818;
+  --gray-2: rgba(40, 40, 40, 0.8);
+  --gray-3: #9e9e9e;
 }

@@ -14,14 +14,10 @@ module.exports = {
   context: sourcePath,
   entry: {
     app: './main.tsx',
-    // app: path.resolve(__dirname, 'src') + '/main.tsx',
   },
-  // entry: path.resolve(__dirname, 'src') + '/main.tsx',
   output: {
     path: outPath,
     filename: isProduction ? '[contenthash].js' : '[contenthash].js',
-    // filename: isProduction ? '[contenthash].js' : 'bundle.js',
-    // chunkFilename: isProduction ? '[name].[contenthash].js' : '[name].[contenthash].js',
   },
   target: 'web',
   resolve: {
@@ -45,9 +41,7 @@ module.exports = {
         ].filter(Boolean),
       },
       {
-        // test: /\.(css|scss)$/,
         test: /\.(css|scss)$/,
-
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
           {
@@ -66,8 +60,7 @@ module.exports = {
               postcssOptions: {
                 ident: 'postcss',
                 plugins: [
-                  require('postcss-import')({ addDependencyTo: webpack }),
-                  // require('postcss-css-variables')(),
+                  require('postcss-import')(),
                   require('postcss-url')(),
                   require('postcss-preset-env')({
                     stage: 2,
@@ -82,18 +75,7 @@ module.exports = {
           },
         ],
       },
-      // static assets
       { test: /\.html$/, use: 'html-loader' },
-      // {
-      //   test: /\.html$/,
-      //   exclude: [/node_modules/, require.resolve('./index.html')],
-      //   use: {
-      //     loader: 'file-loader',
-      //     query: {
-      //       name: '[name].[ext]',
-      //     },
-      //   },
-      // },
       { test: /\.(a?png|svg)$/, use: 'url-loader?limit=10000' },
       {
         test: /\.(jpe?g|gif|bmp|mp3|mp4|ogg|wav|eot|ttf|woff|woff2)$/,

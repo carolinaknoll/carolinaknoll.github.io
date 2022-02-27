@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { App } from 'app/app';
-import 'app/index.css';
 
-import 'app/config/css-variables.css';
+import 'app/index.css';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
