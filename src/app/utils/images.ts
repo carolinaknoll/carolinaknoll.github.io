@@ -95,11 +95,11 @@ export const categorizedImages: { [key: string]: any } = {
 };
 
 export const HOME_LIGHT_THEME_IMAGE_PROPS = {
-  imageName: 'Sally Swatland - By the Sea',
-  imageUrl: 'https://search.creativecommons.org/photos/6fdb8d79-6def-403c-b24e-bcfa52edca29',
+  imageName: 'Sally Swatland - Day at the Beach',
+  imageUrl: 'https://search.openverse.engineering/image/7064b74a-6aeb-4c81-a62d-1bd0954bf1c8',
 };
 
 export const HOME_DARK_THEME_IMAGE_PROPS = {
-  imageName: "Alexander Rossi - A Summer's Tale",
-  imageUrl: 'https://search.creativecommons.org/photos/d4d46ead-4775-4fab-8e79-adb0ff67548e',
+  imageName: 'Sally Swatland - Tidal Pool',
+  imageUrl: 'https://search.openverse.engineering/image/8ca38d60-f55a-4946-ab79-2e3167fa5213',
 };

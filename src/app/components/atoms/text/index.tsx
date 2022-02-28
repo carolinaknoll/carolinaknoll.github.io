@@ -40,9 +40,16 @@ export const Text = ({
   ...props
 }: TextProps) => {
   const textProps = {
-    className: classNames(className, TextColors[color], TextSizes[size], TextFonts[form], styles.text, {
-      [styles.bold]: bold,
-    }),
+    className: classNames(
+      className,
+      styles[TextColors[color]],
+      styles[TextSizes[size]],
+      styles[TextFonts[form]],
+      styles.text,
+      {
+        [styles.bold]: bold,
+      }
+    ),
     props,
   };
 

@@ -15,6 +15,15 @@
     color: var(--green-3);
   }
 
+  .listItem:before {
+    content: '✽ ';
+    color: var(--green-3);
+  }
+
+  .secondParagraph {
+    padding-top: 30px;
+  }
+
   .secondSection {
     margin-top: 120px;
 

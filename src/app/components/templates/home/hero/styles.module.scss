@@ -7,60 +7,62 @@
   align-items: center;
   vertical-align: middle;
 
-  &Background {
-    background: url('app/images/Sally_Swatland-By_the_Sea.jpeg');
+  .titleContainer {
+    display: inline-flex;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .background {
+    background: url('app/images/SallySwatland_DayAtTheBeach.jpeg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.5s;
-    width: 60%;
-    height: calc(100vh - 80px);
-    margin-top: -80px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    flex-direction: column;
   }
 
   &DescriptionWrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto 20px;
-    width: 40%;
-
-    &Separator {
-      display: none;
-    }
   }
 
   &Description {
     margin: auto;
     text-align: center;
-  }
 
-  &ImageAttribution {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-
-    &Separator {
-      width: 70%;
-      height: 1px;
-      background-color: var(--green-3);
-      border: 1px solid var(--green-3);
-    }
-
-    &Text {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      vertical-align: middle;
-
-      p {
-        line-height: 1rem;
-        margin-top: 10px;
-      }
+    a {
+      color: var(--orange-1);
     }
   }
 
   .homeTitle {
-    color: var(--green-3);
+    color: var(--orange-1);
+  }
+
+  .homeSubtitle {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .attributionContainer {
+    display: inline-flex;
+    margin-bottom: 20px;
+  }
+
+  .attribution {
+    display: inline-flex;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 
   @media (--sm-viewport) {
@@ -68,31 +70,34 @@
     flex-direction: column;
     padding-top: 45px;
 
-    &Background {
+    .background {
       width: 100%;
-      height: 40vh;
     }
 
     &DescriptionWrapper {
       width: 100%;
       padding-top: 20px;
-
-      &Separator {
-        display: block;
-        width: 95%;
-        height: 1px;
-        background-color: var(--green-3);
-        border: 1px solid var(--green-3);
-      }
     }
   }
 }
 
 :global(.darkTheme) .home {
-  &Background {
-    background: url('app/images/Alexander_Rossi-A_Summers_Tale.jpeg');
+  .background {
+    background: url('app/images/SallySwatland_TidalPool.jpeg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.transparentBg {
+  padding: 10px;
+}
+
+:global(.lightTheme) .transparentBg {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+:global(.darkTheme) .transparentBg {
+  background: rgba(0, 0, 0, 0.5);
 }
