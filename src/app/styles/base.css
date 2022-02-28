@@ -56,6 +56,11 @@ a {
   src: url('./app/fonts/Brayden-Script-Regular.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('./app/fonts/EBGaramond-Regular.ttf');
+}
+
 :global(.startingParagraph:first-letter) {
   font-family: var(--default-cursive-font-family);
   float: left;

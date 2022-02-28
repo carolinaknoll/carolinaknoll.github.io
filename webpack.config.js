@@ -81,7 +81,7 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.(gif|bmp|mp3|mp4|ogg|wav|eot|ttf|woff|woff2)$/,
+        test: /\.(gif|bmp|mp3|mp4|ogg|wav|eot|woff|woff2)$/,
         use: 'file-loader',
       },
     ],
