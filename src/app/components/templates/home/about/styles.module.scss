@@ -1,8 +1,14 @@
+:global(.darkTheme) .about {
+  background-color: rgba(165, 144, 112, 1);
+}
+
 .about {
   min-height: 100vh;
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  background-color: rgba(130, 150, 180, 1);
+  transition: background-color 1s ease-in-out;
 
   @media (--xs-viewport) {
     &Title {
@@ -10,18 +16,56 @@
     }
   }
 
+  .titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titleImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .titleImage path {
+    fill: var(--orange-4);
+  }
+
   .aboutTitle,
   :global(.startingParagraph:first-letter) {
-    color: var(--green-3);
+    color: var(--orange-4);
   }
 
   .listItem:before {
     content: '✽ ';
-    color: var(--green-3);
+    color: var(--orange-4);
   }
 
   .secondParagraph {
     padding-top: 30px;
+  }
+
+  .firstSectionContent,
+  .secondSectionContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 33%;
+    padding: 0 20px;
+
+    @media (--md-viewport) {
+      width: 100%;
+    }
   }
 
   .secondSection {
@@ -35,7 +79,7 @@
   &ImageFirst img,
   &ImageSecond img {
     padding: 10px;
-    border: 1px solid var(--green-3);
+    border: 1px solid var(--orange-4);
   }
 
   &ImageFirst {

@@ -7,6 +7,8 @@ import { PortfolioItem } from 'app/components/molecules';
 import { RandomImage } from 'app/components/organisms';
 import { PortfolioItemData } from 'app/utils/portfolio';
 
+import Flower from 'app/images/svg/noun-flowers-1827937.svg';
+
 import styles from './styles.module.scss';
 
 interface PorfolioSectionProps {
@@ -16,9 +18,25 @@ interface PorfolioSectionProps {
 const PortfolioSection = ({ portfolioItems }: PorfolioSectionProps) => (
   <section className={classNames('sectionPadding', styles.portfolio)} id="portfolio">
     <div className="content">
-      <Heading type={HeadingLevels.h2} form={HeadingFonts.cursive} center className={styles.portfolioTitle}>
-        <FormattedMessage id="portfolioTitle" />
-      </Heading>
+      <div className={styles.titleContainer}>
+        <Heading
+          type={HeadingLevels.h2}
+          form={HeadingFonts.cursive}
+          center
+          className={styles.aboutTitle}
+        >
+          <Heading
+            type={HeadingLevels.h2}
+            form={HeadingFonts.cursive}
+            center
+            className={styles.portfolioTitle}
+          >
+            <FormattedMessage id="portfolioTitle" />
+          </Heading>
+        </Heading>
+        <Flower className={styles.titleImage} />
+      </div>
+
       <RandomImage position="right" category="portfolio" className={styles.portfolioImage} />
       <Text size={TextSizes.size20} className={'startingParagraph'}>
         <FormattedMessage id="portfolioDescription1" />

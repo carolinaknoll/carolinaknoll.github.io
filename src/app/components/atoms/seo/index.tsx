@@ -8,7 +8,7 @@ interface SEOProps {
 
 const SEO = ({ title, description }: SEOProps) => (
   <Helmet>
-    <title>Carolina - Jr. Software and Mobile Engineer passionate about Education</title>
+    <title>Carolina - Software and Mobile Engineer passionate about Education</title>
     <meta
       name="description"
       content="React and React Native engineer passionate about education practices and

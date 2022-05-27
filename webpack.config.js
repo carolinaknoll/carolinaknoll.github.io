@@ -77,12 +77,23 @@ module.exports = {
       },
       { test: /\.html$/, use: 'html-loader' },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
       {
         test: /\.(gif|bmp|mp3|mp4|ogg|wav|eot|woff|woff2)$/,
         use: 'file-loader',
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: 'react-svg-loader',
+          },
+        ],
       },
     ],
   },

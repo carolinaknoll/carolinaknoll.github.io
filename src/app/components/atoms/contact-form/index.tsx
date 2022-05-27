@@ -4,11 +4,19 @@ import { useIntl } from 'react-intl';
 
 import styles from './styles.module.scss';
 
-const ContactForm = () => {
+interface ContactformProps {
+  className: string;
+}
+
+const ContactForm = ({ className }: ContactformProps) => {
   const intl = useIntl();
 
   return (
-    <form action="https://formspree.io/carolinasknoll@gmail.com" method="POST" className={styles.contactForm}>
+    <form
+      action="https://formspree.io/carolinasknoll@gmail.com"
+      method="POST"
+      className={classNames(styles.contactForm, className)}
+    >
       <input
         type="text"
         name="name"

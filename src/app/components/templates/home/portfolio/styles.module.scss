@@ -1,9 +1,25 @@
 .portfolio {
   min-height: 100vh;
+  background: rgb(69, 43, 41);
 
   .portfolioTitle,
   :global(.startingParagraph:first-letter) {
     color: var(--blue-1);
+  }
+
+  .titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titleImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .titleImage path {
+    fill: var(--blue-1);
   }
 
   &Image {
