@@ -1,0 +1,28 @@
+.attributions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.attributionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  svg {
+    margin-top: 5px;
+  }
+
+  p {
+    padding: 0;
+  }
+}
+
+.url {
+  margin-left: 5px;
+}

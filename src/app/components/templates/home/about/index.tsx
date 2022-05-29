@@ -6,6 +6,16 @@ import { Heading, HeadingFonts, HeadingLevels, Text, TextSizes } from 'app/compo
 
 import Flower from 'app/images/svg/noun-flower-2727483.svg';
 
+import Gloves from 'app/images/svg/noun-gloves-1044055.svg';
+import Rabbit from 'app/images/svg/noun-rabbit-214995.svg';
+import KnowledgeGrowth from 'app/images/svg/noun-knowledge-growth-3997797.svg';
+
+import Geography from 'app/images/svg/noun-geography-3846209.svg';
+import Growth from 'app/images/svg/noun-growth-3816161.svg';
+import MatrixStrength from 'app/images/svg/noun-matrix-strength-3020215.svg';
+import Camping from 'app/images/svg/noun-camping-4362585.svg';
+import RollerCoaster from 'app/images/svg/noun-roller-coaster-4362629.svg';
+
 import styles from './styles.module.scss';
 
 const AboutSection = () => (
@@ -40,19 +50,21 @@ const AboutSection = () => (
 
       <div className={styles.firstSectionContent}>
         <div className={styles.contentWrapper}>
+          <Gloves className={classNames(styles.aboutIcon, styles.stroke1px)} />
           <Text size={TextSizes.size20} className={styles.listItem}>
             <FormattedMessage id="aboutDescription4" />
           </Text>
         </div>
 
         <div className={styles.contentWrapper}>
+          <Rabbit className={styles.aboutIcon} />
           <Text size={TextSizes.size20} className={styles.listItem}>
             <FormattedMessage id="aboutDescription5" />
           </Text>
         </div>
 
         <div className={styles.contentWrapper}>
-          <div className={styles.foo} />
+          <KnowledgeGrowth className={styles.aboutIcon} />
           <Text size={TextSizes.size20} className={styles.listItem}>
             <FormattedMessage id="aboutDescription6" />
           </Text>
@@ -60,43 +72,43 @@ const AboutSection = () => (
       </div>
 
       <div className={styles.secondSection}>
-        {/* <RandomImage position="left" category="about" className={styles.aboutImageSecond} /> */}
-
         <Text size={TextSizes.size20} className={'startingParagraph'}>
           <FormattedMessage id="aboutDescription7" />
         </Text>
 
         <div className={styles.secondSectionContent}>
           <div className={styles.contentWrapper}>
-            <div className={styles.foo} />
+            <Geography
+              className={classNames(styles.aboutIcon, styles.stroke1px, styles.strokeSameColor)}
+            />
             <Text size={TextSizes.size20} className={styles.listItem}>
               <FormattedMessage id="aboutDescription8" />
             </Text>
           </div>
 
           <div className={styles.contentWrapper}>
-            <div className={styles.foo} />
+            <Growth className={classNames(styles.aboutIcon, styles.stroke5px)} />
             <Text size={TextSizes.size20} className={styles.listItem}>
               <FormattedMessage id="aboutDescription9" />
             </Text>
           </div>
 
           <div className={styles.contentWrapper}>
-            <div className={styles.foo} />
+            <MatrixStrength className={classNames(styles.aboutIcon, styles.stroke0px)} />
             <Text size={TextSizes.size20} className={styles.listItem}>
               <FormattedMessage id="aboutDescription10" />
             </Text>
           </div>
 
           <div className={styles.contentWrapper}>
-            <div className={styles.foo} />
+            <Camping className={classNames(styles.aboutIcon, styles.stroke5px)} />
             <Text size={TextSizes.size20} className={styles.listItem}>
               <FormattedMessage id="aboutDescription11" />
             </Text>
           </div>
 
           <div className={styles.contentWrapper}>
-            <div className={styles.foo} />
+            <RollerCoaster className={classNames(styles.aboutIcon, styles.stroke5px)} />
             <Text size={TextSizes.size20} className={styles.listItem}>
               <FormattedMessage id="aboutDescription12" />
             </Text>

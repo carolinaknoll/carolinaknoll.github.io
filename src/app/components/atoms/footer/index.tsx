@@ -3,6 +3,7 @@ import { Text, TextSizes } from 'app/components/atoms';
 import { FormattedMessage } from 'react-intl';
 
 import styles from './styles.module.scss';
+import { CreditAttribution } from 'app/components/templates/home/credit-attribution';
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -27,6 +28,8 @@ const Footer = () => (
         <FormattedMessage id="footerDescription2" />{' '}
         <a href="https://search.creativecommons.org/">Creative Commons Search</a>.
       </Text>
+
+      <CreditAttribution />
     </div>
   </footer>
 );

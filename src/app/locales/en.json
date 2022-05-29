@@ -8,11 +8,6 @@
   "homeDescription2": "Carolina",
   "homeDescription3": "A young Software & Mobile Engineer who believes in kindness, heroes and",
   "homeDescription4": "human super powers.",
-  "homeImageAttribution1": "*Credit attribution - ",
-  "homeImageAttribution2": "Dark theme:",
-  "homeImageAttribution3": "Light theme:",
-  "homeImageAttribution4": "*Credit attribution - Beautiful icons:",
-  "homeImageAttribution5": "Alex Muravev from NounProject.com",
 
   "aboutTitle": "About",
   "aboutDescription1": "I usually work with React, React Native, Context, Redux, Gatsby, CSS Modules, TypeScript, Bitrise and Netlify.",
@@ -75,5 +70,20 @@
   "commonLight": "Light",
   "commonLanguage": "Language",
   "commonEnglish": "English",
-  "commonPortuguese": "Portuguese"
+  "commonPortuguese": "Portuguese",
+
+  "creditAttribution1": "*Credit attribution for the images and icons used:",
+  "creditAttribution2": "Dark theme hero image:",
+  "creditAttribution3": "Light theme hero image:",
+  "creditAttribution4": "Icons are from the following creators at NounProject.com:",
+  "creditAttribution5": "Section title flowers are from",
+  "creditAttribution6": "Alex Muravev",
+  "creditAttribution8": "Oleksandr Panasovskyi",
+  "creditAttribution10": "Nicole Portantiere",
+  "creditAttribution12": "Shakeel Ch.",
+  "creditAttribution14": "Smashing Stocks",
+  "creditAttribution16": "agus raharjo",
+  "creditAttribution18": "IconforYou",
+  "creditAttribution20": "Jino",
+  "creditAttribution22": "Jino"
 }

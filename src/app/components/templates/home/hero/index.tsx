@@ -1,14 +1,6 @@
 import React from 'react';
 
-import {
-  Heading,
-  Text,
-  Caption,
-  TextSizes,
-  HeadingLevels,
-  HeadingFonts,
-} from 'app/components/atoms';
-import { HOME_LIGHT_THEME_IMAGE_PROPS, HOME_DARK_THEME_IMAGE_PROPS } from 'app/utils/images';
+import { Heading, HeadingLevels, HeadingFonts } from 'app/components/atoms';
 import { FormattedMessage } from 'react-intl';
 
 import Flower from 'app/images/svg/noun-feather-3250980.svg';
@@ -41,24 +33,6 @@ const HeroSection = () => (
               <FormattedMessage id="homeDescription4" />
             </a>
           </Heading>
-        </div>
-        <div className={styles.attributionContainer}>
-          <Text size={TextSizes.size16} className={styles.attribution}>
-            <FormattedMessage id="homeImageAttribution1" />
-            <FormattedMessage id="homeImageAttribution2" />
-            <Caption data={HOME_LIGHT_THEME_IMAGE_PROPS} /> /
-            <FormattedMessage id="homeImageAttribution3" />
-            <Caption data={HOME_DARK_THEME_IMAGE_PROPS} />
-          </Text>
-        </div>
-
-        <div className={styles.attributionContainer}>
-          <Text size={TextSizes.size16} className={styles.attribution}>
-            <FormattedMessage id="homeImageAttribution4" />{' '}
-            <a href="https://thenounproject.com/alex2900/" target="_blank">
-              <FormattedMessage id="homeImageAttribution5" />
-            </a>
-          </Text>
         </div>
       </div>
     </div>

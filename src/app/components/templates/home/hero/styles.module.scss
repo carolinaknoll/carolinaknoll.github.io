@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   &Description {
@@ -68,21 +68,6 @@
 
   .homeSubtitle {
     background: rgba(255, 255, 255, 0.5);
-  }
-
-  .attributionContainer {
-    display: inline-flex;
-  }
-
-  .attribution {
-    display: inline-flex;
-
-    p {
-      margin-bottom: 0;
-    }
-  }
-  .attributionContainer:last-of-type {
-    margin-top: -15px;
   }
 
   @media (--sm-viewport) {

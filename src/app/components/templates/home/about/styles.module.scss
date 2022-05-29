@@ -1,5 +1,40 @@
 :global(.darkTheme) .about {
   background-color: rgba(165, 144, 112, 1);
+
+  .aboutIcon path {
+    stroke: rgba(165, 144, 112, 1);
+  }
+
+  .strokeSameColor {
+    stroke: var(--orange-4);
+    fill: var(--orange-4);
+  }
+}
+
+.stroke0px {
+  stroke-width: 0px !important;
+
+  path {
+    stroke-width: 0px !important;
+  }
+}
+
+.stroke1px {
+  stroke-width: 1px !important;
+
+  path {
+    stroke-width: 1px !important;
+  }
+}
+
+.stroke5px {
+  stroke-width: 5px;
+}
+
+.strokeSameColor path {
+  stroke: var(--orange-4) !important;
+  fill: var(--orange-4);
+  stroke-width: 1px !important;
 }
 
 .about {
@@ -60,11 +95,22 @@
     align-items: center;
     justify-content: center;
 
-    width: 33%;
-    padding: 0 20px;
+    flex: 1 1 33%;
+    padding: 20px;
 
     @media (--md-viewport) {
       width: 100%;
+    }
+  }
+
+  .aboutIcon {
+    width: 200px;
+    height: 200px;
+
+    path {
+      fill: var(--orange-4);
+      stroke: rgba(130, 150, 180, 1);
+      stroke-width: 5px;
     }
   }
 
