@@ -1,25 +1,18 @@
 import React from 'react';
+
 import { ImageWithCaption } from 'app/components/molecules';
-import { categorizedImages } from 'app/utils/images';
+import { getRandomImage } from 'app/utils/helpers';
 
 interface RandomImageProps {
   position: string;
-  category: string;
+  category?: string;
   className: string;
 }
 
 const RandomImage = ({ position, category, className }: RandomImageProps) => {
-  let randomNumber = category
-    ? Math.floor(Math.random() * categorizedImages[category].length)
-    : Math.floor(Math.random() * categorizedImages.length);
+  let randomImage = getRandomImage(category);
 
-  return (
-    <ImageWithCaption
-      position={position}
-      image={category ? categorizedImages[category][randomNumber] : categorizedImages[randomNumber]}
-      className={className}
-    />
-  );
+  return <ImageWithCaption position={position} image={randomImage} className={className} />;
 };
 
 export { RandomImage };
