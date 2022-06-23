@@ -1,11 +1,34 @@
 .home {
   height: 100vh;
-  padding-top: 120px;
-  text-align: center;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   vertical-align: middle;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(130, 150, 180, 1) 90%,
+      rgba(130, 150, 180, 1) 100%
+    ),
+    url('app/images/SallySwatland_DayAtTheBeach.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+
+  .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    a {
+      color: var(--orange-4);
+    }
+  }
 
   .titleContainer {
     display: flex;
@@ -14,86 +37,37 @@
     align-items: center;
   }
 
-  .background {
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 40%,
-        rgba(130, 150, 180, 1) 90%,
-        rgba(130, 150, 180, 1) 100%
-      ),
-      url('app/images/SallySwatland_DayAtTheBeach.jpeg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.5s;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    vertical-align: middle;
-    flex-direction: column;
+  .title {
+    color: var(--orange-4);
+    margin-left: 10px;
+    margin-bottom: -10px;
   }
 
-  &Description {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 80px;
+  .titleImage {
+    width: 100px;
+    height: 100px;
 
-    a {
-      color: var(--orange-4);
+    path {
+      fill: var(--orange-4);
     }
-
-    .homeTitle {
-      color: var(--orange-4);
-      margin-left: 10px;
-      margin-bottom: -10px;
-    }
-
-    .titleImage {
-      width: 100px;
-      height: 100px;
-
-      path {
-        fill: var(--orange-4);
-      }
-    }
-  }
-
-  .homeSubtitle {
-    background: rgba(255, 255, 255, 0.5);
   }
 
   @media (--sm-viewport) {
     height: 100%;
     flex-direction: column;
     padding-top: 45px;
-
-    .background {
-      width: 100%;
-    }
-
-    &DescriptionWrapper {
-      width: 100%;
-      padding-top: 20px;
-    }
   }
 }
 
 :global(.darkTheme) .home {
-  .background {
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 40%,
-        rgba(165, 144, 112, 1) 90%,
-        rgba(165, 144, 112, 1) 100%
-      ),
-      url('app/images/SallySwatland_TidalPool.jpeg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(165, 144, 112, 1) 90%,
+      rgba(165, 144, 112, 1) 100%
+    ),
+    url('app/images/SallySwatland_TidalPool.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
