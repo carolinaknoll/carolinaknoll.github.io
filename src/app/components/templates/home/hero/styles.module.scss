@@ -35,16 +35,13 @@
     flex-direction: column;
   }
 
-  &DescriptionWrapper {
+  &Description {
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 80px;
-  }
-
-  &Description {
-    text-align: center;
 
     a {
       color: var(--orange-4);
