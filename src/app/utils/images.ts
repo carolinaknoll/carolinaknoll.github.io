@@ -4,13 +4,11 @@ import ViggoJohansenChildrenpaintingspringflowers from 'app/images/Viggo-Johanse
 import MaryCassattInTheGarden from 'app/images/Mary-Cassatt-In-the-Garden.jpg';
 import BertheMorisotEugeneManet from 'app/images/Berthe-Morisot-Eugene-Manet-the-Artists-Husband-on-the-Isle-of-Wight.jpg';
 import DorotheaSharpSpringtime from 'app/images/Dorothea-Sharp-Springtime.jpg';
-import HarietteSutcliffeHerNewBrownShoes from 'app/images/Hariette-Sutcliffe-Her-New-Brown-Shoes.jpg';
 import JohnGeorgeBrownPickingBerries from 'app/images/John-George-Brown-Picking-Berries.jpg';
 import LauraMuntzLyallInterestingStory from 'app/images/Laura-Muntz-Lyall-Interesting-Story.jpg';
 import PelegFranklinBrownellTwoGirlsReading from 'app/images/Peleg-Franklin-Brownell-Two-Girls-Reading.jpg';
 import ClaudeMonetInTheWoods from 'app/images/Claude-Monet-In-The-Woods.jpg';
 import DanielGerhartzInHerCare from 'app/images/Daniel-Gerhartz-In-Her-Care.jpg';
-import MaryCassattMotherAndChildInBoat from 'app/images/Mary-Cassatt-Mother-And-Child-In-Boat.jpg';
 import DorotheaSharpSundayPicnic from 'app/images/Dorothea-Sharp-Sunday-Picnic.jpeg';
 
 export const categorizedImages: { [key: string]: any } = {
@@ -24,16 +22,6 @@ export const categorizedImages: { [key: string]: any } = {
       imagePath: BertheMorisotEugeneManet,
       imageName: 'Berthe Morisot — Eugene Manet',
       imageUrl: 'https://search.creativecommons.org/photos/ff9b3781-c0bf-453b-ae09-ce4f591173ab',
-    },
-    {
-      imagePath: ViggoJohansenChildrenpaintingspringflowers,
-      imageName: 'Viggo Johansen — Children Painting Spring Flowers',
-      imageUrl: 'https://search.creativecommons.org/photos/7c5d5de4-1274-461d-9695-48f6f116c0bf',
-    },
-    {
-      imagePath: HarietteSutcliffeHerNewBrownShoes,
-      imageName: 'Hariette Sutcliffe — Her New Brown Shoes',
-      imageUrl: 'https://search.creativecommons.org/photos/8ff42b8f-938a-41f8-b812-52af88aa84c5',
     },
   ],
 
@@ -57,6 +45,11 @@ export const categorizedImages: { [key: string]: any } = {
 
   contact: [
     {
+      imagePath: ViggoJohansenChildrenpaintingspringflowers,
+      imageName: 'Viggo Johansen — Children Painting Spring Flowers',
+      imageUrl: 'https://search.creativecommons.org/photos/7c5d5de4-1274-461d-9695-48f6f116c0bf',
+    },
+    {
       imagePath: DorotheaSharpSpringtime,
       imageName: 'Dorothea Sharp — Springtime',
       imageUrl: 'https://search.creativecommons.org/photos/14078547-66ff-4fb1-b3f8-6923a576e262',
@@ -75,11 +68,6 @@ export const categorizedImages: { [key: string]: any } = {
       imagePath: DanielGerhartzInHerCare,
       imageName: 'Daniel Gerhartz — In Her Care',
       imageUrl: 'https://search.creativecommons.org/photos/c5c9e006-6558-4705-885b-2a3cd9028ef3',
-    },
-    {
-      imagePath: MaryCassattMotherAndChildInBoat,
-      imageName: 'Mary Cassatt — Mother And Child In Boat',
-      imageUrl: 'https://search.creativecommons.org/photos/06a2a4b1-e380-4f27-a22d-fd00d674f1ba',
     },
     {
       imagePath: VittorioReggianiniAnUnwelcomeGuest,

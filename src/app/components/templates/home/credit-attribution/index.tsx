@@ -28,7 +28,7 @@ const CreditAttribution = () => {
 
       <div className={styles.attributions}>
         {attributionItems.map((item) => (
-          <div className={styles.attributionContainer}>
+          <div className={styles.attributionContainer} key={item.url}>
             <Text size={TextSizes.size16} className={styles.attribution}>
               {item.icon}
               <a href={item.url} target="_blank" className={styles.url}>
