@@ -34,12 +34,8 @@ const randomStyles = {
 };
 
 const ContactSection = () => (
-  <section
-    className={classNames('sectionPadding', styles.contact)}
-    style={randomStyles}
-    id="contact"
-  >
-    <div className={classNames('content', styles.columnWrapper)}>
+  <section className={classNames('content', styles.contact)} style={randomStyles} id="contact">
+    <div className={styles.columnWrapper}>
       <div className={styles.titleContainer}>
         <Plant className={styles.titleImage} />
         <Heading

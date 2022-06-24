@@ -46,8 +46,7 @@ a {
 }
 
 :global(.lightTheme) {
-  background: #eceff1;
-
+  background: var(--white-6);
   color: var(--dark);
 }
 
@@ -67,30 +66,13 @@ a {
   color: red;
   font-size: 3em;
   line-height: 0;
-  padding: 0px 0px 40px 0;
+  padding: 0 0 40px 0;
   margin-bottom: -20px;
 }
 
 @media (--xs-viewport) {
   :global(.startingParagraph) {
     padding-top: 20px;
-  }
-}
-
-:global(.half) {
-  width: 50%;
-
-  @media (--sm-viewport) {
-    width: 100%;
-  }
-}
-
-:global(.sectionPadding) {
-  padding-top: 70px;
-  padding-bottom: 50px;
-
-  @media (--md-viewport) {
-    padding: 20px 0;
   }
 }
 
@@ -101,4 +83,11 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  @media (--md-viewport) {
+    padding: 20px 0;
+  }
 }

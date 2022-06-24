@@ -15,40 +15,38 @@ interface PorfolioSectionProps {
 }
 
 const PortfolioSection = ({ portfolioItems }: PorfolioSectionProps) => (
-  <section className={classNames('sectionPadding', styles.portfolio)} id="portfolio">
-    <div className="content">
-      <div className={styles.titleContainer}>
+  <section className={classNames('content', styles.portfolio)} id="portfolio">
+    <div className={styles.titleContainer}>
+      <Heading
+        type={HeadingLevels.h2}
+        form={HeadingFonts.cursive}
+        center
+        className={styles.aboutTitle}
+      >
         <Heading
           type={HeadingLevels.h2}
           form={HeadingFonts.cursive}
           center
-          className={styles.aboutTitle}
+          className={styles.portfolioTitle}
         >
-          <Heading
-            type={HeadingLevels.h2}
-            form={HeadingFonts.cursive}
-            center
-            className={styles.portfolioTitle}
-          >
-            <FormattedMessage id="portfolioTitle" />
-          </Heading>
+          <FormattedMessage id="portfolioTitle" />
         </Heading>
-        <Flower className={styles.titleImage} />
-      </div>
+      </Heading>
+      <Flower className={styles.titleImage} />
+    </div>
 
-      <Text size={TextSizes.size20} className={'startingParagraph'}>
-        <FormattedMessage id="portfolioDescription1" />
-      </Text>
-      <Text size={TextSizes.size20}>
-        <FormattedMessage id="portfolioDescription2" />
-      </Text>
+    <Text size={TextSizes.size20} className={'startingParagraph'}>
+      <FormattedMessage id="portfolioDescription1" />
+    </Text>
+    <Text size={TextSizes.size20}>
+      <FormattedMessage id="portfolioDescription2" />
+    </Text>
 
-      <div className={styles.portfolioProjects}>
-        <div className={styles.portfolioProjectsGrid}>
-          {portfolioItems.map((item: PortfolioItemData, index: number) => (
-            <PortfolioItem item={item} hideCaption key={`portfolio-item-${index}`} />
-          ))}
-        </div>
+    <div className={styles.portfolioProjects}>
+      <div className={styles.portfolioProjectsGrid}>
+        {portfolioItems.map((item: PortfolioItemData, index: number) => (
+          <PortfolioItem item={item} hideCaption key={`portfolio-item-${index}`} />
+        ))}
       </div>
     </div>
   </section>
